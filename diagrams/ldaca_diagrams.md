@@ -1,3 +1,4 @@
+```plantuml:ldaca-paradisec-architecture
 @startuml
 title: PARADISEC Architecture
 
@@ -15,10 +16,9 @@ database "NFS Storage" {
 
 
 @enduml
+```
 
-
-
-
+```plantuml:ldaca-conversation
 @startuml
 
 rectangle "@id: conversation.csv" as csv {
@@ -39,7 +39,9 @@ rectangle "@id: csv_schema.json" as json {
 csv -> schema : conformsTo
 schema -> json : sameAs
 @enduml
+```
 
+```plantuml:ldaca-paradisec-workspaces
 @startuml
 
 cloud Workspaces as ws {
@@ -57,7 +59,9 @@ ar -left-> ws :  Data use
 
 
 @enduml
+```
 
+```plantuml:ldaca-data-storage-options
 @startuml
 title: Data storage options\none crate, many parts (Collection A)\nvs many crates (Collection B)
 
@@ -95,10 +99,10 @@ obj3b -> cb: memberOf
 
 
 @enduml
+```
 
 
-
-
+```plantuml:ldaca-atap-architecture
 @startuml
 skinparam defaultFontSize 18
 title: ATAP Architecture
@@ -136,9 +140,9 @@ oni -> ac : Authenticate each request
 oni <--down-- repo : Index  (w/ access licenses)
 oni -down-> repo : Fetch
 @enduml
+```
 
-
-
+```plantuml:ldaca-ro-crate-profile
 @startuml
 
 rectangle "RO-Crate Profile (this document)" {
@@ -165,10 +169,10 @@ obj -down-> file : hasPart
 
 
 @enduml
+```
 
 
-
-
+```plantuml:ldaca-self-contained-corpus
 @startuml
 title: Self contained corpus crate with all resources
 package "ROCrate: My Corpus" {
@@ -207,9 +211,9 @@ package "ROCrate: My Corpus" {
 }
 
 @enduml
+```
 
-
-
+```plantuml:ldaca-complete-corpus-collection
 @startuml
 title: Complete corpus collection metadata-only crate w/ links to object packages
 package "name My Corpus" as mc {
@@ -259,9 +263,9 @@ note right of cc : Repository Collection:\n- MUST contain descriptive metadata\n
 note bottom of ec2 : Individual object with file data
 
 @enduml
+```
 
-
-
+```plantuml:ldaca-ro-crate-profile-this-document
 @startuml
 
 rectangle "RO-Crate Profile (this document)" {
@@ -294,7 +298,9 @@ obj -down-> file : hasFile
 
 
 @enduml
+```
 
+```plantuml:ldaca-ro-crate-profile-this-document
 @startuml
 skinparam defaultFontSize 18
 
@@ -342,7 +348,8 @@ rep -> rep : OK, user is a member of G1
 rep -> c : fetch
 rep -> res : Here's the data
 @enduml
-
+```
+```plantuml:ldaca-simple-repository-access
 @startuml
 skinparam defaultFontSize 18
 
@@ -364,8 +371,9 @@ rep -> rep : OK, user is a member of G1
 rep -> c : fetch
 rep -> res : Here's the data
 @enduml
+```
 
-
+```plantuml:ldaca-sketch-potential-authorization
 @startuml
 skinparam defaultFontSize 18
 
@@ -394,12 +402,13 @@ gls -> rep : yep
 rep -> c : fetch
 rep -> res : Here's the RO-Crate
 @enduml
+```
 
 
 
 
 
-
+```plantuml:ldaca-alveo-rescue
 @startuml
 title: Alveo rescue
 database "Alveo" {
@@ -442,7 +451,9 @@ rectangle "RO-Crate Object n" {
 
 }
 @enduml
+```
 
+```plantuml:ldaca-data-triangle
 @startuml
 title: LDaCA data triage
 start
@@ -462,8 +473,9 @@ if (Data is in a service) then (yes)
   endif
     
 endif
-
-
+@enduml
+```
+```plantuml:ldaca-persistent-ids
 @startuml
 title: LDaCA Persistent IDs (PIDs)
 
@@ -509,7 +521,8 @@ endif
 
 stop
 @enduml
-
+```
+```plantuml:ldaca-data-publications
 @startuml
 title: Data Publications
 
@@ -545,8 +558,9 @@ package "Git Service (eg github)" as git {
 
 
 @enduml
+```
 
-
+```plantuml:ldaca-alveo
 @startuml Alveo
 title: Alveo model of licences
 
@@ -596,7 +610,6 @@ rectangle "Conversion Script" {
 "Conversion Script" <-up- "h1" : Read
 
 
-
 rectangle "OCFL Repository"  {
 
 rectangle "RO-Crate Object 1" as ss1 {
@@ -618,8 +631,8 @@ rectangle "RO-Crate Object n" {
 "Conversion Script" --down--> "RO-Crate Object ss/1" ss1 : Deposit
 "Conversion Script" --down--> "RO-Crate Object hc/1"  hc1: Deposit
 @enduml
-
-
+```
+```plantuml:ldaca-repository-services
 @startuml
 top to bottom direction
 title: LDACA Repository Services
@@ -734,7 +747,8 @@ spa --down--> itemdb : Populate item with text
 rm -up-> inbox : Approve / reject
 inbox -> repo : Deposit
 @enduml
-
+```
+```plantuml:ldaca-aggregation
 @startuml
 top to bottom direction
 title: LDaCA Aggregation
@@ -786,9 +800,9 @@ i ----> repo3 : Index content
 
 
 @enduml
+```
 
-
-
+```plantuml:ldaca-step-1
 @startuml
 Title: Step 1 - Fetching data over the wire
 rectangle Workbench {
@@ -809,7 +823,8 @@ rectangle "Crate 2 (open)" as c2 {
 
 w1 -> c1 : Fetch
 @enduml
-
+```
+```plantuml:ldaca-step-2
 @startuml
 Title: Step 2 - Adding scalability
 rectangle Workbench {
@@ -841,8 +856,9 @@ w1 -> ui : Fetch Crate 1
 ui <-> ocfl : Fetch Crate 1
 ui --> c1 : Fetch
 @enduml
+```
 
-
+```plantuml:ldaca-step-3
 @startuml
 Title: Step 3 - Adding discoverability
 rectangle Workbench {
@@ -940,7 +956,8 @@ ui ---> auth : Is r2 allowed to see mwn
 auth -> ui : No
 ui ----> r2 : NO!
 @enduml
-
+```
+```plantuml:ldaca-step-3-1
 @startuml
 
 actor "Speaker 1" as s1
@@ -985,7 +1002,8 @@ c1 ->  proobj: conformsTo
 
 
 @enduml
-
+```
+```plantuml:ldaca-step-3-2
 @startuml
 
 rectangle "Work (Class: Dataset)" as w {
@@ -993,7 +1011,8 @@ rectangle "Work (Class: Dataset)" as w {
 }
 
 @enduml
-
+```
+```plantuml:ldaca-step-3-3
 @startuml
 
 rectangle "Work (Class: Dataset)" as w {
@@ -1005,9 +1024,8 @@ actor "Contributor (Class: Person)" as c
 w -> c : compiler (Class: Property)
 
 @enduml
-
-
-
+```
+```plantuml:ldaca-step-3-4
 @startuml
 
 rectangle "Work" as w {
@@ -1022,7 +1040,8 @@ w -> c : depositor
 
 
 @enduml
-
+```
+```plantuml:ldaca-step-3-5
 @startuml
 
 rectangle "Work" as w {
@@ -1036,8 +1055,8 @@ w <- c : compilerOf
 
 
 @enduml
-
-
+```
+```plantuml:ldaca-step-3-6
 @startuml
 
 rectangle "Work" as w {
@@ -1075,3 +1094,4 @@ a3 -down-> cam : instrument
 
 
 @enduml
+```
