@@ -1,10 +1,5 @@
-```plantuml:atap-ecosystem
+```plantuml:atap-ecosystem-components
 @startuml
-
-
-
-
-
 
 title: ATAP Ecosystem - components
 
@@ -66,8 +61,9 @@ adp -down-> a : Index and serve
 aw -down-> adp : Link
 aw -down-> ws : Link
 @enduml
+```
 
-
+```plantuml:atap-ecosystem-publishing
 @startuml
 
 title: ATAP Ecosystem - Publishing
@@ -107,7 +103,9 @@ rectangle "Institutional Data Repo" as z {
 }
 
 @enduml
+```
 
+```plantuml:atap-ecosystem-environment
 @startuml
 title: Full ATAP environment
 rectangle "ATAP Website" as aw {
