@@ -1,5 +1,6 @@
 
 
+```plantuml:oni-atap-architecture
 @startuml
 skinparam defaultFontSize 18
 title: ATAP Architecture
@@ -37,12 +38,12 @@ oni -> ac : Authenticate each request
 oni <--down-- repo : Index  (w/ access licenses)
 oni -down-> repo : Fetch
 @enduml
+```
 
 
 
 
-
-
+```plantuml:oni-architecture
 @startuml
 skinparam defaultFontSize 18
 title: Oni Architecture
@@ -169,8 +170,8 @@ qapi --down-> ai : Consult for queries / views\n*with license filter
 API --down->  repo : Read
 
 @enduml
-
-
+```
+```plantuml:oni-architecture-2
 @startuml
 
 skinparam rectanglebackgroundColor<<oni>> yellow
@@ -214,7 +215,8 @@ note bottom of ocfl : All data stored using the Research Object Crate metadata s
 
 
 @enduml
-
+```
+```plantuml:oni-architecture-3
 @startuml
 
 skinparam rectanglebackgroundColor<<oni>> yellow
@@ -263,10 +265,8 @@ note bottom of ocfl : All data stored using the Research Object Crate metadata s
 
 
 @enduml
-
-
-
-
+```
+```plantuml:oni-architecture-4
 @startuml
 
 rectangle "Need versioning?" as nv {
@@ -306,7 +306,7 @@ nv ---down---> atomic2 : Yes
 atomic2 -down-> ocfl : No
 atomic2 -down-> ns : Yes
 @enduml
-
+```
 
 
 
