@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="352px" preserveAspectRatio="none" style="width:1128px;height:352px;background:#FFFFFF;" version="1.1" viewBox="0 0 1128 352" width="1128px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="58.8906" id="_title" style="stroke:none;stroke-width:1.0;" width="305" x="404.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="174" x="470" y="22.9951">Data storage options</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="295" x="409.5" y="39.292">one crate, many parts (Collection A)</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="239" x="437.5" y="55.5889">vs many crates (Collection B)</text><!--MD5=[6ea77cb932c14286879160cd0a6a975f]
+cluster OCFL repository--><g id="cluster_OCFL repository"><path d="M6,132.8866 C6,122.8866 558.5,122.8866 558.5,122.8866 C558.5,122.8866 1111,122.8866 1111,132.8866 L1111,325.8866 C1111,335.8866 558.5,335.8866 558.5,335.8866 C558.5,335.8866 6,335.8866 6,325.8866 L6,132.8866 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M6,132.8866 C6,142.8866 558.5,142.8866 558.5,142.8866 C558.5,142.8866 1111,142.8866 1111,132.8866 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="129" x="494" y="157.8817">OCFL repository</text></g><!--MD5=[84dda40acb3410cad7262261daba2aaf]
+cluster c1--><g id="cluster_c1"><rect fill="none" height="116" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="576" x="511" y="195.8866"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="53" x="772.5" y="210.8817">Object</text></g><!--MD5=[956469d7f1aec4a2c079fbcba97d3a0f]
+entity ca--><g id="elem_ca"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="127" x="943.5" y="249.8866"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="1050.5" y="254.8866"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="1048.5" y="256.8866"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="1048.5" y="260.8866"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="958.5" y="282.8817">Collection A</text></g><!--MD5=[60e3a48cce053fc458e960bb4d648ab9]
+entity obj1a--><g id="elem_obj1a"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="757" y="249.8866"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="817" y="254.8866"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="815" y="256.8866"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="815" y="260.8866"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="772" y="282.8817">obj1a</text></g><!--MD5=[0b78bfa1bbef1e935ba1f60b7ab59b80]
+entity obj2a--><g id="elem_obj2a"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="79" x="642.5" y="249.8866"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="701.5" y="254.8866"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="699.5" y="256.8866"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="699.5" y="260.8866"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="657.5" y="282.8817">obj2a</text></g><!--MD5=[c027fcc307d8a70e9c6501ea806a81f8]
+entity obj3a--><g id="elem_obj3a"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="527" y="249.8866"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="587" y="254.8866"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="585" y="256.8866"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="585" y="260.8866"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="542" y="282.8817">obj3a</text></g><!--MD5=[b1bb34d5f6a5f9f0e50b702338f741d1]
+entity cb--><g id="elem_cb"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="107" x="384.5" y="254.8866"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="394.5" y="277.8817">Collection B</text></g><!--MD5=[024c4c219a760021abe8641afd9dfd95]
+entity obj1b--><g id="elem_obj1b"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="62" x="216" y="254.8866"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="226" y="277.8817">obj1b</text></g><!--MD5=[df97a579a387feb725bf978daf2a9e8c]
+entity obj2b--><g id="elem_obj2b"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="61" x="119.5" y="254.8866"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="129.5" y="277.8817">obj2b</text></g><!--MD5=[9149356f083ae3ec9b371da2134c5568]
+entity obj3b--><g id="elem_obj3b"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="62" x="22" y="254.8866"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="32" y="277.8817">obj3b</text></g><!--MD5=[b5d90f489f603d43970779fe15260bca]
+link obj1a to ca--><g id="link_obj1a_ca"><path d="M837.49,272.8866 C866,272.8866 904.869,272.8866 938.196,272.8866 " fill="none" id="obj1a-to-ca" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="943.494,272.8866,934.494,268.8866,938.494,272.8866,934.494,276.8866,943.494,272.8866" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="855.25" y="265.9535">memberOf</text></g><!--MD5=[5ce938550c090e5c9cffcf1b2fa966d9]
+link obj2a to ca--><g id="link_obj2a_ca"><path d="M683.923,249.8816 C688.017,217.3966 700.734,159.1216 740,132.8866 C782.498,104.4916 807.388,114.3006 855,132.8866 C912.968,155.5146 962.161,211.7476 987.86,245.6616 " fill="none" id="obj2a-to-ca" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="990.88,249.6826,988.68,240.0826,987.88,245.6826,982.28,244.8826,990.88,249.6826" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="797" y="102.9535">memberOf</text></g><!--MD5=[797ea833bd37ff668ef2adee1e6d824d]
+link obj3a to ca--><g id="link_obj3a_ca"><path d="M568.923,249.8816 C573.017,217.3966 585.734,159.1216 625,132.8866 C709.996,76.0976 759.776,95.7156 855,132.8866 C912.968,155.5146 962.161,211.7476 987.86,245.6616 " fill="none" id="obj3a-to-ca" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="990.88,249.6826,988.68,240.0826,987.88,245.6826,982.28,244.8826,990.88,249.6826" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="664" y="102.9535">memberOf</text></g><!--MD5=[64b6bc65a0c548149c6706a0dfc9be9c]
+link obj1b to cb--><g id="link_obj1b_cb"><path d="M278.113,272.8866 C305.405,272.8866 345.83,272.8866 379.202,272.8866 " fill="none" id="obj1b-to-cb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="384.494,272.8866,375.494,268.8866,379.494,272.8866,375.494,276.8866,384.494,272.8866" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="296.25" y="265.9535">memberOf</text></g><!--MD5=[f84ddf262a6c5fa7f0dde777137ae082]
+link obj2b to cb--><g id="link_obj2b_cb"><path d="M150.041,254.4435 C151.231,223.3056 158.692,160.9636 198,132.8866 C277.795,75.8906 382.198,197.6926 421.812,250.2726 " fill="none" id="obj2b-to-cb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="424.997,254.5371,422.8146,244.9331,422.0043,250.5316,416.4058,249.7214,424.997,254.5371" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="247" y="102.9535">memberOf</text></g><!--MD5=[5c93dbb8ad5da413f1f83b1b75e49e45]
+link obj3b to cb--><g id="link_obj3b_cb"><path d="M53.1775,254.43 C54.5979,223.2716 62.5157,160.8996 102,132.8866 C171.959,83.2526 215.579,100.4816 295,132.8866 C353.494,156.7536 401.039,217.3486 423.677,250.4536 " fill="none" id="obj3b-to-cb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="426.574,254.7412,424.8484,245.0447,423.7742,250.5986,418.2203,249.5244,426.574,254.7412" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="127" y="102.9535">memberOf</text></g><!--MD5=[273f6d51a334c04bbb6cfbdcaef36446]
+@startuml
+title: Data storage options\none crate, many parts (Collection A)\nvs many crates (Collection B)
+
+database "OCFL repository" {
+rectangle "Object" as c1 {
+   [Collection A] as ca 
+   [obj1a]
+   [obj2a]
+   [obj3a]
+}
+rectangle "Collection B" as cb {
+
+}
+rectangle obj1b {
+
+}
+rectangle obj2b {
+   
+}
+rectangle obj3b {
+   
+}
+
+obj1a -> ca: memberOf
+obj2a -> ca: memberOf
+obj3a -> ca: memberOf
+
+
+obj1b -> cb: memberOf
+obj2b -> cb: memberOf
+obj3b -> cb: memberOf
+
+
+}
+@enduml
+
+PlantUML version 1.2022.8beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

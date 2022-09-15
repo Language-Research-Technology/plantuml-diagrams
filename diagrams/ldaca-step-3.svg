@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="748px" preserveAspectRatio="none" style="width:1631px;height:748px;background:#FFFFFF;" version="1.1" viewBox="0 0 1631 748" width="1631px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.2969" id="_title" style="stroke:none;stroke-width:1.0;" width="140" x="738.7188" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="130" x="743.7188" y="22.9951">Step 4 - Deposit</text><!--MD5=[49922c1fb65fec7366eab94c7b2714c5]
+cluster Workbench--><g id="cluster_Workbench"><rect fill="none" height="122" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="173" x="34.4376" y="189.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89" x="76.4376" y="204.792">Workbench</text></g><!--MD5=[d5b38d4b24307be98c9c362692fbd4b9]
+cluster Webserver--><g id="cluster_Webserver"><rect fill="none" height="418.5" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="851" x="239.4376" y="197.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="84" x="622.9376" y="212.792">Webserver</text></g><!--MD5=[1cf1c7b1a9e849733b508c86811a28ab]
+cluster ocfl--><g id="cluster_ocfl"><rect fill="none" height="122" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="787" x="271.4376" y="376.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="85" x="622.4376" y="391.792">OCFL Repo</text></g><!--MD5=[945bb76cb2232b12ba90c731e52d4c9b]
+entity w1--><g id="elem_w1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="105" x="77.9376" y="251.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="87.9376" y="274.792">Notebook 1</text></g><!--MD5=[74d933e1d656676adfcd4a7f27d1afee]
+entity sr--><g id="elem_sr"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="121" x="349.9376" y="251.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="359.9376" y="274.792">Search results</text></g><g id="elem_GMN13"><path d="M255.4376,575.2969 L255.4376,600.4297 L393.4376,600.4297 L393.4376,585.2969 L383.4376,575.2969 L255.4376,575.2969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M383.4376,575.2969 L383.4376,585.2969 L393.4376,585.2969 L383.4376,575.2969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="261.4376" y="592.3638">"*" = Open licence</text></g><g id="elem_GMN25"><path d="M428.4376,575.2969 L428.4376,600.4297 L566.4376,600.4297 L566.4376,585.2969 L556.4376,575.2969 L428.4376,575.2969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M556.4376,575.2969 L556.4376,585.2969 L566.4376,585.2969 L556.4376,575.2969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="434.4376" y="592.3638">"*" = Open licence</text></g><!--MD5=[bf1b4add2ee2e1b53e65912b20fb7ef4]
+entity ui--><g id="elem_ui"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="181" x="781.9376" y="251.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="791.9376" y="274.792">OCFL search/discovery</text></g><!--MD5=[0aac872f208ab6f5f7887aae079fb447]
+entity c1--><g id="elem_c1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="954.4376" y="438.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="964.4376" y="461.792">Crate 1*</text></g><!--MD5=[3d2111c8a0a2d14b8769ddc11704380e]
+entity c2--><g id="elem_c2"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="79" x="839.9376" y="438.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="849.9376" y="461.792">Crate 2*</text></g><!--MD5=[ec0ce55baad344de3025d2ffee8adffc]
+entity n1--><g id="elem_n1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="112" x="692.4376" y="438.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="702.4376" y="461.792">Notebook 1*</text></g><!--MD5=[2e097bb411287f6ed1a33ac9cb2c3661]
+entity n2--><g id="elem_n2"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111" x="545.9376" y="438.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="555.9376" y="461.792">Notebook 2*</text></g><!--MD5=[adb5baa5cfc4f927b85a611d9a688dae]
+entity mwn--><g id="elem_mwn"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="196" x="314.4376" y="438.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="324.4376" y="461.792">My Wordcloud Notebook</text></g><!--MD5=[e29493a8775effcafa538aa0485107d1]
+entity auth--><g id="elem_auth"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="155" x="1371.9376" y="569.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="1381.9376" y="592.792">Licence Authorizer</text></g><!--MD5=[97bded9ea8416bc4240d1ecd7eca0282]
+entity r1--><g id="elem_r1"><ellipse cx="662.4376" cy="51.2969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M662.4376,59.2969 L662.4376,86.2969 M649.4376,67.2969 L675.4376,67.2969 M662.4376,86.2969 L649.4376,101.2969 M662.4376,86.2969 L675.4376,101.2969 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="615.4376" y="115.792">Researcher 1</text></g><!--MD5=[2d034b0875f5e28a2e66ba2265252e77]
+entity r2--><g id="elem_r2"><ellipse cx="1135.4376" cy="675.2969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M1135.4376,683.2969 L1135.4376,710.2969 M1122.4376,691.2969 L1148.4376,691.2969 M1135.4376,710.2969 L1122.4376,725.2969 M1135.4376,710.2969 L1148.4376,725.2969 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="1088.9376" y="739.792">Researcher 2</text></g><!--MD5=[81294d7971fc1b370076eb44052e566b]
+link ocfl to GMN13--><g id="link_ocfl_GMN13"><path d="M292.9829,498.8389 C293.0501,499.038 293.1173,499.2371 293.1846,499.4363 C293.3191,499.8347 293.4538,500.2333 293.5887,500.6321 C294.1282,502.2269 294.67,503.8233 295.2116,505.4126 C296.2948,508.5914 297.3771,511.7421 298.4376,514.7969 C305.8476,536.1399 314.8816,560.8879 320.1146,575.1059 " fill="none" id="ocfl-GMN13" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[98f97cb98d137c1acb51471d008056fb]
+link w1 to ui--><g id="link_w1_ui"><path d="M143.8696,251.7279 C162.3766,228.5219 198.1536,189.3849 239.4376,173.7969 C342.9696,134.7049 378.5996,160.2749 488.4376,173.7969 C605.7296,188.2359 738.7256,226.5989 813.3956,250.2259 " fill="none" id="w1-to-ui" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="818.2286,251.7609,810.8613,245.2246,813.4631,250.2476,808.4401,252.8494,818.2286,251.7609" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="535.4376" y="161.8638">Fetch Crate 1</text></g><!--MD5=[e0d6be031015ca7c2c6d334e9bf46695]
+link ui to ocfl--><g id="link_ui_ocfl"><path d="M823.5026,289.5939 C769.0236,309.5099 677.9006,339.8329 596.4376,352.7969 C580.0816,355.3999 311.1036,350.1259 298.4376,360.7969 C294.3857,364.2105 291.0433,368.2224 288.2971,372.6337 C287.6106,373.7365 286.9613,374.8643 286.3475,376.0139 C286.2708,376.1576 286.1946,376.3016 286.119,376.446 " fill="none" id="ui-ocfl" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="286.119,376.446,293.8381,370.3292,288.4388,372.0167,286.7512,366.6175,286.119,376.446" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="828.3346,287.8199,818.5074,287.1666,823.6409,289.543,821.2645,294.6765,828.3346,287.8199" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="675.4376" y="348.8638">Fetch Crate 1</text></g><!--MD5=[0614fa7133e84beda1155e4e6e7f1550]
+link ui to c1--><g id="link_ui_c1"><path d="M885.0696,287.8019 C898.2486,305.7159 919.3346,334.8699 936.4376,360.7969 C952.7206,385.4819 970.2626,414.6019 981.7386,434.0329 " fill="none" id="ui-to-c1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="984.5216,438.7559,983.3992,428.9712,981.9834,434.448,976.5066,433.0322,984.5216,438.7559" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="931.4376" y="348.8638">Fetch</text></g><!--MD5=[58aa43707465f905782baaf1617bc9da]
+link r1 to ui--><g id="link_r1_ui"><path d="M709.4686,99.4439 C735.5776,110.8149 767.5126,127.4709 791.4376,148.7969 C823.4086,177.2959 848.7046,221.0199 862.0476,247.0759 " fill="none" id="r1-to-ui" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="864.3986,251.7279,863.9087,241.8912,862.1431,247.2655,856.7688,245.5,864.3986,251.7279" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="223" x="809.4376" y="161.8638">Show me notebooks for wordcloud</text></g><!--MD5=[78b7fc9962bf9ec8218c10012be564ec]
+link ui to sr--><g id="link_ui_sr"><path d="M781.5926,269.7969 C691.7846,269.7969 556.5376,269.7969 476.5016,269.7969 " fill="none" id="ui-to-sr" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="471.3116,269.7969,480.3116,273.7969,476.3116,269.7969,480.3116,265.7969,471.3116,269.7969" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="538.4376" y="262.8638">Show wordcloud notebooks</text></g><!--MD5=[840685a5fae95725b483b0907b4e55cf]
+link r1 to sr--><g id="link_r1_sr"><path d="M651.4566,119.0259 C645.2756,134.9649 636.1836,152.8489 623.4376,165.7969 C582.8466,207.0329 522.4326,234.0749 476.3026,250.0579 " fill="none" id="r1-to-sr" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="471.3186,251.7609,481.1286,252.6351,476.0499,250.1438,478.5412,245.0651,471.3186,251.7609" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="119" x="637.4376" y="161.8638">Invoke Notebook 1</text></g><!--MD5=[ad93a34898ad6b7b286af08e0913d3c7]
+link sr to Workbench--><g id="link_sr_Workbench"><path d="M381.4436,251.7279 C342.0136,228.3259 268.4646,188.7619 199.4376,173.7969 C139.4966,160.8019 108.8303,134.8649 61.4376,173.7969 C57.4335,177.0861 54.1138,180.9543 51.3722,185.2167 C50.6869,186.2823 50.0376,187.3726 49.4228,188.4846 C49.2691,188.7626 49.1176,189.0419 48.9682,189.3226 C48.8935,189.463 48.8193,189.6036 48.7457,189.7446 " fill="none" id="sr-to-Workbench" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="48.7457,189.7446,56.458,183.6192,51.0606,185.3128,49.367,179.9154,48.7457,189.7446" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="236" x="43.4376" y="161.8638">"Fire up Notebook 1 for Researcher 1</text></g><!--MD5=[3a0dfefbe2ad759d0093ef347906602c]
+link ocfl to GMN25--><g id="link_ocfl_GMN25"><path d="M288.1047,498.9724 C288.1884,499.1601 288.2728,499.3475 288.358,499.5346 C288.5285,499.9088 288.7023,500.2816 288.8793,500.6529 C289.2334,501.3954 289.6008,502.1318 289.982,502.8603 C290.7443,504.3175 291.5617,505.7436 292.4382,507.1261 C294.1912,509.891 296.1804,512.4815 298.4376,514.7969 C304.4326,520.9459 407.8526,556.5299 463.1666,575.2649 " fill="none" id="ocfl-GMN25" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[cfda3791a0c96c639f8ece33fde5a6e8]
+link r1 to w1--><g id="link_r1_w1"><path d="M615.1836,87.1799 C547.8366,95.6989 420.9396,114.8989 317.4376,148.7969 C300.6226,154.3039 298.2626,160.3199 281.4376,165.7969 C263.3686,171.6789 256.5266,165.4879 239.4376,173.7969 C202.4586,191.7769 168.1746,225.6419 148.2776,247.7029 " fill="none" id="r1-to-w1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="144.7326,251.6789,153.7086,247.6254,148.061,247.9477,147.7387,242.3,144.7326,251.6789" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="207" x="318.4376" y="161.8638">Save as My wordcloud notebook</text></g><!--MD5=[1597ff58c7f9c03a3916c18cb19684ed]
+link Workbench to ocfl--><g id="link_Workbench_ocfl"><path d="M34.3525,280.4375 C34.2876,280.5214 34.2224,280.6057 34.157,280.6904 C29.9716,286.1141 24.868,293.3843 20.5033,301.5173 C11.7739,317.7831 6,337.4999 16.4376,352.7969 C51.2613,403.8344 115.5168,429.5834 171.7962,442.5735 C199.9358,449.0686 226.0814,452.3739 245.557,454.0557 C255.2948,454.8966 263.3651,455.3317 269.1833,455.5566 C269.9106,455.5847 270.6027,455.6096 271.2585,455.6315 " fill="none" id="Workbench-to-ocfl" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="271.2585,455.6315,262.3972,451.3329,266.2613,455.4644,262.1298,459.3284,271.2585,455.6315" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="375" x="17.4376" y="348.8638">Deposit *My Wordcloud Notebook* with single-user license</text></g><!--MD5=[cf1b23019fe97406ae9fcfc8ec668287]
+reverse link w1 to mwn--><g id="link_w1_mwn"><path d="M159.9356,290.7089 C181.0806,303.8299 210.7786,319.9819 239.4376,327.7969 C256.3966,332.4209 384.5586,323.8339 397.4376,335.7969 C425.5896,361.9449 421.1576,412.0299 416.3416,438.4669 " fill="none" id="w1-backto-mwn" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="155.5576,287.9589,161.0508,296.1335,159.7915,290.6186,165.3064,289.3593,155.5576,287.9589" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177" x="410.4376" y="348.8638">Provenance -- derived from</text></g><!--MD5=[c38a8904d22d358e0b782df4cd105b0d]
+link r2 to ui--><g id="link_r2_ui"><path d="M1147.6776,666.7934 C1169.0976,594.3879 1204.1276,432.6239 1126.4376,335.7969 C1106.3876,310.8039 1031.5576,293.6419 968.2786,283.2559 " fill="none" id="r2-to-ui" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="962.9706,282.3959,971.2147,287.7843,967.9062,283.1959,972.4946,279.8874,962.9706,282.3959" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="208" x="1174.4376" y="535.8638">Fire up My Word Cloud Notebook</text></g><!--MD5=[86a9e1b01fa0380e6ddd52b84298ad1a]
+link ui to r2--><g id="link_ui_r2"><path d="M935.4826,287.9089 C974.1066,301.5489 1021.5176,324.5069 1050.4376,360.7969 C1121.6976,450.2299 1134.2476,591.2659 1135.8076,661.3487 " fill="none" id="ui-to-r2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1135.9076,666.6795,1139.7377,657.6059,1135.8136,661.6804,1131.7391,657.7563,1135.9076,666.6795" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="1124.4376" y="535.8638">NO!</text></g><!--MD5=[22d5735ac8b2c91c1bf9041698151f16]
+link ui to auth--><g id="link_ui_auth"><path d="M963.0196,272.8609 C1102.6276,278.0639 1360.7476,296.3749 1422.4376,360.7969 C1475.9876,416.7199 1463.3776,519.4409 1454.5176,564.5549 " fill="none" id="ui-to-auth" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1453.5176,569.5089,1459.2252,561.4825,1454.5105,564.6085,1451.3846,559.8938,1453.5176,569.5089" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="1463.4376" y="461.3638">Is r2 allowed to see mwn</text></g><!--MD5=[55185cb097ee14e956a63b2256d7bbfe]
+link auth to ui--><g id="link_auth_ui"><path d="M1437.8976,569.6819 C1405.8276,523.5659 1310.4676,396.1439 1197.4376,335.7969 C1126.3276,297.8289 1035.7076,281.9509 968.2356,275.3559 " fill="none" id="auth-to-ui" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="963.0106,274.8589,971.5919,279.6922,967.9882,275.3318,972.3486,271.728,963.0106,274.8589" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="17" x="1396.4376" y="461.3638">No</text></g><!--MD5=[64cf68d9788f79abb43e874fb462726c]
+@startuml
+Title: Step 3 - Adding discoverability
+rectangle Workbench {
+rectangle "Notebook 1" as w1 {
+}
+}
+
+actor "Researcher 1" as r1
+
+
+rectangle Webserver {
+rectangle "OCFL search/discovery" as ui {
+
+}
+
+rectangle "OCFL Repo" as ocfl {
+
+
+
+rectangle "Crate 1*" as c1 {
+}
+rectangle "Crate 2*" as c2 {
+}
+rectangle "Notebook 1*" as n1 {
+}
+rectangle "Notebook 2*" as n2 {
+}
+}
+
+rectangle "Search results" as sr
+
+note bottom of ocfl: "*" = Open licence
+
+}
+
+w1 -> ui : Fetch Crate 1
+ui <-> ocfl : Fetch Crate 1
+ui - -> c1 : Fetch
+r1 -> ui : Show me notebooks for wordcloud
+ui -> sr : Show wordcloud notebooks
+
+r1 -> sr : Invoke Notebook 1
+sr -> Workbench : "Fire up Notebook 1 for Researcher 1
+
+
+
+Title: Step 4 - Deposit
+rectangle Workbench {
+rectangle "Notebook 1" as w1 {
+}
+}
+
+actor "Researcher 1" as r1
+
+actor "Researcher 2" as r2
+
+rectangle Webserver {
+rectangle "OCFL search/discovery" as ui {
+
+}
+
+rectangle "OCFL Repo" as ocfl {
+
+
+
+rectangle "Crate 1*" as c1 {
+}
+rectangle "Crate 2*" as c2 {
+}
+rectangle "Notebook 1*" as n1 {
+}
+rectangle "Notebook 2*" as n2 {
+}
+
+rectangle "My Wordcloud Notebook" as mwn {
+}
+}
+
+
+note bottom of ocfl: "*" = Open licence
+
+}
+
+rectangle "Licence Authorizer" as auth {
+
+}
+
+r1 -down-> w1: Save as My wordcloud notebook
+Workbench -down-> ocfl : Deposit *My Wordcloud Notebook* with single-user license
+mwn -up-> w1 : Provenance - - derived from
+
+r2 -> ui : Fire up My Word Cloud Notebook
+
+ui - - -> auth : Is r2 allowed to see mwn
+auth -> ui : No
+ui - - - -> r2 : NO!
+@enduml
+
+PlantUML version 1.2022.8beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
