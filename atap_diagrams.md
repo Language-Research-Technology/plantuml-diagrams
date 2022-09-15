@@ -1,6 +1,11 @@
 
 @startuml
 
+
+
+
+
+
 title: ATAP Ecosystem - components
 
 skinparam cloud<<workspace>> {
