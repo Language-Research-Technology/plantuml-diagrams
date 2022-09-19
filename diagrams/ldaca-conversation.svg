@@ -3,7 +3,7 @@ entity csv--><g id="elem_csv"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry=
 entity schema--><g id="elem_schema"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="329" x="298" y="8.5659"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="309" x="308" y="31.561">@id: arcp://name,somedomain/csv_schema</text></g><!--MD5=[a264f174970795e6f8e9a8e3ba271873]
 entity json--><g id="elem_json"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="716" y="8.5659"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="726" y="31.561">@id: csv_schema.json</text></g><!--MD5=[5c47ec3fdede0891a64b11f8cc87aab6]
 link csv to schema--><g id="link_csv_schema"><path d="M184.34,26.5659 C217.027,26.5659 255.232,26.5659 292.673,26.5659 " fill="none" id="csv-to-schema" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="297.711,26.5659,288.711,22.5659,292.711,26.5659,288.711,30.5659,297.711,26.5659" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="202.5" y="19.6328">conformsTo</text></g><!--MD5=[8ef9c87a83ab7eb58b4f4891fe9194f5]
-link schema to json--><g id="link_schema_json"><path d="M627.007,26.5659 C655.747,26.5659 684.715,26.5659 710.638,26.5659 " fill="none" id="schema-to-json" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="715.781,26.5659,706.781,22.5659,710.781,26.5659,706.781,30.5659,715.781,26.5659" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="645.5" y="19.6328">sameAs</text></g><!--MD5=[7c52548d4604a427bc479e1b42aa689e]
+link schema to json--><g id="link_schema_json"><path d="M627.007,26.5659 C655.747,26.5659 684.715,26.5659 710.638,26.5659 " fill="none" id="schema-to-json" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="715.781,26.5659,706.781,22.5659,710.781,26.5659,706.781,30.5659,715.781,26.5659" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="645.5" y="19.6328">sameAs</text></g><!--MD5=[c02cf8cd7571198c4416033a91e62d04]
 @startuml
 rectangle "@id: conversation.csv" as csv {
 
@@ -24,7 +24,7 @@ csv -> schema : conformsTo
 schema -> json : sameAs
 @enduml
 
-PlantUML version 1.2022.8beta6(Unknown compile time)
+PlantUML version 1.2022.8beta8(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM

@@ -11,7 +11,7 @@ link coll to obj--><g id="link_coll_obj"><path d="M179.464,184.473 C157.488,191.
 reverse link coll to obj--><g id="link_coll_obj"><path d="M221.19,198.166 C217.434,211.438 211.114,228.003 201,240 C189.383,253.78 172.645,264.607 157.65,272.379 " fill="none" id="coll-backto-obj" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="222.553,193.074,216.3619,200.7337,221.2602,197.904,224.0898,202.8022,222.553,193.074" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="213" y="236.0669">memberOf</text></g><!--MD5=[a3972a202d3aee799dc78ba9caa00fe3]
 reverse link procoll to coll--><g id="link_procoll_coll"><path d="M216.378,83.396 C218.665,104.931 222.074,137.028 224.16,156.676 " fill="none" id="procoll-backto-coll" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="215.823,78.162,212.7967,87.5344,216.3515,83.134,220.7519,86.6888,215.823,78.162" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="222" y="123.0669">conformsTo</text></g><!--MD5=[43301f08bd5990094f237ca086f1180c]
 link obj to proobj--><g id="link_obj_proobj"><path d="M113.582,269.947 C103.957,251.571 89.5244,221.163 83,193 C74.2599,155.273 74.0008,109.927 74.8394,83.4 " fill="none" id="obj-to-proobj" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="75.0195,78.354,70.7006,87.2054,74.8409,83.3508,78.6955,87.4911,75.0195,78.354" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="84" y="179.5669">conformsTo</text></g><!--MD5=[7c46a9323d5c38d9275f9a7dcf8fcb1c]
-link obj to file--><g id="link_obj_file"><path d="M123,306.344 C123,325.5677 123,356.6296 123,377.6606 " fill="none" id="obj-to-file" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="123,382.778,127,373.778,123,377.778,119,373.778,123,382.778" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="124" y="349.0669">hasPart</text></g><!--MD5=[8bd553921103cb56ee0452ec61422944]
+link obj to file--><g id="link_obj_file"><path d="M123,306.344 C123,325.5677 123,356.6296 123,377.6606 " fill="none" id="obj-to-file" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="123,382.778,127,373.778,123,377.778,119,373.778,123,382.778" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="124" y="349.0669">hasPart</text></g><!--MD5=[f94192a7539bc11a30992a5a3a3998f1]
 @startuml
 rectangle "RO-Crate Profile (this document)" {
 rectangle " #Collection" as procoll
@@ -36,7 +36,7 @@ obj -right-> proobj : conformsTo
 obj -down-> file : hasPart
 @enduml
 
-PlantUML version 1.2022.8beta6(Unknown compile time)
+PlantUML version 1.2022.8beta8(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM

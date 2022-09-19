@@ -8,7 +8,7 @@ entity c1--><g id="elem_c1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2
 entity c2--><g id="elem_c2"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="123" x="276.5" y="231.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="286.5" y="254.292">Crate 2 (open)</text></g><!--MD5=[98f97cb98d137c1acb51471d008056fb]
 link w1 to ui--><g id="link_w1_ui"><path d="M128.751,97.2969 C162.203,97.2969 206.492,97.2969 246.116,97.2969 " fill="none" id="w1-to-ui" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="251.423,97.2969,242.423,93.2969,246.423,97.2969,242.423,101.2969,251.423,97.2969" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="147" y="90.3638">Fetch Crate 1</text></g><!--MD5=[e0d6be031015ca7c2c6d334e9bf46695]
 link ui to ocfl--><g id="link_ui_ocfl"><path d="M311.903,118.8269 C294.181,132.0779 272.984,150.8229 260,172.2969 C257.8185,175.9048 255.8867,179.7533 254.1762,183.7313 C253.7485,184.7258 253.3347,185.7284 252.9343,186.7373 C252.7341,187.2418 252.5372,187.7479 252.3436,188.2553 " fill="none" id="ui-ocfl" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="252.3436,188.2553,259.2888,181.2721,254.1258,183.5837,251.8142,178.4207,252.3436,188.2553" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="316.327,115.5779,306.7055,117.6818,312.2972,118.5377,311.4412,124.1294,316.327,115.5779" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="280" y="160.3638">Fetch Crate 1</text></g><!--MD5=[0614fa7133e84beda1155e4e6e7f1550]
-link ui to c1--><g id="link_ui_c1"><path d="M360.666,115.5039 C389.211,143.3079 445.362,198.0009 475.941,227.7849 " fill="none" id="ui-to-c1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="479.54,231.2909,475.8841,222.1457,475.9584,227.8021,470.302,227.8763,479.54,231.2909" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="407" y="160.3638">Fetch</text></g><!--MD5=[df131237822c8f83d48d26ab0782d135]
+link ui to c1--><g id="link_ui_c1"><path d="M360.666,115.5039 C389.211,143.3079 445.362,198.0009 475.941,227.7849 " fill="none" id="ui-to-c1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="479.54,231.2909,475.8841,222.1457,475.9584,227.8021,470.302,227.8763,479.54,231.2909" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="407" y="160.3638">Fetch</text></g><!--MD5=[41dfb8110cc9d419a95e8cc83bd16028]
 @startuml
 Title: Step 2 - Adding scalability
 rectangle Workbench {
@@ -41,7 +41,7 @@ ui <-> ocfl : Fetch Crate 1
 ui - -> c1 : Fetch
 @enduml
 
-PlantUML version 1.2022.8beta6(Unknown compile time)
+PlantUML version 1.2022.8beta8(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM

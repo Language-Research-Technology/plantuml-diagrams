@@ -28,7 +28,7 @@ reverse link w1 to mwn--><g id="link_w1_mwn"><path d="M159.9356,290.7089 C181.08
 link r2 to ui--><g id="link_r2_ui"><path d="M1147.6776,666.7934 C1169.0976,594.3879 1204.1276,432.6239 1126.4376,335.7969 C1106.3876,310.8039 1031.5576,293.6419 968.2786,283.2559 " fill="none" id="r2-to-ui" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="962.9706,282.3959,971.2147,287.7843,967.9062,283.1959,972.4946,279.8874,962.9706,282.3959" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="208" x="1174.4376" y="535.8638">Fire up My Word Cloud Notebook</text></g><!--MD5=[86a9e1b01fa0380e6ddd52b84298ad1a]
 link ui to r2--><g id="link_ui_r2"><path d="M935.4826,287.9089 C974.1066,301.5489 1021.5176,324.5069 1050.4376,360.7969 C1121.6976,450.2299 1134.2476,591.2659 1135.8076,661.3487 " fill="none" id="ui-to-r2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1135.9076,666.6795,1139.7377,657.6059,1135.8136,661.6804,1131.7391,657.7563,1135.9076,666.6795" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="1124.4376" y="535.8638">NO!</text></g><!--MD5=[22d5735ac8b2c91c1bf9041698151f16]
 link ui to auth--><g id="link_ui_auth"><path d="M963.0196,272.8609 C1102.6276,278.0639 1360.7476,296.3749 1422.4376,360.7969 C1475.9876,416.7199 1463.3776,519.4409 1454.5176,564.5549 " fill="none" id="ui-to-auth" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1453.5176,569.5089,1459.2252,561.4825,1454.5105,564.6085,1451.3846,559.8938,1453.5176,569.5089" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="1463.4376" y="461.3638">Is r2 allowed to see mwn</text></g><!--MD5=[55185cb097ee14e956a63b2256d7bbfe]
-link auth to ui--><g id="link_auth_ui"><path d="M1437.8976,569.6819 C1405.8276,523.5659 1310.4676,396.1439 1197.4376,335.7969 C1126.3276,297.8289 1035.7076,281.9509 968.2356,275.3559 " fill="none" id="auth-to-ui" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="963.0106,274.8589,971.5919,279.6922,967.9882,275.3318,972.3486,271.728,963.0106,274.8589" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="17" x="1396.4376" y="461.3638">No</text></g><!--MD5=[64cf68d9788f79abb43e874fb462726c]
+link auth to ui--><g id="link_auth_ui"><path d="M1437.8976,569.6819 C1405.8276,523.5659 1310.4676,396.1439 1197.4376,335.7969 C1126.3276,297.8289 1035.7076,281.9509 968.2356,275.3559 " fill="none" id="auth-to-ui" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="963.0106,274.8589,971.5919,279.6922,967.9882,275.3318,972.3486,271.728,963.0106,274.8589" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="17" x="1396.4376" y="461.3638">No</text></g><!--MD5=[b469022c700cf4a71f15e86c714a906a]
 @startuml
 Title: Step 3 - Adding discoverability
 rectangle Workbench {
@@ -127,7 +127,7 @@ auth -> ui : No
 ui - - - -> r2 : NO!
 @enduml
 
-PlantUML version 1.2022.8beta6(Unknown compile time)
+PlantUML version 1.2022.8beta8(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM

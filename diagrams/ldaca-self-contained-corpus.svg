@@ -14,7 +14,7 @@ link o1 to a1--><g id="link_o1_a1"><path d="M396.031,340.3969 C357.388,360.4419 
 link o1 to csv1--><g id="link_o1_csv1"><path d="M430.208,340.4269 C431.976,354.3469 436.321,373.8159 447,387.2969 C456.046,398.716 468.666,407.7805 481.418,414.7791 " fill="none" id="o1-to-csv1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="486.116,417.2646,480.0318,409.5197,481.6966,414.9261,476.2902,416.5908,486.116,417.2646" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="448" y="383.3638">hasPart</text></g><!--MD5=[20ed630a26c1e7423deb52c9bfa2417a]
 link cc to files--><g id="link_cc_files"><path d="M550.068,114.7139 C557.376,123.2139 565.763,133.8439 572,144.2969 C603.23,196.6389 627.625,264.5959 638.998,299.0959 " fill="none" id="cc-to-files" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="640.581,303.9379,641.5855,294.1404,639.0269,299.1855,633.9817,296.627,640.581,303.9379" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="612" y="213.8638">hasPart</text></g><!--MD5=[efc1ec3c68cf46431925c959197e9c62]
 link files to csv1--><g id="link_files_csv1"><path d="M635.89,340.5599 C627.39,354.1949 614.354,373.2049 600,387.2969 C589.785,397.3256 577.206,406.6748 565.657,414.3514 " fill="none" id="files-to-csv1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="561.455,417.1021,571.1759,415.5194,565.6384,414.3636,566.7942,408.826,561.455,417.1021" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="615" y="383.3638">hasPart</text></g><!--MD5=[259b0818f678c7232fc3ac505cf88405]
-link files to a1--><g id="link_files_a1"><path d="M607.999,340.3269 C566.272,359.0059 504.761,386.4723 502,387.2969 C470.233,396.786 395.529,408.9083 330.302,418.4649 " fill="none" id="files-to-a1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="325.224,419.2065,334.7077,421.8633,330.1715,418.4836,333.5512,413.9473,325.224,419.2065" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="539" y="383.3638">hasPart</text></g><!--MD5=[55ed1a5e8fe5e0aa019eca14aa7447c3]
+link files to a1--><g id="link_files_a1"><path d="M607.999,340.3269 C566.272,359.0059 504.761,386.4723 502,387.2969 C470.233,396.786 395.529,408.9083 330.302,418.4649 " fill="none" id="files-to-a1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="325.224,419.2065,334.7077,421.8633,330.1715,418.4836,333.5512,413.9473,325.224,419.2065" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="539" y="383.3638">hasPart</text></g><!--MD5=[25222416b7118d9a855cbca75e1559d2]
 @startuml
 title: Self contained corpus crate with all resources
 package "ROCrate: My Corpus" {
@@ -53,7 +53,7 @@ package "ROCrate: My Corpus" {
 }
 @enduml
 
-PlantUML version 1.2022.8beta6(Unknown compile time)
+PlantUML version 1.2022.8beta8(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM
