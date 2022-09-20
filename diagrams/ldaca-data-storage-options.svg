@@ -14,7 +14,7 @@ link obj2a to ca--><g id="link_obj2a_ca"><path d="M683.923,249.8816 C688.017,217
 link obj3a to ca--><g id="link_obj3a_ca"><path d="M568.923,249.8816 C573.017,217.3966 585.734,159.1216 625,132.8866 C709.996,76.0976 759.776,95.7156 855,132.8866 C912.968,155.5146 962.161,211.7476 987.86,245.6616 " fill="none" id="obj3a-to-ca" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="990.88,249.6826,988.68,240.0826,987.88,245.6826,982.28,244.8826,990.88,249.6826" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="664" y="102.9535">memberOf</text></g><!--MD5=[64b6bc65a0c548149c6706a0dfc9be9c]
 link obj1b to cb--><g id="link_obj1b_cb"><path d="M278.113,272.8866 C305.405,272.8866 345.83,272.8866 379.202,272.8866 " fill="none" id="obj1b-to-cb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="384.494,272.8866,375.494,268.8866,379.494,272.8866,375.494,276.8866,384.494,272.8866" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="296.25" y="265.9535">memberOf</text></g><!--MD5=[f84ddf262a6c5fa7f0dde777137ae082]
 link obj2b to cb--><g id="link_obj2b_cb"><path d="M150.041,254.4435 C151.231,223.3056 158.692,160.9636 198,132.8866 C277.795,75.8906 382.198,197.6926 421.812,250.2726 " fill="none" id="obj2b-to-cb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="424.997,254.5371,422.8146,244.9331,422.0043,250.5316,416.4058,249.7214,424.997,254.5371" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="247" y="102.9535">memberOf</text></g><!--MD5=[5c93dbb8ad5da413f1f83b1b75e49e45]
-link obj3b to cb--><g id="link_obj3b_cb"><path d="M53.1775,254.43 C54.5979,223.2716 62.5157,160.8996 102,132.8866 C171.959,83.2526 215.579,100.4816 295,132.8866 C353.494,156.7536 401.039,217.3486 423.677,250.4536 " fill="none" id="obj3b-to-cb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="426.574,254.7412,424.8484,245.0447,423.7742,250.5986,418.2203,249.5244,426.574,254.7412" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="127" y="102.9535">memberOf</text></g><!--MD5=[273f6d51a334c04bbb6cfbdcaef36446]
+link obj3b to cb--><g id="link_obj3b_cb"><path d="M53.1775,254.43 C54.5979,223.2716 62.5157,160.8996 102,132.8866 C171.959,83.2526 215.579,100.4816 295,132.8866 C353.494,156.7536 401.039,217.3486 423.677,250.4536 " fill="none" id="obj3b-to-cb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="426.574,254.7412,424.8484,245.0447,423.7742,250.5986,418.2203,249.5244,426.574,254.7412" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="127" y="102.9535">memberOf</text></g><!--MD5=[6382631c57a3dd6c48ebcb64bb278da6]
 @startuml
 title: Data storage options\none crate, many parts (Collection A)\nvs many crates (Collection B)
 
@@ -51,7 +51,7 @@ obj3b -> cb: memberOf
 }
 @enduml
 
-PlantUML version 1.2022.8beta6(Unknown compile time)
+PlantUML version 1.2022.8beta8(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM

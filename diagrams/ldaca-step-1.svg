@@ -4,7 +4,7 @@ cluster Webserver--><g id="cluster_Webserver"><rect fill="none" height="106" rx=
 entity w1--><g id="elem_w1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="105" x="23.5" y="130.8628"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="33.5" y="153.8579">Notebook 1</text></g><!--MD5=[0aac872f208ab6f5f7887aae079fb447]
 entity c1--><g id="elem_c1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="344" y="130.8628"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="354" y="153.8579">Crate 1 (open)</text></g><!--MD5=[3d2111c8a0a2d14b8769ddc11704380e]
 entity c2--><g id="elem_c2"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="123" x="185.5" y="130.8628"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="195.5" y="153.8579">Crate 2 (open)</text></g><!--MD5=[a16ff7d3b28e6af11c750835f8d66717]
-link w1 to c1--><g id="link_w1_c1"><path d="M90.5589,130.7397 C107.222,111.5042 136.446,82.0958 169,68.8628 C189.007,60.7298 195.914,66.5298 217.5,65.8628 C265.718,64.3728 281.828,49.4718 326,68.8628 C353.589,80.9738 376.839,107.2955 391.044,126.4485 " fill="none" id="w1-to-c1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="394.11,130.6618,392.0489,121.031,391.1681,126.6189,385.5802,125.7381,394.11,130.6618" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="218.5" y="56.9297">Fetch</text></g><!--MD5=[a974b2bcf7d95ce16617aec733056622]
+link w1 to c1--><g id="link_w1_c1"><path d="M90.5589,130.7397 C107.222,111.5042 136.446,82.0958 169,68.8628 C189.007,60.7298 195.914,66.5298 217.5,65.8628 C265.718,64.3728 281.828,49.4718 326,68.8628 C353.589,80.9738 376.839,107.2955 391.044,126.4485 " fill="none" id="w1-to-c1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="394.11,130.6618,392.0489,121.031,391.1681,126.6189,385.5802,125.7381,394.11,130.6618" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="218.5" y="56.9297">Fetch</text></g><!--MD5=[a8861e782bb1924373a4e0eb6702f320]
 @startuml
 Title: Step 1 - Fetching data over the wire
 rectangle Workbench {
@@ -26,7 +26,7 @@ rectangle "Crate 2 (open)" as c2 {
 w1 -> c1 : Fetch
 @enduml
 
-PlantUML version 1.2022.8beta6(Unknown compile time)
+PlantUML version 1.2022.8beta8(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM

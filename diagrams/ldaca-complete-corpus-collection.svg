@@ -15,7 +15,7 @@ reverse link ca to eo1--><g id="link_ca_eo1"><path d="M204,304.2319 C204,334.605
 reverse link cc to ca--><g id="link_cc_ca"><path d="M301.444,135.7759 C278.873,167.1659 243.803,215.9409 222.463,245.6189 " fill="none" id="cc-backto-ca" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="304.406,131.6559,295.9037,136.6269,301.4866,135.7151,302.3984,141.2979,304.406,131.6559" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="272" y="190.8638">memberOf</text></g><!--MD5=[f6832e6bfdedaeb2095be69530b9fdc8]
 reverse link cc to cb--><g id="link_cc_cb"><path d="M365.411,134.4459 C411.756,165.7529 485.329,215.4519 529.898,245.5589 " fill="none" id="cc-backto-cb" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="361.012,131.4749,366.2321,139.8265,365.1557,134.273,370.7092,133.1966,361.012,131.4749" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="454" y="190.8638">memberOf</text></g><!--MD5=[e5e7a43661dca3ba8040e136261fe983]
 link cc to GMN20--><g id="link_cc_GMN20"><path d="M475.037,104.7969 C486.613,104.7969 498.188,104.7969 509.764,104.7969 " fill="none" id="cc-GMN20" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[6716071b6ad4f1f35d7351a37e9b42b8]
-link ec2 to GMN23--><g id="link_ec2_GMN23"><path d="M733.1188,466.2683 C733.3367,466.4823 733.5584,466.6999 733.7838,466.9213 C734.2348,467.3641 734.7008,467.8217 735.1813,468.2935 C737.1034,470.1808 739.2579,472.2962 741.6098,474.6054 C751.0172,483.8424 763.5826,496.1802 777.0676,509.421 C804.0378,535.9026 834.6865,565.9962 851.107,582.1196 " fill="none" id="ec2-GMN23" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[79e354e8647afe2513b09001931d7c28]
+link ec2 to GMN23--><g id="link_ec2_GMN23"><path d="M733.1188,466.2683 C733.3367,466.4823 733.5584,466.6999 733.7838,466.9213 C734.2348,467.3641 734.7008,467.8217 735.1813,468.2935 C737.1034,470.1808 739.2579,472.2962 741.6098,474.6054 C751.0172,483.8424 763.5826,496.1802 777.0676,509.421 C804.0378,535.9026 834.6865,565.9962 851.107,582.1196 " fill="none" id="ec2-GMN23" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[328760fed626ec1f2ae9a446c1626396]
 @startuml
 title: Complete corpus collection metadata-only crate w/ links to object packages
 package "name My Corpus" as mc {
@@ -65,7 +65,7 @@ note right of cc : Repository Collection:\n- MUST contain descriptive metadata\n
 note bottom of ec2 : Individual object with file data
 @enduml
 
-PlantUML version 1.2022.8beta6(Unknown compile time)
+PlantUML version 1.2022.8beta8(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM
