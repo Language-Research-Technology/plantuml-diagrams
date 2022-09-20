@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="434px" preserveAspectRatio="none" style="width:1500px;height:434px;background:#FFFFFF;" version="1.1" viewBox="0 0 1500 434" width="1500px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.2969" id="_title" style="stroke:none;stroke-width:1.0;" width="368" x="559.4778" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="358" x="564.4778" y="22.9951">Batch-loading data into LDaCA more details</text><!--MD5=[dce4c2b5694dd28223e7b1d160ba96c4]
+cluster data--><g id="cluster_data"><path d="M206.2929,180.728 C229.6507,132.4444 268.0742,133.7648 294.276,178.0241 C316.8465,136.8734 346.8917,143.6246 370.7373,176.7109 C401.0123,136.0816 440.2074,143.58 460.2761,187.5172 C484.3934,141.1202 520.5365,143.5726 548.6313,183.4436 C574.895,126.7043 617.9966,127.7401 652.2,175.5807 C676.93,137.612 705.6276,136.5212 729.2264,176.6958 C760.6074,121.7328 797.9566,133.0691 829.3517,176.6815 C853.3523,134.0704 890.3516,127.8204 918.7267,172.1864 C947.1934,136.8006 981.9101,147.1849 996.6196,186.5263 C1022.6008,149.5939 1064.8513,150.274 1089.4069,188.2912 C1111.3293,139.4687 1154.8098,140.7583 1184.265,180.1953 C1205.6257,142.426 1240.2071,137.9067 1265.6843,175.7634 C1291.9323,137.7794 1326.1683,129.2748 1352.307,175.8753 C1386.6967,131.7358 1415.2954,129.2847 1444,181.2969 C1447.6917,183.425 1448.195,186.4948 1444.8696,189.3781 C1490.2178,213.6161 1493.9556,241.4271 1462.6058,280.5806 C1487.9827,319.0327 1479.8246,345.2157 1437,362.2969 C1443.4891,361.6437 1446.8504,366.3342 1443.9776,372.2465 C1417.8421,410.918 1379.6307,414.3339 1359.5473,366.3498 C1338.5566,406.8983 1297.1572,416.6247 1271.069,371.6216 C1244.3905,410.9304 1217.3191,416.0095 1185.0149,377.8725 C1154.7895,427.3301 1122.8569,415.881 1094.0117,376.4593 C1062.8387,412.8186 1028.3013,420.8265 1004.1845,369.2512 C976.6621,419.435 932.2513,410.0312 906.3654,367.524 C884.3936,409.4247 846.807,411.2174 823.0395,369.3093 C800.939,410.1825 756.4037,418.5845 733.6314,369.9805 C711.7379,411.401 676.8729,412.4724 646.7793,379.5619 C618.2617,418.7702 576.2173,418.5171 558.8067,368.5988 C534.7686,416.7728 503.6385,408.9516 472.4681,376.2089 C436.9946,416.39 406.3779,420.2373 374.3683,372.3503 C348.6038,406.5286 315.9918,415.5846 291.0598,371.4645 C245.8421,423.1725 213.5718,418.2543 186,355.2969 C192.4319,352.8497 198.4054,355.4848 197.1117,363.5011 C154.4052,337.5131 148.647,309.7288 188.9448,275.9941 C144.4284,240.5485 149.408,206.2291 193,174.2969 C200.4414,170.2938 204.8443,172.344 206.2929,180.728 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="161" x="734.5" y="192.292">Original Data Types</text></g><g id="elem_GMN4"><path d="M1288.5,313.7969 L1288.5,338.9297 L1427.5,338.9297 L1427.5,323.7969 L1417.5,313.7969 L1288.5,313.7969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1417.5,313.7969 L1417.5,323.7969 L1427.5,323.7969 L1417.5,313.7969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="1294.5" y="330.8638">Eg Sydney Speaks</text></g><g id="elem_GMN8"><path d="M1089,313.7969 L1089,338.9297 L1253,338.9297 L1253,323.7969 L1243,313.7969 L1089,313.7969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1243,313.7969 L1243,323.7969 L1253,323.7969 L1243,313.7969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="1095" y="330.8638">Eg Farms to Freeways</text></g><g id="elem_GMN12"><path d="M966,313.7969 L966,338.9297 L1054,338.9297 L1054,323.7969 L1044,313.7969 L966,313.7969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1044,313.7969 L1044,323.7969 L1054,323.7969 L1044,313.7969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="972" y="330.8638">Eg Austalk</text></g><g id="elem_GMN16"><path d="M653.5,306.2969 L653.5,346.5625 L858.5,346.5625 L858.5,316.2969 L848.5,306.2969 L653.5,306.2969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M848.5,306.2969 L848.5,316.2969 L858.5,316.2969 L848.5,306.2969 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="184" x="659.5" y="323.3638">Eg Monash Corpus of English</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="90" x="659.5" y="338.4966">(legacy .docs)</text></g><!--MD5=[5b5b6116e9ca12b5be308e1a61d0aa39]
+entity csv--><g id="elem_csv"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="161" x="1266.5" y="209.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="1276.5" y="232.292">Spreadsheet + files</text></g><!--MD5=[68ed47e20afb3153da56cce0b31eee5d]
+entity crate--><g id="elem_crate"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="87" x="1144.5" y="209.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="1154.5" y="232.292">RO-Crate</text></g><!--MD5=[d968cb161b28e4468d265724c669f32e]
+entity rdf--><g id="elem_rdf"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="172" x="937" y="209.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="152" x="947" y="232.292">RDF Metadata + Files</text></g><!--MD5=[5a805625d5531209e570b5ca86c77d09]
+entity word--><g id="elem_word"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="292" x="610" y="209.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="272" x="620" y="232.292">Transcripts with embedded metadata</text></g><!--MD5=[1d972db5b171e50b461ebb8daaca712c]
+entity Service with API--><g id="elem_Service with API"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="439.5" y="209.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="449.5" y="232.292">Service with API</text></g><!--MD5=[55723d23e03dfbd4cdcbc3191844398b]
+entity HTML interface to files--><g id="elem_HTML interface to files"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="183" x="221.5" y="209.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="231.5" y="232.292">HTML interface to files</text></g><!--MD5=[d6c9eaecddfd69550070453b61bcb09c]
+entity ct--><g id="elem_ct"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="234" x="14" y="44.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214" x="24" y="67.292">'Corpus Tool' conversion code</text></g><!--MD5=[ae38f3df50bbf8acf027574e6a8bac37]
+entity repo--><g id="elem_repo"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="140" x="7" y="209.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="17" y="232.292">OCFL Repository</text></g><!--MD5=[02ce534567b2df790e0653f47912a37f]
+link csv to GMN4--><g id="link_csv_GMN4"><path d="M1348.97,245.6389 C1351.19,265.2559 1354.75,296.6684 1356.67,313.5904 " fill="none" id="csv-GMN4" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[17b89bacf675fdf26e2d534d62233a32]
+link crate to GMN8--><g id="link_crate_GMN8"><path d="M1184.96,245.6389 C1181.52,265.2559 1176.02,296.6684 1173.05,313.5904 " fill="none" id="crate-GMN8" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[204b244c7171510f7b290e12c616f198]
+link rdf to GMN12--><g id="link_rdf_GMN12"><path d="M1020.68,245.6389 C1018.05,265.2559 1013.84,296.6684 1011.57,313.5904 " fill="none" id="rdf-GMN12" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[d8fb8c50ab3bee8502c861fc00d28940]
+link word to GMN16--><g id="link_word_GMN16"><path d="M756,245.6389 C756,262.6409 756,288.5019 756,306.1111 " fill="none" id="word-GMN16" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[f17114b243edf3f8d950235866970a9b]
+reverse link ct to data--><g id="link_ct_data"><path d="M139.871,85.1999 C146.816,102.6879 156.52,127.8869 164,150.2969 C166.6965,158.3751 169.3773,166.9982 171.8919,175.4285 C173.1491,179.6436 174.3648,183.8105 175.5202,187.837 C176.0978,189.8502 176.6604,191.8284 177.2055,193.7598 C177.3418,194.2427 177.477,194.7227 177.611,195.1995 C177.678,195.438 177.7448,195.6756 177.8113,195.9125 C177.8445,196.0309 177.8776,196.1492 177.9107,196.2672 " fill="none" id="ct-backto-data" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="137.989,80.4809,137.6087,90.3224,139.8418,85.1249,145.0392,87.358,137.989,80.4809" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="209" y="123.3638">Convert to RO-Crate</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="225" x="162" y="138.4966">(using Language Commons profile)</text></g><!--MD5=[8c10ca441584a950c9cc358e8fb45cd2]
+link ct to repo--><g id="link_ct_repo"><path d="M100.8963,80.3489 C90.3651,88.0199 79.744,98.1159 74,110.2969 C59.8016,140.4069 65.1831,179.9779 70.7831,204.2509 " fill="none" id="ct-to-repo" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="71.9744,209.1889,73.7517,199.5017,70.8016,204.3284,65.9749,201.3782,71.9744,209.1889" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="75" y="130.8638">Write data</text></g><!--MD5=[4763a6cccae7b027a12cda2bb75e7cc9]
+@startuml
+title: Batch-loading data into LDaCA more details
+
+cloud "Original Data Types" as data {
+rectangle "Spreadsheet + files" as csv {
+
+}
+note bottom of csv: Eg Sydney Speaks
+rectangle "RO-Crate" as crate {
+    
+}
+
+note bottom of crate: Eg Farms to Freeways
+
+rectangle "RDF Metadata + Files" as rdf {
+    
+}
+
+note bottom of rdf: Eg Austalk
+rectangle "Transcripts with embedded metadata" as word {
+    
+}
+
+note bottom of word : Eg Monash Corpus of English\n(legacy .docs)
+
+
+
+rectangle "Service with API" {
+    
+}
+
+rectangle "HTML interface to files" {
+    
+}
+
+}
+
+rectangle "'Corpus Tool' conversion code" as ct {
+
+}
+
+rectangle "OCFL Repository" as repo {
+
+}
+
+ct <-up- data : Convert to RO-Crate\n(using Language Commons profile)
+ct -down-> repo : Write data
+@enduml
+
+PlantUML version 1.2022.8beta8(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
