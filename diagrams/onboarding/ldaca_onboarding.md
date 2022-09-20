@@ -12,6 +12,8 @@ rectangle "'Corpus Tool' conversion code" as ct {
 
 }
 
+note top of ct : Tool is corpus specific
+
 rectangle "OCFL Repository" as repo {
 
 }
@@ -75,7 +77,7 @@ rectangle "Spreadsheet + files" as csv {
 
 }
 note bottom of csv: Eg Sydney Speaks
-rectangle "RO-Crate" as crate {
+rectangle "RO-Crate + files" as crate {
     
 }
 
