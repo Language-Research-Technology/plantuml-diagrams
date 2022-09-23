@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="449px" preserveAspectRatio="none" style="width:457px;height:449px;background:#FFFFFF;" version="1.1" viewBox="0 0 457 449" width="457px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.2969" id="_title" style="stroke:none;stroke-width:1.0;" width="112" x="165.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="170.5" y="22.9951">Alveo rescue</text><!--MD5=[906f2ea83d189bc0788efccb883f431f]
+cluster Alveo--><g id="cluster_Alveo"><path d="M19,153.2969 C19,143.2969 170,143.2969 170,143.2969 C170,143.2969 321,143.2969 321,153.2969 L321,235.2969 C321,245.2969 170,245.2969 170,245.2969 C170,245.2969 19,245.2969 19,235.2969 L19,153.2969 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M19,153.2969 C19,163.2969 170,163.2969 170,163.2969 C170,163.2969 321,163.2969 321,153.2969 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="44" x="148" y="178.292">Alveo</text></g><!--MD5=[fd0477d47a8f1f11d39e6e9b15d57e59]
+cluster OCFL Repository--><g id="cluster_OCFL Repository"><rect fill="none" height="87" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="444" x="7" y="356.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="133" x="162.5" y="371.292">OCFL Repository</text></g><!--MD5=[e95669db7903443bb4bf41b9fa2d3189]
+entity Object 1--><g id="elem_Object 1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="223" y="193.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="233" y="216.292">Object 1</text></g><!--MD5=[988a6c3e9eda54c0a4d55875b29298bd]
+entity asdkj--><g id="elem_asdkj"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="35" x="152.5" y="193.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="15" x="162.5" y="216.292">...</text></g><!--MD5=[f03805f09b9e798ff7b924147cbcb0fb]
+entity Object n--><g id="elem_Object n"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="35" y="193.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="45" y="216.292">Object n</text></g><!--MD5=[f7edd7f00a15d77523143dade350b708]
+entity Conversion Script--><g id="elem_Conversion Script"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="148" x="246" y="44.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="256" y="67.292">Conversion Script</text></g><!--MD5=[e9cf87b509b374140519bae94e9db315]
+entity RO-Crate Object 1--><g id="elem_RO-Crate Object 1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="153" x="281.5" y="391.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="291.5" y="414.292">RO-Crate Object 1</text></g><!--MD5=[80ceb6aaded45058e3204fdb17f5ebaa]
+entity ...--><g id="elem_..."><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="35" x="211.5" y="391.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="15" x="221.5" y="414.292">...</text></g><!--MD5=[e94715ed8fdeb7606cacdd97a89717a7]
+entity RO-Crate Object n--><g id="elem_RO-Crate Object n"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="153" x="23.5" y="391.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="33.5" y="414.292">RO-Crate Object n</text></g><!--MD5=[534d0e81f7d3164395a3fe78298f6ce6]
+reverse link Conversion Script to Object 1--><g id="link_Conversion Script_Object 1"><path d="M308.532,85.1599 C304.634,92.9849 300.406,101.9369 297,110.2969 C285.41,138.7399 274.82,172.9179 268.909,193.0539 " fill="none" id="Conversion Script-backto-Object 1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="310.906,80.4499,303.2842,86.6875,308.6562,84.9151,310.4286,90.2872,310.906,80.4499" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="33" x="298" y="123.3638">Read</text></g><!--MD5=[a193e718f52fab0b6f20b564f1e061f5]
+link Conversion Script to RO-Crate Object 1--><g id="link_Conversion Script_RO-Crate Object 1"><path codeLine="26" d="M327.001,80.4159 C330.291,89.2009 333.936,100.1619 336,110.2969 C356.676,211.8229 358.481,336.3149 358.276,386.1439 " fill="none" id="Conversion Script-to-RO-Crate Object 1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="358.246,391.2886,362.2979,382.3118,358.2749,386.2887,354.298,382.2656,358.246,391.2886" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="356" y="274.3638">Deposit</text></g><!--MD5=[6d80599bb1e57551df89c06b741d9f34]
+@startuml
+title: Alveo rescue
+database "Alveo" {
+
+
+rectangle "Object 1" {
+}
+
+rectangle "..." as asdkj {
+}
+
+
+rectangle "Object n" {
+}
+
+}
+
+
+
+
+rectangle "Conversion Script" {
+
+}
+
+"Conversion Script" <-up- "Object 1" : Read
+
+"Conversion Script" - -down- -> "RO-Crate Object 1" : Deposit
+
+rectangle "OCFL Repository"  {
+
+rectangle "RO-Crate Object 1" {
+}
+
+rectangle "..." {
+}
+
+
+rectangle "RO-Crate Object n" {
+}
+
+}
+@enduml
+
+PlantUML version 1.2022.8beta9(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

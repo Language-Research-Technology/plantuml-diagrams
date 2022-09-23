@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="188px" preserveAspectRatio="none" style="width:490px;height:188px;background:#FFFFFF;" version="1.1" viewBox="0 0 490 188" width="490px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.2969" id="_title" style="stroke:none;stroke-width:1.0;" width="302" x="87" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="292" x="92" y="22.9951">Step 1 - Fetching data over the wire</text><!--MD5=[49922c1fb65fec7366eab94c7b2714c5]
+cluster Workbench--><g id="cluster_Workbench"><rect fill="none" height="106" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="138" x="7" y="76.8628"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89" x="31.5" y="91.8579">Workbench</text></g><!--MD5=[d5b38d4b24307be98c9c362692fbd4b9]
+cluster Webserver--><g id="cluster_Webserver"><rect fill="none" height="106" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="315" x="169" y="76.8628"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="84" x="284.5" y="91.8579">Webserver</text></g><!--MD5=[945bb76cb2232b12ba90c731e52d4c9b]
+entity w1--><g id="elem_w1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="105" x="23.5" y="130.8628"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="33.5" y="153.8579">Notebook 1</text></g><!--MD5=[0aac872f208ab6f5f7887aae079fb447]
+entity c1--><g id="elem_c1"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="344" y="130.8628"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="354" y="153.8579">Crate 1 (open)</text></g><!--MD5=[3d2111c8a0a2d14b8769ddc11704380e]
+entity c2--><g id="elem_c2"><rect fill="#F1F1F1" height="36.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="123" x="185.5" y="130.8628"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="103" x="195.5" y="153.8579">Crate 2 (open)</text></g><!--MD5=[a16ff7d3b28e6af11c750835f8d66717]
+link w1 to c1--><g id="link_w1_c1"><path d="M90.5589,130.7397 C107.222,111.5042 136.446,82.0958 169,68.8628 C189.007,60.7298 195.914,66.5298 217.5,65.8628 C265.718,64.3728 281.828,49.4718 326,68.8628 C353.589,80.9738 376.839,107.2955 391.044,126.4485 " fill="none" id="w1-to-c1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="394.11,130.6618,392.0489,121.031,391.1681,126.6189,385.5802,125.7381,394.11,130.6618" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="218.5" y="56.9297">Fetch</text></g><!--MD5=[630fe7eb080481d5a6a93e3666f51362]
+@startuml
+Title: Step 1 - Fetching data over the wire
+rectangle Workbench {
+rectangle "Notebook 1" as w1 {
+}
+}
+
+
+rectangle Webserver {
+rectangle "Crate 1 (open)" as c1 {
+}
+rectangle "Crate 2 (open)" as c2 {
+}
+
+
+
+}
+
+w1 -> c1 : Fetch
+@enduml
+
+PlantUML version 1.2022.8beta9(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
