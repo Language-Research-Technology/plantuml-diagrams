@@ -4,17 +4,17 @@
 @startuml
 title: Batch-loading data into LDaCA, simplest view
 
-rectangle "Original Data" as data {
+rectangle "📈📄📜  Original Data 🎥🎙" as data {
 
 }
 
-rectangle "'Corpus Tool' conversion code" as ct {
+rectangle "⚙️ 'Corpus Tool' conversion code ⚙️ " as ct {
 
 }
 
 note top of ct : Tool is corpus specific
 
-rectangle "OCFL Repository" as repo {
+database "Arkisto Repository" as repo {
 
 }
 
@@ -49,15 +49,15 @@ portal <-down-> repo : Index and serve data
 @startuml
 title: Multiple portals serving data from an OCFL Repository
 
-rectangle "LDaCA Portal" as portal {
+rectangle "💡 LDaCA Portal 💡" as portal {
 
 }
 
-rectangle "Austalk Portal" as aportal {
+rectangle "💡 Austalk Portal 💡" as aportal {
 
 }
 
-rectangle "OCFL Repository" as repo {
+database "Arkisto Repository" as repo {
 
 }
 
@@ -120,3 +120,28 @@ ct -down-> repo : Write data
 @enduml
 ```
 
+
+```plantuml: ldaca_developing_corpus_tool
+
+@startuml
+title: Corpus Tool Development process
+
+start
+
+:Identify Metadata Source;
+
+label lab
+:Create/update Tool w/ Metadata Crosswalk;
+
+:Run tool  to create repo;
+
+:Index repo into test portal;
+
+if (It Looks Right) then (no)
+ :Rinse, repeat;
+ goto lab
+
+else (yes)
+ stop
+
+@enduml
