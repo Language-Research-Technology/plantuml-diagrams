@@ -11,7 +11,7 @@ rectangle "Registry"  {
 
 }
 
-
+ 
 
 rectangle "Tutorials" {
  rectangle "Notebook 2 Tutorial" as  nt2  {
