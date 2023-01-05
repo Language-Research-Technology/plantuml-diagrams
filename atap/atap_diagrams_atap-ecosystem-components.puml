@@ -1,12 +1,12 @@
 
 @startuml
 
-title: ATAP Ecosystem - components
+title: ATAP Ecosystem - Major Components
 
 !include ../data-management-style.txt
 
 
-title: ATAP Ecosystem
+
 rectangle "ATAP Website" as aw <<support>> {
 rectangle "ATAP Data Portal" as adp {
 rectangle "Tool Registry" as tr  {
@@ -27,7 +27,7 @@ rectangle "Data and Analytics Guides" as dag {
 
 rectangle Workspaces as ws <<workspace>> {
 
-database "Git Server" as git {
+database "Git Server\neg github, gitlab" as git {
 
 }
 
