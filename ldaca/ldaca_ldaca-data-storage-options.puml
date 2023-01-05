@@ -2,6 +2,7 @@
 @startuml
 title: Data storage options\none crate, many parts (Collection A)\nvs many crates (Collection B)
 
+
 database "OCFL repository" {
 rectangle "Object" as c1 {
    [Collection A] as ca 
