@@ -3,13 +3,15 @@
 !include ../data-management-style.txt
 title: ATAP Ecosystem
 rectangle "ATAP Website" as aw <<support>> {
-    
+
 }
 
 
 rectangle "Registry"  {
 
 }
+
+
 
 rectangle "Tutorials" {
  rectangle "Notebook 2 Tutorial" as  nt2  {
