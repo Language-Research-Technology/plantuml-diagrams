@@ -63,10 +63,9 @@ rectangle "Institutional Data Repo" as z {
 
 }
 
-adp -left-> git : Index Notebooks
 
-dc -down-> a : Index and serve
-tr -down-> l : Index and serve
-
+dc -down-> a : Index data
+dc -down-> l : Index data
+tr --down--> git : Index tools
 dag -down-> ws : Link
 @enduml

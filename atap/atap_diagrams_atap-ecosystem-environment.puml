@@ -9,7 +9,6 @@ rectangle "ATAP Website" as aw <<support>> {
 rectangle "Registry"  {
 
 }
-
 rectangle "Guides and Tutorials" {
 
  rectangle "Notebook 2 Tutorial" as  nt2  {

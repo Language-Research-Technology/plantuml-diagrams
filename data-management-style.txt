@@ -6,6 +6,7 @@ skinparam InterfaceFontSize 60
 skinparam titleFontSize 80
 skinparam arrowFontSize 60
 skinparam arrowThickness 6
+skinparam arrowLollipopColor yellow
 skinparam arrowColor purple
 
 skinparam note  {
