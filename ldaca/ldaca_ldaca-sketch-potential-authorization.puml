@@ -1,0 +1,29 @@
+
+@startuml
+skinparam defaultFontSize 18
+
+title: A sketch of POTENTIAL authorization and authentication required by FAIR principle A1.2 
+actor       researcher     as res
+entity    repository    as rep
+entity    "Group Licence Server"    as gls
+entity "https://doi.org/x/some-crate" as c
+database "groups" as gps
+res -> rep : Can I have https://doi.org/x/some-crate?
+rep -> c : What's your licence?
+c -> rep : Accessible to ppl who agree to SS licence
+rep -> rep : Is that URL on the list of trusted sites?
+rep -> rep : Yep
+rep -> res : Authenticate yourself to the the group-licence-server
+res -> gls : Logs in 
+gls-> gps : User in SS?
+gps -> gls : Nope
+gls -> res : Do you agree to these SS license terms?
+res -> gls : Yep
+gls -> gps : Add user to SS license group (TTL 100days)
+gls -> res : (To web browser) Here's a token for your browser that will let the repo get your group-memberships
+res -> rep : (via browser) Here's a token
+rep -> gls : I have this token
+gls -> rep : yep
+rep -> c : fetch
+rep -> res : Here's the RO-Crate
+@enduml

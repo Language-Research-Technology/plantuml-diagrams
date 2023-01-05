@@ -1,0 +1,36 @@
+
+@startuml
+title: Data Publications
+
+package "Git Service (eg github)" as git {
+   package "Study or Method Repository" as repo {
+   package "RO-Crate Metadata" {
+      rectangle "name: My Thesis Data\nauthor: https://orcid.org/12345\n" {
+         rectangle "hasPart" {
+            rectangle "Notebook 1" {
+
+            }
+            rectangle "Notebook 2" {
+               
+            }
+         }
+
+
+      }
+
+   }
+   package "Notebook 1" as n1 {
+
+   }
+   package "Notebook 2" as n2 {
+      
+   }
+   
+   }
+
+   
+}
+
+
+
+@enduml

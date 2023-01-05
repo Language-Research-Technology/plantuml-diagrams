@@ -1,0 +1,18 @@
+
+@startuml
+title: PARADISEC Architecture
+
+package "Nabu" {
+   database "Metadata Database"  {
+
+   }
+
+}
+
+database "NFS Storage" {
+
+
+}
+
+
+@enduml

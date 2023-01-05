@@ -1,0 +1,38 @@
+
+@startuml
+title: Data storage options\none crate, many parts (Collection A)\nvs many crates (Collection B)
+
+database "OCFL repository" {
+rectangle "Object" as c1 {
+   [Collection A] as ca 
+   [obj1a]
+   [obj2a]
+   [obj3a]
+}
+rectangle "Collection B" as cb {
+
+}
+rectangle obj1b {
+
+}
+rectangle obj2b {
+   
+}
+rectangle obj3b {
+   
+}
+
+obj1a -> ca: memberOf
+obj2a -> ca: memberOf
+obj3a -> ca: memberOf
+
+
+obj1b -> cb: memberOf
+obj2b -> cb: memberOf
+obj3b -> cb: memberOf
+
+
+}
+
+
+@enduml

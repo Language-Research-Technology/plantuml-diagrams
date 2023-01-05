@@ -1,0 +1,14 @@
+
+@startuml
+
+rectangle "Work" as w {
+
+}
+
+actor "Contributor " as c
+
+w -> c : hasCompiler 
+w <- c : compilerOf 
+
+
+@enduml

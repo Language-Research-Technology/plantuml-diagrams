@@ -1,0 +1,40 @@
+
+@startuml
+
+rectangle "Need versioning?" as nv {
+
+}
+
+
+
+rectangle "Directories must be atomic" as atomic  {
+
+}
+
+rectangle "Directories must be atomic" as atomic2  {
+
+}
+
+rectangle "Checksums required?" as cr {
+
+}
+
+rectangle "Use OCFL" as ocfl {
+
+}
+rectangle "Consider BagIt based solution" as bagit {
+
+}
+
+rectangle "Create new standard" as ns {
+
+}
+
+nv -down-> atomic : No
+atomic ---down---> bagit : Yes
+atomic -down-> cr : No
+cr -down-> ocfl : Yes
+nv ---down---> atomic2 : Yes
+atomic2 -down-> ocfl : No
+atomic2 -down-> ns : Yes
+@enduml

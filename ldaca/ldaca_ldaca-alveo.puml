@@ -1,0 +1,71 @@
+
+@startuml Alveo
+title: Alveo model of licences
+
+actor       researcher     as res
+participant  Alveo    as rep
+database "Index of holdings" as i
+participant   "licence Server"    as gls
+
+
+res -> rep : Log in (username/password)
+rep -> gls : Get list of licences for user
+gls -> rep : [licence-list]
+rep -> i : Show browse screen (for data with licences in [licence-list])
+i -> rep : <browse-data>
+rep -> res : Serves page showing data user is licensed to see
+@enduml
+
+@startuml
+database "Sydney Speaks" as ss {
+
+rectangle "Content Dir 1" as d1 {
+
+}
+rectangle "Content Dir n" as d2 {
+
+}
+}
+
+database "Horvath Collection" as hc {
+
+rectangle "Content Dir 1" as h1 {
+
+}
+rectangle "Content Dir n" as h2 {
+
+}
+}
+
+
+
+rectangle "Conversion Script" {
+
+}
+
+"Conversion Script" <-up- "d1" : Read
+
+"Conversion Script" <-up- "h1" : Read
+
+
+rectangle "OCFL Repository"  {
+
+rectangle "RO-Crate Object 1" as ss1 {
+}
+
+rectangle "RO-Crate Object 2" as hc1 {
+}
+
+rectangle "..." {
+}
+
+
+rectangle "RO-Crate Object n" {
+}
+
+}
+
+
+"Conversion Script" --down--> "RO-Crate Object ss/1" ss1 : Deposit
+"Conversion Script" --down--> "RO-Crate Object hc/1"  hc1: Deposit
+@enduml

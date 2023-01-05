@@ -1,0 +1,72 @@
+
+@startuml
+
+title: ATAP Ecosystem - components
+
+!include ../data-management-style.txt
+
+
+title: ATAP Ecosystem
+rectangle "ATAP Website" as aw <<support>> {
+rectangle "ATAP Data Portal" as adp {
+rectangle "Tool Registry" as tr  {
+
+}
+rectangle "Data Collections" as dc {
+
+}
+}
+
+
+rectangle "Data and Analytics Guides" as dag {
+
+
+}
+
+}
+
+rectangle Workspaces as ws <<workspace>> {
+
+database "Git Server" as git {
+
+}
+
+rectangle "Binder Hub"  as bh {
+}
+
+rectangle "Nectar Virtual Compute"  as nectar {
+}
+
+}
+
+bh -down-> git : Fetch notebook
+bh -down-> nectar : Launch Notebook
+cloud "Archival Repositories" as ar <<repository>> {
+
+
+database "ATAP repo" as a {
+
+
+}
+database "LDACA repo" as l {
+
+
+}
+
+database "Zenodo etc" as z {
+
+}
+
+rectangle "Institutional Data Repo" as z {
+
+}
+
+}
+
+adp -left-> git : Index Notebooks
+
+dc -down-> a : Index and serve
+tr -down-> l : Index and serve
+
+dag -down-> ws : Link
+@enduml

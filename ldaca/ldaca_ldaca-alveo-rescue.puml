@@ -1,0 +1,43 @@
+
+@startuml
+title: Alveo rescue
+database "Alveo" {
+
+
+rectangle "Object 1" {
+}
+
+rectangle "..." as asdkj {
+}
+
+
+rectangle "Object n" {
+}
+
+}
+
+
+
+
+rectangle "Conversion Script" {
+
+}
+
+"Conversion Script" <-up- "Object 1" : Read
+
+"Conversion Script" --down--> "RO-Crate Object 1" : Deposit
+
+rectangle "OCFL Repository"  {
+
+rectangle "RO-Crate Object 1" {
+}
+
+rectangle "..." {
+}
+
+
+rectangle "RO-Crate Object n" {
+}
+
+}
+@enduml

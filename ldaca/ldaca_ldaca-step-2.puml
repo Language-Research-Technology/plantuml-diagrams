@@ -1,0 +1,32 @@
+
+@startuml
+Title: Step 2 - Adding scalability
+rectangle Workbench {
+rectangle "Notebook 1" as w1 {
+}
+}
+
+
+rectangle Webserver {
+rectangle "Simple OCFL front end" as ui {
+
+}
+
+rectangle "OCFL Repo" as ocfl {
+
+
+
+rectangle "Crate 1 (open)" as c1 {
+}
+rectangle "Crate 2 (open)" as c2 {
+}
+}
+
+
+
+}
+
+w1 -> ui : Fetch Crate 1
+ui <-> ocfl : Fetch Crate 1
+ui --> c1 : Fetch
+@enduml

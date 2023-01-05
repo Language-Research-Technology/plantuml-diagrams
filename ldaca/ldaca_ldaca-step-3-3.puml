@@ -1,0 +1,12 @@
+
+@startuml
+
+rectangle "Work (Class: Dataset)" as w {
+
+}
+
+actor "Contributor (Class: Person)" as c
+
+w -> c : compiler (Class: Property)
+
+@enduml

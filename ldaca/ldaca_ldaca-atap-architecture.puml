@@ -1,0 +1,38 @@
+
+@startuml
+skinparam defaultFontSize 18
+title: ATAP Architecture
+
+rectangle "Text Analytics Platform" as atap {
+rectangle "Notebook 1" as n1 {
+
+}
+
+rectangle "Notebook 1" as n2 {
+    
+}
+}
+database "OCFL Repository" as repo {
+
+
+}
+
+rectangle "API" as oni {
+
+}
+
+rectangle "Access control" as ac {
+
+}
+
+
+
+actor researcher
+
+researcher -down-> n1 : Use Notebook
+n1 -down-> oni : Fetch Metadata 
+n1 -down-> oni : Fetch data streams
+oni -> ac : Authenticate each request
+oni <--down-- repo : Index  (w/ access licenses)
+oni -down-> repo : Fetch
+@enduml

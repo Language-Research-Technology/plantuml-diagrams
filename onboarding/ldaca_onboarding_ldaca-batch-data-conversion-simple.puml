@@ -1,0 +1,22 @@
+
+@startuml
+title: Batch-loading data into LDaCA, simplest view
+
+rectangle "📈📄📜  Original Data 🎥🎙" as data {
+
+}
+
+rectangle "⚙️ 'Corpus Tool' conversion code ⚙️ " as ct {
+
+}
+
+note top of ct : Tool is corpus specific
+
+database "Arkisto Repository" as repo {
+
+}
+
+ct <-up- data : Convert to RO-Crate\n(using Language Commons profile)
+ct -down-> repo : Write data 
+
+@enduml

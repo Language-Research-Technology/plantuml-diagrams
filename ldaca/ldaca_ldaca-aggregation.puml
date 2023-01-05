@@ -1,0 +1,52 @@
+
+@startuml
+top to bottom direction
+title: LDaCA Aggregation
+
+rectangle Authorization as auth {
+database "Local Auth" as la {
+}
+[AAF]
+[Google]
+[Licence Authorizer] as lic
+
+}
+
+database "Repository 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" as repo1 {
+
+}
+
+database "Repository 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" as repo2 {
+
+}
+
+database "Repository 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" as repo3 {
+
+}
+
+rectangle Portal as port {
+database "Index" as i {
+
+
+}
+rectangle "Web UI" as web {
+
+
+}
+
+rectangle "API" as api {
+}
+
+rectangle "Inbox" as inbox
+
+
+}
+
+
+port --up--> auth : Authorise users
+i ----> repo1 : Index content
+i ----> repo2 : Index content 
+i ----> repo3 : Index content 
+
+
+@enduml

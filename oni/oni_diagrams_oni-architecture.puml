@@ -1,0 +1,127 @@
+
+@startuml
+skinparam defaultFontSize 18
+title: Oni Architecture
+
+database "Discovery Index" {
+    rectangle "A" {
+
+    }
+        rectangle "Object, Diaglogue" as A {
+        
+    }
+        rectangle "Sub Collection Books 1" as B {
+        
+    }
+        rectangle "Sub Collection Books 1" as C {
+        
+    }
+        rectangle "Small video collection"  as D{
+        
+    }
+        rectangle "Video 1" as E {
+        
+    }
+           rectangle "Video 2" as F {
+        
+    }
+
+}
+
+database "Data and license index" {
+       rectangle "Object 1" as o1 {
+
+    }
+    rectangle "Object 2" as o2 {
+        
+    }
+   rectangle "Object 3" as o3 {
+        
+    }
+
+}
+
+
+
+database "OCFL Repo" as repo {
+    rectangle "Object 1" as ro1 {
+
+    }
+    rectangle "Object 2"  as ro2 {
+        
+    }
+   rectangle "Object 3" as ro3 {
+        
+    }
+}
+
+note top of ro3: Complete collection
+note top of ro2: Two sub collection records
+note top of ro1: Single data objectm
+ro1 ---> A
+ro2 ---> B
+ro2 ---> C
+ro3 ---> D
+ro3 ---> E
+ro3 ---> F
+
+ro1 --up--> o1
+ro2 --up--> o2
+ro3 --up--> o3
+
+
+@enduml
+
+@startuml
+
+database "Index" {
+rectangle "Data & License index" as ii {
+
+}
+rectangle "Discovery Index" as ai {
+
+}
+}
+
+database ".......... OCFL Repo .............. \n\n\n\n\n\n\n\n\n\n\n\n" as repo {
+    
+}
+
+rectangle "Indexer" {
+
+}
+
+rectangle "Config" as conf {
+
+}
+
+Indexer -up-> repo : Scan objects
+Indexer -> conf : Consume
+Indexer -up-> Index : Write
+
+rectangle "API" {
+    [item/] as iapi
+    [query/] as qapi
+    [license filter] as lic
+
+}
+
+cloud "Authentication and Authorizatio Services" as auth {
+    [CILogon]
+    [Mukurtu]
+    [...]
+
+}
+
+rectangle "UI" {
+  
+}
+lic -> auth : Get user's group/license holdings
+UI --down--> qapi : Construct views
+UI --down--> iapi : Get data for viewing
+iapi --down-> ii : Consult for get requests\nfor Objects and files
+qapi --down-> ai : Consult for queries / views\n*with license filter
+
+API --down->  repo : Read
+
+@enduml

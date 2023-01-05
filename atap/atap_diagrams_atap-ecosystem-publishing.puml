@@ -1,0 +1,40 @@
+
+@startuml
+
+title: ATAP Ecosystem - Publishing
+
+
+cloud Workspaces as ws {
+
+database "Git Server" as git {
+
+}
+
+
+
+}
+
+cloud "Archival Repositories" as ar {
+rectangle "ATAP Data Portal" as adp {
+
+}
+database "ATAP repo" as a {
+
+
+}
+
+rectangle "Zenodo" as z {
+
+}
+
+rectangle "Institutional Data Repository" as idp {
+
+}
+
+rectangle "Institutional Data Repo" as z {
+
+}
+
+}
+
+@enduml

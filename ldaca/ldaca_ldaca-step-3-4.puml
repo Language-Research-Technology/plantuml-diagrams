@@ -1,0 +1,15 @@
+
+@startuml
+
+rectangle "Work" as w {
+
+}
+
+actor "Contributor" as c
+
+w -> c : compiler 
+w -> c : depositor 
+
+
+
+@enduml

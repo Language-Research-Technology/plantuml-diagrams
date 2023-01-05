@@ -1,0 +1,98 @@
+
+@startuml
+Title: Step 3 - Adding discoverability
+rectangle Workbench {
+rectangle "Notebook 1" as w1 {
+}
+}
+
+actor "Researcher 1" as r1
+
+
+rectangle Webserver {
+rectangle "OCFL search/discovery" as ui {
+
+}
+
+rectangle "OCFL Repo" as ocfl {
+
+
+
+rectangle "Crate 1*" as c1 {
+}
+rectangle "Crate 2*" as c2 {
+}
+rectangle "Notebook 1*" as n1 {
+}
+rectangle "Notebook 2*" as n2 {
+}
+}
+
+rectangle "Search results" as sr
+
+note bottom of ocfl: "*" = Open licence
+
+}
+
+w1 -> ui : Fetch Crate 1
+ui <-> ocfl : Fetch Crate 1
+ui --> c1 : Fetch
+r1 -> ui : Show me notebooks for wordcloud
+ui -> sr : Show wordcloud notebooks
+
+r1 -> sr : Invoke Notebook 1
+sr -> Workbench : "Fire up Notebook 1 for Researcher 1
+@enduml
+
+@startuml
+Title: Step 4 - Deposit
+rectangle Workbench {
+rectangle "Notebook 1" as w1 {
+}
+}
+
+actor "Researcher 1" as r1
+
+actor "Researcher 2" as r2
+
+rectangle Webserver {
+rectangle "OCFL search/discovery" as ui {
+
+}
+
+rectangle "OCFL Repo" as ocfl {
+
+
+
+rectangle "Crate 1*" as c1 {
+}
+rectangle "Crate 2*" as c2 {
+}
+rectangle "Notebook 1*" as n1 {
+}
+rectangle "Notebook 2*" as n2 {
+}
+
+rectangle "My Wordcloud Notebook" as mwn {
+}
+}
+
+
+note bottom of ocfl: "*" = Open licence
+
+}
+
+rectangle "Licence Authorizer" as auth {
+
+}
+
+r1 -down-> w1: Save as My wordcloud notebook
+Workbench -down-> ocfl : Deposit *My Wordcloud Notebook* with single-user license
+mwn -up-> w1 : Provenance -- derived from
+
+r2 -> ui : Fire up My Word Cloud Notebook
+
+ui ---> auth : Is r2 allowed to see mwn
+auth -> ui : No
+ui ----> r2 : NO!
+@enduml

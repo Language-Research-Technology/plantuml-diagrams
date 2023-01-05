@@ -1,0 +1,8 @@
+
+@startuml
+
+rectangle "Work (Class: Dataset)" as w {
+
+}
+
+@enduml

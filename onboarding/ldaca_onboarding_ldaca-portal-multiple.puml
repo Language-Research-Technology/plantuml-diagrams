@@ -1,0 +1,19 @@
+
+@startuml
+title: Multiple portals serving data from an OCFL Repository
+
+rectangle "💡 LDaCA Portal 💡" as portal {
+
+}
+
+rectangle "💡 Austalk Portal 💡" as aportal {
+
+}
+
+database "Arkisto Repository" as repo {
+
+}
+
+portal <-down-> repo : Index and serve ALL data 
+aportal <-down-> repo : Index and serve\nAustalk data ONLY 
+@enduml

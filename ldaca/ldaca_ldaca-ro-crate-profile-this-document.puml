@@ -1,0 +1,33 @@
+
+@startuml
+
+rectangle "RO-Crate Profile (this document)" {
+rectangle  " #Corpus"  as procorp
+rectangle " #Collection" as procoll
+rectangle "    #Object" as proobj
+}
+
+rectangle "Corpus" as corp {
+}
+rectangle "Collection" as coll {
+}
+rectangle "Object" as obj {
+}
+rectangle "File" as file {
+}
+corp -down-> coll : hasMember
+coll --> coll : hasMember
+coll -down-> obj : hasMember
+corp ---down---> obj : hasMember
+note top of corp: pcdm:Collection / RO-Crate RepositoryCollection 
+note left of coll : pdcm:Collection / RO-Crate RepositoryCollection
+note left of obj : pdcm:Object / RO-Crate RepositoryObject
+
+note right of file : schema:MediaObject / RO-Crate File
+corp -up-> procorp : conformsTo
+coll --up---> procoll : conformsTo
+obj -right-> proobj : conformsTo
+obj -down-> file : hasFile
+
+
+@enduml

@@ -1,0 +1,21 @@
+
+@startuml
+title: LDaCA data triage
+start
+
+if (Data is in a service) then (yes)
+ 
+  if (Service can be sustainably Managed) then (yes)
+   
+         if (Service needs to  be migrated) then (yes)
+            :Organize Migration;
+         else (no)
+         endif
+         :Set up Harvester;
+         stop
+  else (no)
+       
+  endif
+    
+endif
+@enduml

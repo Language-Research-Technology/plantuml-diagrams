@@ -1,0 +1,18 @@
+
+@startuml
+
+cloud Workspaces as ws {
+
+
+}
+
+cloud "Archival Repositories" as ar {
+
+}
+
+
+ws -right-> ar : Data deposit
+ar -left-> ws :  Data use
+
+
+@enduml

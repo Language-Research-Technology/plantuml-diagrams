@@ -1,0 +1,115 @@
+
+@startuml
+top to bottom direction
+title: LDACA Repository Services
+
+
+cloud "Conversion Services"  as cs {
+rectangle "OCR" as ocr {
+
+}
+rectangle "Your service here"
+
+}
+
+cloud "Vocab Services" as vocab {
+[Orcid]
+[ROR]
+[Language Ontologies] as lo
+[Existing Entities] as ee
+
+}
+
+cloud "Workspaces" {
+rectangle "From The Page" as ftp {
+
+}
+
+rectangle "Cloudstor" {
+
+rectangle "File Sync n Share" {
+
+}
+rectangle "Swan" {
+
+}
+
+}
+
+
+}
+
+
+rectangle Authorization as auth {
+database "Local Auth" as la {
+}
+[AAF]
+[Google]
+[Licence Authorizer] as lic
+
+}
+
+
+
+rectangle "Curation App" as app {
+
+rectangle "Data Day Spa"  as spa {
+rectangle "Uploaded Files" as files {
+
+}
+}
+
+rectangle "Data Description" as describo {
+
+}
+
+
+database "Items" as itemdb {
+
+}
+
+
+
+}
+
+database "Main Repository\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" as repo {
+
+}
+
+rectangle Portal as port {
+database "Index" as i {
+
+
+}
+rectangle "Web UI" as web {
+
+
+}
+
+rectangle "API" as api {
+}
+
+rectangle "Inbox" as inbox
+
+
+}
+
+
+
+repo -down-> vocab : Lookup
+app --up--> auth : Authorise users
+i ----> repo : Index content (with license info of course)
+ee ----> repo : Look up collections / people etc
+actor "Repo Manager" as rm
+port --down--> lic : Check keys/credentials for EVERY access
+spa -down-> cs : Batch conversion
+describo -> itemdb : Make RO-Crate
+auth ---down---> auth : Authenticate users
+itemdb -down-> api : Fetch latest version of item 
+itemdb ---> itemdb : Mint new item
+itemdb --down--> inbox : Deposit item
+spa --up--> Workspaces : Send data to asynchronous services for cleaning/analysis
+spa --down--> itemdb : Populate item with text
+rm -up-> inbox : Approve / reject
+inbox -> repo : Deposit
+@enduml

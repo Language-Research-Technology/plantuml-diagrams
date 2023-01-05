@@ -1,0 +1,38 @@
+
+@startuml
+
+rectangle "Work" as w {
+
+}
+
+actor "Contributor 1" as c1
+actor "Contributor 2 " as c2
+
+rectangle "CreateActionSpeak" as a1 {
+   [date: 2022-01-02]
+}
+
+rectangle "UpdateActionDeposit" as a2 {
+   [date: 2022-02-02]
+}
+
+
+rectangle "CreateActionRecord" as a3 {
+   [date: 2022-02-02] as di
+}
+
+rectangle "Video Camera" as cam {
+
+}
+a1 -down-> w : result
+a1 -up-> c1 : agent
+
+a2 -down-> w : result
+a2 -up-> c2 : agent
+
+a3 -down-> w : result
+a3 -up-> c2 : agent
+a3 -down-> cam : instrument
+
+
+@enduml

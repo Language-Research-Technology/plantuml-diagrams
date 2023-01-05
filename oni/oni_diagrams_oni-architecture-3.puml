@@ -1,0 +1,49 @@
+
+@startuml
+
+skinparam rectanglebackgroundColor<<oni>> yellow
+skinparam databasebackgroundColor<<oni>> yellow
+skinparam noteBackgroundColor white
+
+
+
+cloud "ATAP analytics 'Ecosystem' " as atap {
+    rectangle "Git service" {
+
+    }
+    rectangle "BinderHub Launch Service" {
+        
+    }
+}
+
+rectangle "LDaCA Search / browse portal" <<oni>> as oni {
+
+}
+
+rectangle "Full text search index" <<oni>> as elastic {
+
+}
+
+rectangle "Data & Access API" <<oni>> as api {
+
+}
+
+database "LDaCA file-based data repository"  as ocfl {
+
+}
+
+cloud "Authentication & Group services (AAF)" as auth {
+
+}
+
+atap -down-> api : Consume data
+oni <-down-> api
+auth <--down--> api : Authorize users
+elastic -> api : index
+api -down-> ocfl : Mediate secure access according to license
+
+note bottom of ocfl : All data stored using the Research Object Crate metadata specification, with an OLAC-derived metadata schema and with re-use license information
+
+
+
+@enduml

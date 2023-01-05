@@ -1,0 +1,86 @@
+
+
+@startuml
+!include ../data-management-style.txt
+
+title: Full ATAP environment
+rectangle "ATAP Website" as aw <<support>> {
+
+rectangle "Registry"  {
+
+}
+
+rectangle "Guides and Tutorials" {
+
+ rectangle "Notebook 2 Tutorial" as  nt2  {
+
+}
+
+}
+
+}
+
+nt2 ---down--> tin2 : LAUNCH
+
+
+
+rectangle "Git Server" as gs <<workspace>> {
+rectangle "Notebook 1" as  n1 {
+
+}
+rectangle "Notebook 2" as  n2 {
+
+}
+
+rectangle "Notebook 2 (modified)" as  n2m {
+
+}
+
+
+
+}
+
+rectangle "Binder Hub"  as bh <<workspace>> {
+
+rectangle "Instance of N2" as  1in2 {
+
+}
+
+
+rectangle "Instance of N2" as  tin2 {
+
+}
+rectangle "Instance of N2 (modified)" as  2in2 {
+
+}
+
+
+}
+
+
+database "ATAP repo" as a {
+
+rectangle "Notebook Registry" as nr {
+rectangle "Notebook 1" as  n1r {
+
+}
+rectangle "Notebook 2" as  n2r {
+
+}
+}
+
+}
+
+
+
+
+
+
+ws --right--> ar : Data deposit
+a --left--> ws :  Data use
+note bottom of gs : Eg github / gitlab
+ar --> gs : Harvest metadata & index
+n2r ----> 1in2 : LAUNCH!!
+n2 ----> 2in2 : LAUNCH!!
+2in2 ---> n2m: Push
+@enduml

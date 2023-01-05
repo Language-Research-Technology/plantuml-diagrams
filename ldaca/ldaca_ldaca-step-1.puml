@@ -1,0 +1,21 @@
+
+@startuml
+Title: Step 1 - Fetching data over the wire
+rectangle Workbench {
+rectangle "Notebook 1" as w1 {
+}
+}
+
+
+rectangle Webserver {
+rectangle "Crate 1 (open)" as c1 {
+}
+rectangle "Crate 2 (open)" as c2 {
+}
+
+
+
+}
+
+w1 -> c1 : Fetch
+@enduml

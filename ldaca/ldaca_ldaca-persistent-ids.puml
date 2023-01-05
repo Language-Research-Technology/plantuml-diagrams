@@ -1,0 +1,46 @@
+
+@startuml
+title: LDaCA Persistent IDs (PIDs)
+
+start
+
+if (Data has a custodial Organization) then (yes)
+ 
+  if (Org has PID policy & governance) then (yes)
+         :Use existing policy;
+         stop
+  else (no)
+      :Use LDaCA defaults;
+      :ARCP IDs for context, demographics, collectionEvents etc;
+      while (Can Identify responsible party within ORG to manage PIDs) is (no)
+            if (Content has existing PIDs) then (yes)
+                :Use exisiting PIDs;
+            else (no)
+               :ARCP IDs for collections, objects and files;
+            endif
+       endwhile (yes)
+       switch (Type of deposit)
+            case ( Completed speech study or corpus )
+               :DOI at study/collection level;
+               :ARCP IDs for objects and files;
+            case ( Continuing deposit of objects ) 
+               :DOI at object level;
+               :ARCP IDs for files;
+         endswitch
+       
+   
+
+  endif
+else (no)
+   :Continue negotiations;
+   stop
+endif
+
+
+     
+ 
+
+
+
+stop
+@enduml

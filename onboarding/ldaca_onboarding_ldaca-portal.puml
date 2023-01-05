@@ -1,0 +1,15 @@
+
+@startuml
+title: Serving data from an OCFL repository
+
+rectangle "Portal" as portal {
+
+}
+
+rectangle "OCFL Repository" as repo {
+
+}
+
+portal <-down-> repo : Index and serve data 
+
+@enduml
