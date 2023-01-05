@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import subprocess
+
+# Get the list of modified files
+modified_files = subprocess.run(
+    ['git', 'diff', '--cached', '--name-only'],
+    stdout=subprocess.PIPE,
+    encoding='utf-8'
+).stdout.strip().split('\n')
+
+# Iterate through the modified files
+for file in modified_files:
+    # Check if the file is a plantuml file
+    if file.endswith('.puml'):
+        status = subprocess.run(
+            ['git', 'diff', '--quiet', 'HEAD', '--', file],
+            stdout=subprocess.PIPE,
+            encoding='utf-8'
+        ).returncode
+        if status == 1:    
+            # Generate the HTML filename by replacing the .md extension with .html
+            html_file = file.replace(".puml", ".svg")
+
+            # Generate the HTML file
+            print("Generating " + html_file)
+            subprocess.run(
+                ['plantuml', '-s', file],
+                stdout=subprocess.PIPE,
+                encoding='utf-8'
+            )
+
+            # Add the HTML file to the staging area
+            subprocess.run(
+                ['git', 'add', html_file],
+                stdout=subprocess.PIPE,
+                encoding='utf-8'
+            )
+
+# Exit with a non-zero status to prevent the commit if any errors occurred
+#sys.exit(1)
