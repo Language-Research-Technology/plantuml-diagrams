@@ -21,9 +21,16 @@ skinparam note  {
 
 skinparam rectangle  {
     BackgroundColor<< workspace >>  orchid
-    FontColor<< workspace >>  yellow
+    FontColor<< workspace >>  springgreen
+
+
     BackgroundColor<< repository >>  springgreen
+
+
     BackgroundColor<< support >>  yellow
+    FontColor<< support >>  orchid
+
+
     BorderThickness 4
     BackgroundColor transparent
     FontSize 60

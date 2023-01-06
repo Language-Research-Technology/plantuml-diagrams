@@ -41,7 +41,7 @@ rectangle "Nectar Virtual Compute"  as nectar {
 
 bh -down-> git : Fetch notebook
 bh -down-> nectar : Launch Notebook
-cloud "Archival Repositories" as ar <<repository>> {
+rectangle "Archival Repositories" as ar <<repository>> {
 
 
 database "ATAP repo" as a {
