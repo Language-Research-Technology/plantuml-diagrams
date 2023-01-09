@@ -1,61 +1,77 @@
 @startuml
 skinparam handwritten true
-skinparam FontSize 60
-skinparam InterfaceFontSize 60
+skinparam FontSize 24
+skinparam InterfaceFontSize 24
 
-skinparam titleFontSize 80
-skinparam arrowFontSize 60
-skinparam arrowThickness 6
-skinparam arrowLollipopColor yellow
-skinparam arrowColor purple
+skinparam titleFontSize 42
+skinparam arrowFontSize 24
+skinparam arrowColor DarkRed
+
+skinparam arrowThickness 4
 
 skinparam note  {
-    BackgroundColor<< workspace >>  orchid
+    BackgroundColor<< workspace >>  #FFC7D8
     BackgroundColor<< repository >>  springgreen
     BackgroundColor<< support >>  yellow
     BorderThickness 4
     BackgroundColor transparent
-    FontSize 60
+    FontSize 24
+
+}
+
+skinparam actor  {
+    BackgroundColor<< workspace >>  #FFC7D8
+    BorderColor DarkRed
+
+    BackgroundColor<< repository >>  springgreen
+
+
+    BackgroundColor<< support >>  yellow
+    FontColor<< support >>  #FFC7D8
+
+
+    BorderThickness 4
+    BackgroundColor transparent
+    FontSize 24
+
 
 }
 
 skinparam rectangle  {
-    BackgroundColor<< workspace >>  orchid
-    FontColor<< workspace >>  springgreen
+    BackgroundColor<< workspace >>  #FFC7D8
 
 
     BackgroundColor<< repository >>  springgreen
 
 
     BackgroundColor<< support >>  yellow
-    FontColor<< support >>  orchid
 
 
     BorderThickness 4
     BackgroundColor transparent
-    FontSize 60
+    FontSize 24
 
 
 }
 
 skinparam cloud  {
-    BackgroundColor<< workspace >>  orchid
+    BackgroundColor<< workspace >>  #FFC7D8
     BackgroundColor<< repository >>  springgreen
     BackgroundColor<< support >>  yellow
     BorderThickness 4
     BackgroundColor transparent
 
-    FontSize 60
+    FontSize 24
 
 }
 
 skinparam database  {
-    BackgroundColor<< workspace >>  orchid
+    BackgroundColor<< workspace >>  #FFC7D8
     BackgroundColor<< repository >>  springgreen
     BackgroundColor<< support >>  lightyellow
     BorderThickness 4
     BackgroundColor transparent
 
-    FontSize 60
+    FontSize 24
 }
 @enduml

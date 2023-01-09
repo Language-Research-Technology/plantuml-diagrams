@@ -2,7 +2,7 @@
 @startuml
 title: Batch-loading data into LDaCA more details
 
-
+    
 cloud "Original Data Types" as data {
 rectangle "Spreadsheet + files" as csv {
 
