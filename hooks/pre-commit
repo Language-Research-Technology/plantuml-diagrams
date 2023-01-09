@@ -29,12 +29,12 @@ for file in modified_files:
             # Generate the HTML file
             print("Generating " + svg_file)
             subprocess.run(
-                ['plantuml', '-s', file],
+                ['plantuml', '-tsvg', file],
                 stdout=subprocess.PIPE,
                 encoding='utf-8'
             )
 
-            # Add the HTML file to the staging area
+            # Add the SVG file to the staging area
             subprocess.run(
                 ['git', 'add', svg_file],
                 stdout=subprocess.PIPE,
@@ -62,5 +62,3 @@ for dirname in directories_touched:
 
  
 
-# Exit with a non-zero status to prevent the commit if any errors occurred
-#sys.exit(1)
