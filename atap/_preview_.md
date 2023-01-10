@@ -12,6 +12,12 @@
 
 <img src="atap-interaction-fetch-transcription.svg">
 
+## [atap/atap-interaction-topic-modelling.svg](./atap-interaction-topic-modelling.svg)
+
+
+
+<img src="atap-interaction-topic-modelling.svg">
+
 ## [atap/atap_diagrams_0.svg](./atap_diagrams_0.svg)
 
 

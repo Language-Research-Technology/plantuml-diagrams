@@ -1,0 +1,16 @@
+@startuml
+!include ../data-management-style.txt
+
+actor Researcher as r
+   skinparam defaultFontSize 30
+   skinparam actorFontSize 30
+   r -> "Browser" as b : I have my data, I want to do topic modeling
+   b -> "ATAP/LDaCA Repo" as port : Do we have notebooks for topic modeling?
+   port -> b : Here's three
+   r -> b : I want to run notebook 2
+   b -> "ATAP/LDaCA Repo" as port : (what she said)
+   port -> b : Notebook record w/\n"RUN ME" button
+   r -> b: Clicks "RUN ME" button
+   b -> binderhub : Start Notebook 2
+   binderhub -> b : Return live notebook
+@enduml
