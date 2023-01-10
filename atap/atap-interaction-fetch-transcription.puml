@@ -10,7 +10,6 @@ actor Researcher as r
    port -> b : Here's three
    r -> b : Show me Farms to Freeways (BTW with works with notebook #mel1)
    b -> "ATAP/LDaCA Repo" as port : (what she said)
- 
    port -> b : Notebook record w/\n"RUN ME" button
    r -> b: Clicks "RUN ME" button
    b -> binderhub : Start Notebook #mel1

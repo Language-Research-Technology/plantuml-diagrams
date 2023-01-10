@@ -6,6 +6,12 @@
 
 <img src="atap-interaction-cooee.svg">
 
+## [atap/atap-interaction-fetch-transcription.svg](./atap-interaction-fetch-transcription.svg)
+
+
+
+<img src="atap-interaction-fetch-transcription.svg">
+
 ## [atap/atap_diagrams_0.svg](./atap_diagrams_0.svg)
 
 
