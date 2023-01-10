@@ -1,0 +1,19 @@
+@startuml
+!include ../data-management-style.txt
+
+actor Researcher as r
+   skinparam defaultFontSize 30
+   skinparam actorFontSize 30
+
+   r -> "Browser" as b : Show me datasets with transcribed audio on ATAP
+   b -> "ATAP/LDaCA Repo" as port : (what she said)
+   port -> b : Here's three
+   r -> b : Show me Farms to Freeways (BTW with works with notebook #mel1)
+   b -> "ATAP/LDaCA Repo" as port : (what she said)
+ 
+   port -> b : Notebook record w/\n"RUN ME" button
+   r -> b: Clicks "RUN ME" button
+   b -> binderhub : Start Notebook #mel1
+   binderhub -> b : Return live notebook
+   r -> b : Change notebook
+@enduml
