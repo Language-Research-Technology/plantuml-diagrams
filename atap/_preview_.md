@@ -1,5 +1,11 @@
 # Image summary for atap
 
+## [atap/atap-interaction-cooee.svg](./atap-interaction-cooee.svg)
+
+
+
+<img src="atap-interaction-cooee.svg">
+
 ## [atap/atap_diagrams_0.svg](./atap_diagrams_0.svg)
 
 
