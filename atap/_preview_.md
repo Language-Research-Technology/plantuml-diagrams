@@ -42,3 +42,9 @@
 
 <img src="atap_diagrams_atap-ecosystem-publishing.svg">
 
+## [atap/ldaca_ldaca-atap-architecture.svg](./ldaca_ldaca-atap-architecture.svg)
+
+
+
+<img src="ldaca_ldaca-atap-architecture.svg">
+
