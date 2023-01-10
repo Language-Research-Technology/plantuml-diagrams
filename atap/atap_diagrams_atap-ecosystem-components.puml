@@ -1,4 +1,5 @@
 
+
 @startuml
 
 title: ATAP Ecosystem - Major Components
@@ -16,7 +17,6 @@ rectangle "Data Collections" as dc {
 
 }
 }
-
 
 rectangle "Data and Analytics Guides" as dag {
 

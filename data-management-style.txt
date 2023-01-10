@@ -1,4 +1,6 @@
 @startuml
+
+skinparam defaultFontName Chalkduster
 skinparam handwritten true
 skinparam FontSize 24
 skinparam InterfaceFontSize 24
@@ -41,7 +43,6 @@ skinparam actor  {
 
 skinparam rectangle  {
     BackgroundColor<< workspace >>  #FFC7D8
-
 
     BackgroundColor<< repository >>  springgreen
 
