@@ -1,0 +1,13 @@
+@startuml
+rectangle "Authorization and Authentication" as auths {
+    rectangle "License Management" as lic
+    rectangle "Attribute & Certification\nManagement" as att
+    rectangle "Identity Authentication" as id
+
+}
+
+id -down-> lic
+att -down-> lic
+
+@enduml
+

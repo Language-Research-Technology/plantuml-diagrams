@@ -43,6 +43,7 @@ skinparam actor  {
 
 skinparam rectangle  {
     BackgroundColor<< workspace >>  #FFC7D8
+    BackgroundColor<< standards >>  lightblue
 
     BackgroundColor<< repository >>  springgreen
 
@@ -56,6 +57,8 @@ skinparam rectangle  {
 
 
 }
+
+
 
 skinparam cloud  {
     BackgroundColor<< workspace >>  #FFC7D8
