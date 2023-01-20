@@ -1,0 +1,53 @@
+@startuml
+!include_many ../data-management-style.txt
+!include_many ./authorization-components.puml
+!include_many ./archive-components.puml
+title: The research data work-cycle
+
+rectangle "Workspaces" <<workspace>> {
+rectangle "Tools" as tools
+rectangle "Working Storage" as ws
+rectangle "Instruments" 
+tools -> ws : Store
+Instruments -down-> ws: Store
+actor Analyse
+actor Collect
+Collect -left-> Describe
+Describe -down-> Analyse
+
+Analyse -> Collect
+
+rectangle "🗑 Active cleanup processes\nWorkspaces considered ephemeral " as bin
+bin <-> ws
+tools --down[hidden]--> bin
+tools --down[hidden]--> ws    
+
+}
+
+rectangle "New Data" as new
+rectangle "Reused Data" as re
+
+Describe --down--> new : Package
+
+Collect <-right- re : Reuse
+Collect -down-> Instruments
+rectangle "                Archival Repositories   \n\n"  as arch <<repository>> {
+    rectangle "Discovery Services" as disco
+    rectangle "APIs" as api
+    database "      1      " as 1 
+    database "      2      " as 2
+    database "      3      " as 3
+    database "      4      " as 4
+    rectangle "🗑 Policy based data management: preservation / disposal    " as arbin
+    
+}
+
+2 -down[hidden]-> arbin
+note bottom of ws: Compute and storage may include desktop, HPC, cloud and institutional
+
+auths <-right-> Workspaces
+lic <-> api
+ws -right-> new : Package
+new -down-> api : Deposit
+re -down-> api: Fetch
+@enduml

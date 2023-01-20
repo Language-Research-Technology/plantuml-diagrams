@@ -2,9 +2,9 @@
 @startuml
 title: Abstract FAIR architecture for standards base archival epositories
 !include_many ../data-management-style.txt
-
 !include_many ./authorization-components.puml
-
+!include_many ./archive-components.puml
+!include_many ./standards-components.puml
 
 rectangle "FAIR + CARE \n\n"  as FAIR {
 rectangle "  F  " as F
@@ -18,34 +18,6 @@ I -right-> R
 
 
 
-rectangle "                Archival Repositories   \n\n"  as arch <<repository>> {
-    rectangle "Discovery Services" as disco
-    rectangle "APIs" as api
-    database "  1  " as 1 
-    database "  2  " as 2
-    database "  3  " as 3
-    database "  4  " as 4
-    rectangle "🗑 Policy based data management  preservation / disposal    " as arbin
-     rectangle "Policy based Indentifiers    " as ids
-   
-}
-rectangle "Standards" <<standards>> {
-    
-    package "RO-Crate" as ro {
-        rectangle "Schema.org"
-        rectangle "JSON-LD"
-    }
-    rectangle "PIDs" {
-      rectangle "DOI"
-      rectangle "ARCP"
-      rectangle "Managed URIs"
-    }
-    rectangle "Profiles" {
-        rectangle "Language Data" as ldac
-        rectangle "Workflow Run" as wr
-        ldac -down[hidden]-> wr
-    }
-}
 ro -down-> Profiles
 Profiles  -down[hidden]-> PIDs
 
@@ -66,12 +38,7 @@ FDO2 <--down-- 1 : Fetch
 FDO2 <-up- R
 disco <-> api
 api -- A : Authorize\nall\nrequests
-api <-down->1
-api <-down->2
-api <-down->3
-api <-down->4
-4 -down[hidden]-> arbin
-2 -down[hidden]-> ids
+
 
 FAIR -down[hidden]-> arch
 F <--down--> disco
