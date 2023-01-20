@@ -17,5 +17,5 @@ rectangle "Standards" <<standards>> {
         rectangle "Workflow Run" as wr
         ldac -down[hidden]-> wr
     }
-}
+}   
 @enduml
