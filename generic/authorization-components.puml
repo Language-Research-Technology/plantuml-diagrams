@@ -1,4 +1,6 @@
 @startuml
+!include_many ../data-management-style.txt
+
 rectangle "Authorization and Authentication" as auths {
     rectangle "License Management" as lic
     rectangle "Attribute & Certification\nManagement" as att

@@ -8,8 +8,13 @@ skinparam InterfaceFontSize 24
 skinparam titleFontSize 42
 skinparam arrowFontSize 24
 skinparam arrowColor DarkRed
-
 skinparam arrowThickness 4
+skinparam arrowAlignment left
+skinparam FontSize 24
+skinparam BackgroundColor<< workspace >>  #FFC7D8
+
+
+
 
 
 
@@ -58,7 +63,22 @@ skinparam rectangle  {
 
 }
 
+skinparam package  {
+    BackgroundColor<< workspace >>  #FFC7D8
+    BackgroundColor<< standards >>  lightblue
 
+    BackgroundColor<< repository >>  springgreen
+
+
+    BackgroundColor<< support >>  yellow
+
+
+    BorderThickness 4
+    BackgroundColor transparent
+    FontSize 24
+
+
+}
 
 skinparam cloud  {
     BackgroundColor<< workspace >>  #FFC7D8

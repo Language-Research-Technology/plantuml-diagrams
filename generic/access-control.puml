@@ -1,0 +1,32 @@
+
+@startuml
+title: Distributed access control summary
+!include_many ../data-management-style.txt
+!include_many ./authorization-components.puml
+
+actor "Researcher / Community Member" as res
+
+rectangle "Repositories" <<repository>> {
+    rectangle "Portal 1" as p1
+    rectangle "Portal 2" as p2
+    rectangle "API 1" as a1
+    rectangle "API 2" as a2
+    database "Data 1" as d1
+    database "Data 2" as d2
+}
+p1 <-down-> a1
+p2 <-down-> a2
+
+res -left-> p1 : Request data
+res -left-> p2 : Request data
+
+a1 <-down-> d1
+a2 <-down-> d2
+
+
+a1 --> lic : Check every request
+a2 --> lic : Check every request
+
+res -right-> lic : Sign up for licences\n✅  Click thru ✅\n ✍️ Apply ✍️\n ✉️  By invitation ✉️
+
+@enduml

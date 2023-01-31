@@ -1,5 +1,11 @@
 # Image summary for generic
 
+## [generic/access-control.svg](./access-control.svg)
+
+
+
+<img src="access-control.svg">
+
 ## [generic/archive-components.svg](./archive-components.svg)
 
 

@@ -1,6 +1,6 @@
 
 @startuml
-title: Abstract FAIR architecture for standards base archival epositories
+title: Abstract FAIR architecture for standards base archival repositories
 !include_many ../data-management-style.txt
 !include_many ./authorization-components.puml
 !include_many ./archive-components.puml
@@ -38,7 +38,6 @@ FDO2 <--down-- 1 : Fetch
 FDO2 <-up- R
 disco <-> api
 api -- A : Authorize\nall\nrequests
-
 
 FAIR -down[hidden]-> arch
 F <--down--> disco
