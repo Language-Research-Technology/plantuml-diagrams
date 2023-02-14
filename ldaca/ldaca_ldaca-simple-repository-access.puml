@@ -1,8 +1,10 @@
 
 @startuml
+!include_many ../data-management-style.txt
+
 skinparam defaultFontSize 18
 
-title: Simple repository access 
+title: Simple authorized repository access 
 actor       researcher     as res
 entity    repository    as rep
 entity "https://doi.org/x/some-dataset" as c

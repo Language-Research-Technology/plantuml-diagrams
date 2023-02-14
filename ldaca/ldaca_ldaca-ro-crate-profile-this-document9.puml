@@ -25,24 +25,3 @@ rep -> c : fetch
 rep -> res : Here's the RO-Crate
 @enduml
 
-@startuml
-skinparam defaultFontSize 18
-
-title: Simple repository access 
-actor       researcher     as res
-entity    repository    as rep
-entity "Dataset:\n   https://doi.org/x/some-dataset\nHeld in repository" as c
-entity    "CILogon"    as ci
-
-res -> rep : Can I have https://doi.org/x/some-crate?
-rep -> c : Internal repository lookup:\nwhat's your licence?
-c -> rep : Accessible to people in group G1 on CILogon 
-rep -> rep : Is that on my list of trusted sites?
-rep -> rep : Yep
-rep -> res : Authenticate yourself over at CILogon
-res -> ci : Logs in 
-ci -> rep : Calls repo back "User is a member of G1, G2, G3"
-rep -> rep : OK, user is a member of G1
-rep -> c : fetch
-rep -> res : Here's the data
-@enduml

@@ -24,24 +24,6 @@
 
 <img src="ldaca_ldaca-alveo.svg">
 
-## [ldaca/ldaca_ldaca-atap-architecture.svg](./ldaca_ldaca-atap-architecture.svg)
-
-
-
-<img src="ldaca_ldaca-atap-architecture.svg">
-
-## [ldaca/ldaca_ldaca-complete-corpus-collection.svg](./ldaca_ldaca-complete-corpus-collection.svg)
-
-
-
-<img src="ldaca_ldaca-complete-corpus-collection.svg">
-
-## [ldaca/ldaca_ldaca-conversation.svg](./ldaca_ldaca-conversation.svg)
-
-
-
-<img src="ldaca_ldaca-conversation.svg">
-
 ## [ldaca/ldaca_ldaca-data-publications.svg](./ldaca_ldaca-data-publications.svg)
 
 
