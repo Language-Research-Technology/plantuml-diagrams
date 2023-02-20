@@ -8,6 +8,14 @@ rectangle "Standards" <<standards>> {
         rectangle "Schema.org"
         rectangle "JSON-LD"
     }
+
+     rectangle "Storage" as storage {
+        rectangle "OCFL"
+        rectangle "NOCFL"
+    }
+    ro -down[hidden]-> storage
+    OCFL -right[hidden]-> NOCFL
+
     rectangle "PIDs" {
       rectangle "DOI"
       rectangle "ARCP"
