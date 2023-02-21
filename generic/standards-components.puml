@@ -9,12 +9,11 @@ rectangle "Standards" <<standards>> {
         rectangle "JSON-LD"
     }
 
-     rectangle "Storage" as storage {
+     rectangle "Storage" as sstorage {
         rectangle "OCFL"
         rectangle "NOCFL"
     }
-    ro -down[hidden]-> storage
-    OCFL -right[hidden]-> NOCFL
+ 
 
     rectangle "PIDs" {
       rectangle "DOI"
@@ -26,5 +25,8 @@ rectangle "Standards" <<standards>> {
         rectangle "Workflow Run" as wr
         ldac -down[hidden]-> wr
     }
+    Profiles --down[hidden]--> ro
+    ro -down[hidden]-> sstorage
+    OCFL -right[hidden]-> NOCFL
 }   
 @enduml

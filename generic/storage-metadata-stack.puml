@@ -1,0 +1,24 @@
+@startuml
+!include_many ../data-management-style.txt
+!include_many ./standards-components.puml
+title: Standards-based storage "Stack"
+rectangle "                Architecture Stack   \n\n"  as arch <<repository>> {
+    rectangle "API" as api
+    database "Storage" as stor {
+        rectangle "Obj1"
+        rectangle "Obj2"
+    }
+}
+
+Obj1 -> ldac : conformsTo
+Obj1 -> ro : conformsTo
+stor -> OCFL : conformsTo
+api <-down-> stor
+rectangle Profiles {
+    rectangle "LDaCA Policy" as policy
+    policy -down[hidden]-> ldac
+}
+
+policy --> PIDs : Recommend
+
+@enduml

@@ -168,3 +168,9 @@
 
 <img src="ldaca_ldaca-step-3_001.svg">
 
+## [ldaca/simple-authorization-interaction.svg](./simple-authorization-interaction.svg)
+
+
+
+<img src="simple-authorization-interaction.svg">
+

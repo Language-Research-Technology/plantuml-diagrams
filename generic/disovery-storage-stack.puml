@@ -1,0 +1,41 @@
+@startuml
+!include_many ../data-management-style.txt
+title: Data findability
+rectangle "RE"  as arch <<repository>> {
+    rectangle "Portal 1" as p1 {
+        database "Index:\n 1,2" as i1
+    }
+    rectangle "Portal 2" as p2 {
+        database "Index:\n 1,2,3 4" as i2
+    }
+     rectangle "Portal 3" as p3{
+        database "Index:\n 1,2,3 4" as i3
+    }
+    rectangle "API" as api1
+    rectangle "API" as api2
+    database "Storage 1" as stor1 {
+        rectangle "Obj1"
+        rectangle "Obj2"
+    }
+     database "Storage 2" as stor2 {
+        rectangle "Obj3"
+        rectangle "Obj4"
+    }
+      database "Storage 3" as stor3 {
+        rectangle "Obj5"
+        rectangle "Obj6"
+    }
+}
+
+
+api1 <-down-> stor1
+api1 <-down-> stor2
+api2 <-down-> stor3
+i1 -down-> api1 : Index\nStorage 1
+i2 -down-> api1 : Index \nStorage 1 & 2
+i3 -down-> api2 : Index \nStorage 3
+
+
+
+
+@enduml

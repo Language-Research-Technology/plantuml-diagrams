@@ -18,6 +18,12 @@
 
 <img src="authorization-components.svg">
 
+## [generic/disovery-storage-stack.svg](./disovery-storage-stack.svg)
+
+
+
+<img src="disovery-storage-stack.svg">
+
 ## [generic/fair-conceptual-architecture.svg](./fair-conceptual-architecture.svg)
 
 
@@ -35,4 +41,10 @@
 
 
 <img src="standards-components.svg">
+
+## [generic/storage-metadata-stack.svg](./storage-metadata-stack.svg)
+
+
+
+<img src="storage-metadata-stack.svg">
 
