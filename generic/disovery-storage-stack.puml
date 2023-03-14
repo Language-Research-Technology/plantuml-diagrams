@@ -1,7 +1,7 @@
 @startuml
 !include_many ../data-management-style.txt
 title: Data findability
-rectangle "RE"  as arch <<repository>> {
+rectangle "Multiple storage services made findable"  as arch <<repository>> {
     rectangle "Portal 1" as p1 {
         database "Index:\n 1,2" as i1
     }
@@ -26,7 +26,8 @@ rectangle "RE"  as arch <<repository>> {
         rectangle "Obj6"
     }
 }
-
+p1 -right[hidden]-> p2
+p2 -right[hidden]-> p3
 
 api1 <-down-> stor1
 api1 <-down-> stor2
