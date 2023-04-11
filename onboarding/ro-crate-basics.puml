@@ -2,7 +2,7 @@
 !include_many ../data-management-style.txt
 
 package "RO-Crate 1"  {
-    rectangle "Machine Readable Metadata\nro-crate-metadata.json" {
+    rectangle "Machine Readable Metadata\nro-crate-metadata.json" as json {
          rectangle "What type of data 🅾️" as type {
 
         }
@@ -23,18 +23,22 @@ package "RO-Crate 1"  {
         }
 
     }
+
+
+    rectangle "Web page: Human Readable Metadata  \nro-crate-preview.html\n\n\n Type: Object\n Modalty: Spoken\n DateCreated: 2022-01-30\n etc." as html
+
+    package "Files"  as data {
+     rectangle "LICENSE.txt" as lict
+     rectangle "data/\n   transcriptions/\n   audio/\n   video/" 
+     }
+}
+files -down-> data : Describe
     type -down[hidden]-> who
     who -down[hidden]-> what
     what -down[hidden]-> where
     where -down[hidden]-> files
     files -down[hidden]-> lic
-
-    rectangle "Web page: Human Readable Metadata  \nro-crate-preview.html\n\n\n Type: Object\n Modalty: Spoken\n DateCreated: 2022-01-30\n etc." as html
-
-    package "Files"  as data {
-     rectangle "LICENSE.txt\ndata/\n   transcriptions/\n   audio/\n   video/" 
-     }
-}
-files -down-> data : Describe
+    lic -> lict 
+   html -up-> json : Derived from
 
 @enduml

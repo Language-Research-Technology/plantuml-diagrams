@@ -9,7 +9,7 @@ rectangle "Standards" <<standards>> {
         rectangle "JSON-LD"
     }
 
-     rectangle "Storage" as sstorage {
+     rectangle "Storage Specs" as sstorage {
         rectangle "OCFL"
         rectangle "NOCFL"
     }
@@ -20,10 +20,9 @@ rectangle "Standards" <<standards>> {
       rectangle "ARCP"
       rectangle "Managed URIs"
     }
-    rectangle "Profiles" {
+    rectangle "Profiles & Policy" as Profiles {
         rectangle "Language Data" as ldac
         rectangle "Workflow Run" as wr
-        ldac -down[hidden]-> wr
     }
     Profiles --down[hidden]--> ro
     ro -down[hidden]-> sstorage

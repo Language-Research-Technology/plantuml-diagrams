@@ -9,16 +9,16 @@ rectangle "                Architecture Stack   \n\n"  as arch <<repository>> {
         rectangle "Obj2"
     }
 }
-
 Obj1 -> ldac : conformsTo
 Obj1 -> ro : conformsTo
 stor -> OCFL : conformsTo
 api <-down-> stor
 rectangle Profiles {
-    rectangle "LDaCA Policy" as policy
+    rectangle "LDaCA PID Policy" as policy
     policy -down[hidden]-> ldac
 }
 
 policy --> PIDs : Recommend
+note bottom of NOCFL : Proposed for use by PARADISEC
 
 @enduml
