@@ -1,6 +1,6 @@
 
 @startuml
-title: Abstract FAIR architecture for standards base archival repositories
+title: Abstract FAIR architecture for standards based archival repositories
 !include_many ../data-management-style.txt
 !include_many ./authorization-components.puml
 !include_many ./archive-components.puml

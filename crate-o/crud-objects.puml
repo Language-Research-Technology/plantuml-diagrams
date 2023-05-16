@@ -1,0 +1,69 @@
+@startuml
+!include_many ../data-management-style.txt
+!include_many ./standards.puml 
+
+title: Create, Update (NOT Replace or Delete)
+rectangle "Repository with portal"  as arch <<repository>> {
+    rectangle "Portal 1" as p1 {
+        database "Index:\n 1" as i1
+    }
+   
+   rectangle "Repository Management Application (Oni)" {
+
+        rectangle "API" as api1
+   }
+    database "Storage 1" as stor1 {
+        rectangle "Obj1" {
+            interface v1
+            interface v2
+        }
+        rectangle "Obj2"
+    }
+    
+}
+
+
+
+rectangle "Editing Workspace"  as test <<workspace>> {
+
+       database "Working Store" as stor1a {
+        rectangle "Obj1a" as Obj1aa
+     
+    }
+
+    rectangle "Crate-O Editor"  as CO {
+          rectangle "Obj1a"
+    }
+    rectangle "Portal 1 - test" as p1a {
+        database "Index" as i1a
+    }
+   
+   rectangle "Repository Management Application (Oni)" {
+
+        rectangle "API" as api1
+   }
+}
+
+
+rectangle "'DataPacks'\nEntity Authority Services" as dp {
+    rectangle ROR
+    rectangle LDaCA {
+        rectangle "Austlang"
+        rectangle "Glottolog"
+        rectangle "Country\nCodes"
+        rectangle "Researchers"
+    }
+
+}
+
+p1a -down-> stor1a
+eprof --down--> CO : Define behaviour
+api1 --up--> Obj1aa : Checked out for editing / approval
+CO -> stor1a : Draft
+CO --down--> dp : Look-up
+stor1a --> CO : More editing
+Obj1aa  --down--> api1 : Check in new version\nor new object
+api1 <-down-> stor1
+i1 -down-> api1 : Index\nStorage 1
+
+@enduml

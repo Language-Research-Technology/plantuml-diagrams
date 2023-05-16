@@ -2,13 +2,13 @@
 !include_many ../data-management-style.txt
 title: Data findability
 rectangle "Multiple storage services made findable"  as arch <<repository>> {
-    rectangle "Portal 1" as p1 {
+    rectangle "Data Portal 1" as p1 {
         database "Index:\n 1,2" as i1
     }
-    rectangle "Portal 2" as p2 {
+    rectangle "Data Portal 2" as p2 {
         database "Index:\n 1,2,3 4" as i2
     }
-     rectangle "Portal 3" as p3{
+     rectangle "Data Portal 3" as p3{
         database "Index:\n 1,2,3 4" as i3
     }
     rectangle "API" as api1
