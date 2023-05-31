@@ -18,3 +18,9 @@
 
 <img src="ro-crate-plus-editor-profiles.svg">
 
+## [crate-o/simple-object-upload.svg](./simple-object-upload.svg)
+
+
+
+<img src="simple-object-upload.svg">
+
