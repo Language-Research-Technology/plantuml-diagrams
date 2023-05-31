@@ -1,44 +1,39 @@
 
 @startuml
-
-skinparam rectanglebackgroundColor<<oni>> yellow
-skinparam databasebackgroundColor<<oni>> yellow
-skinparam noteBackgroundColor white
+!include_many ../data-management-style.txt
 
 
-
-
-rectangle "ATAP analytics (notebooks)" as atap {
+rectangle "ATAP analytics (notebooks)" as atap <<workspace>> {
 
 }
 
-rectangle "LDaCA Search / browse portal" <<oni>> as oni {
+rectangle "LDaCA Search / browse portal" <<repository>> as oni {
 
 }
 
-rectangle "Full text search index" <<oni>> as elastic {
+rectangle "Full text search index" <<repository>> as elastic {
 
 }
 
-rectangle "Data & Access API" <<oni>> as api {
+rectangle "Data & Access API" <<repository>> as api {
 
 }
 
-database "LDaCA file-based data repository"  as ocfl {
+database "LDaCA file-based data repository" << repository >>  as ocfl {
 
 }
 
-cloud "Authentication & Group services (AAF)" as auth {
-
+cloud "Authentication & Group services (AAF)" << authorization >> as  auth  {
 }
 
 atap -down-> api : Consume data
 oni <-down-> api
 auth <--down--> api : Authorize users
 elastic -> api : index
+elastic <- api : authorized search
 api -down-> ocfl : Mediate secure access according to license
 
-note bottom of ocfl : All data stored using the Research Object Crate metadata specification, with an OLAC-derived metadata schema and with re-use license information
+note bottom of ocfl : All data stored using the Research Object Crate metadata specification,\nwith an OLAC-derived metadata schema and with re-use license information
 
 
 

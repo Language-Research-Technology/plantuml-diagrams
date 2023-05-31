@@ -1,0 +1,16 @@
+rectangle "RO-Crate Profiles" <<standards>> {
+    rectangle "Language Data Commons RO-Crate Profile" as prof {
+        rectangle "Rules" as r1 {
+            rectangle "Human & Machine readable clauses " as rules
+        }
+       rectangle "RO-Crate Metadata Editor Profile" as eprof
+       rectangle "Language Data Commons Metadata Schema" as lsoss
+       rectangle "RO-Crate Metadata Schema (incl. Schema.org)" as soss
+       rectangle "Document" as doc
+
+    }
+note top of doc: http://purl.archive.org/language-data-commons/profile
+eprof -down-> lsoss : Derived from
+lsoss -down-> soss : Extends
+doc -> rules : Includes
+}

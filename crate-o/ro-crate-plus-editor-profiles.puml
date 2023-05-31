@@ -1,0 +1,16 @@
+@startuml
+!include_many ../data-management-style.txt
+
+title: RO-Crate Editor Profiles 
+rectangle "Domain Specific\nRO-Crate Editor Profile" as dep
+
+
+rectangle "Crate-O Editor" <<workspace>>  as CO {
+        rectangle "Obj1a"
+}
+rectangle "Domain Specific Profile" <<standards>> as pr
+
+CO <-right- dep : Configures
+dep -down-> pr : Implements
+
+@enduml

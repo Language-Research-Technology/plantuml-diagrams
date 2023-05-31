@@ -1,0 +1,16 @@
+@startuml
+!include ../data-management-style.txt
+title: Dettached Crate
+
+folder "One payload file RO-Crate package" <<standards>> {
+    rectangle "-- ro-crate-metadata.json" as rmd
+}
+
+rectangle "Some Repository Service" <<repository>> {
+  rectangle "File1.txt" as f1
+}
+rmd -> f1 : Describes
+
+
+rmd -down[hidden]-> f1
+@enduml

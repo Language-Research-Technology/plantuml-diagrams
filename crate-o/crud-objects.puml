@@ -22,8 +22,6 @@ rectangle "Repository with portal"  as arch <<repository>> {
     
 }
 
-
-
 rectangle "Editing Workspace"  as test <<workspace>> {
 
        database "Working Store" as stor1a {

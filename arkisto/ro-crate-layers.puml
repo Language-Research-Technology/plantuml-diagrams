@@ -1,0 +1,25 @@
+@startuml
+
+
+!include_many ../data-management-style.txt
+
+rectangle "Domain Profile\n" as p <<standards>> {
+
+
+rectangle "Domain Schema" as ds
+rectangle "Domain Rules / Constraints" as dr
+}
+
+rectangle RO-Crate <<standards>> as roc {
+rectangle "Base Profile" as bp
+rectangle "Schema: Schema.org+" as ss 
+    
+rectangle "Syntax: JSON-LD" as sx
+
+
+}
+
+ss -down-> sx : Encoded in
+p -> bp : Builds on
+ds -down-> ss : Extends
+@enduml

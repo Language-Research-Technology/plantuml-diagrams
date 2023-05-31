@@ -36,6 +36,12 @@
 
 <img src="fair-data-cycle.svg">
 
+## [generic/ocfl-contains-ro-crate.svg](./ocfl-contains-ro-crate.svg)
+
+
+
+<img src="ocfl-contains-ro-crate.svg">
+
 ## [generic/standards-components.svg](./standards-components.svg)
 
 

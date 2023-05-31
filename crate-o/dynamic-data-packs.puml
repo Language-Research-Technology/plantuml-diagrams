@@ -1,0 +1,6 @@
+@startuml
+!include_many ../data-management-style.txt
+!include_many ./standards.puml 
+
+title: Dynamic Datapacks -- TODO
+@enduml

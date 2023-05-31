@@ -1,0 +1,31 @@
+@startuml
+!include_many ../data-management-style.txt
+title: OCFL contains RO-Crate
+rectangle "OCFL"  as arch <<repository>> {
+    rectangle "API" as api
+    database "Storage" as stor {
+        rectangle "Obj1"
+        rectangle "Obj2"
+    }
+}
+rectangle "Standards" <<standards>> {
+    
+    rectangle "RO-Crate" as ro {
+       
+    }
+
+    
+    rectangle "OCFL"
+
+    rectangle "Profiles" as prof {
+       rectangle "Language Data Commons RO-Crate Profile" as ldac
+    }
+
+}   
+Obj1 --up--> ldac : conformsTo
+Obj1 --up--> ro : conformsTo
+stor --up--> OCFL : conformsTo
+api <-down-> stor
+
+
+@enduml

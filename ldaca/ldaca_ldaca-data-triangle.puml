@@ -3,19 +3,22 @@
 title: LDaCA data triage
 start
 
-if (Data is in a service) then (yes)
+if (Data is in an existing service) then (yes)
  
   if (Service can be sustainably Managed) then (yes)
-   
-         if (Service needs to  be migrated) then (yes)
-            :Organize Migration;
-         else (no)
-         endif
-         :Set up Harvester;
-         stop
-  else (no)
-       
+    if (Need Preservation or working copy) then (yes)
+      :Create exporter;
+    else (no)
+      :Set up Harvester or other integration;
+       stop
+    endif
+  else (no)            
+      :Migrate / transform data;
   endif
-    
+       
+ 
+else (no)
 endif
+
+:Set up Arkisto Stack;
 @enduml
