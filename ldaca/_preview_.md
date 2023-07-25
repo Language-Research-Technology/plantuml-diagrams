@@ -6,6 +6,12 @@
 
 <img src="Alveo.svg">
 
+## [ldaca/data-triage.svg](./data-triage.svg)
+
+
+
+<img src="data-triage.svg">
+
 ## [ldaca/ldaca_ldaca-aggregation.svg](./ldaca_ldaca-aggregation.svg)
 
 
@@ -35,12 +41,6 @@
 
 
 <img src="ldaca_ldaca-data-storage-options.svg">
-
-## [ldaca/ldaca_ldaca-data-triangle.svg](./ldaca_ldaca-data-triangle.svg)
-
-
-
-<img src="ldaca_ldaca-data-triangle.svg">
 
 ## [ldaca/ldaca_ldaca-paradisec-architecture.svg](./ldaca_ldaca-paradisec-architecture.svg)
 

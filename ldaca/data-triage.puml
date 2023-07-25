@@ -1,5 +1,7 @@
 
 @startuml
+!include_many ../data-management-style.txt
+
 title: LDaCA data triage
 start
 

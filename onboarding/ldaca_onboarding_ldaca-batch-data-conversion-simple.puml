@@ -4,7 +4,7 @@
 
 title: Batch-loading data into LDaCA, simplest view
 
-rectangle "📈📄📜  Original Data 🎥🎙" as data {
+rectangle "📈📄📜 Original Data 🎥🎙" as data {
 
 }
 
@@ -18,7 +18,7 @@ database "OCFL Repository" <<repository>>  as repo {
 
 }
 
-ct <-up- data : Convert to RO-Crate\n(using Language Commons profile)
+ct <-up- data : Convert to RO-Crate\n(using Language Data Commons\nRO-Crate profile)
 ct -down-> repo : Write data 
 
 @enduml

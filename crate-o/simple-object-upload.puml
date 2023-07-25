@@ -1,7 +1,7 @@
 @startuml
 !include_many ../data-management-style.txt
 
-title: Adding Objects using Crate-O
+title: Adding Objects using Crate-O (TODO)
 rectangle "Repository with portal"  as arch <<repository>> {
 
    
@@ -9,42 +9,32 @@ rectangle "Repository with portal"  as arch <<repository>> {
         rectangle "API" as api1
    
     database "Storage 1" as stor1 {
-        rectangle "Obj1" {
-            interface v1
-            interface v2
-        }
+        rectangle "Obj1" 
         rectangle "Obj2"
     }
     
 }
 
- database "Working Store" <<workspace>> as stor1a {
-        rectangle "Obj1a" as Obj1aa
-     
-    }
 rectangle "Editing Workspace"  as test <<workspace>> {
+     database "Preview 'Repository'" as p1a {
+     }
+     
+    
 
-
+   
     rectangle "Crate-O Editor"  as CO {
           rectangle "Obj1a"
     }
-    rectangle "Portal 1 - test" as p1a {
-        database "Index" as i1a
-    }
-   
-   rectangle "Repository Management Application (Oni)" {
 
-        rectangle "API" as api1
-   }
+
 }
 
 
 
-p1a -down-> stor1a
-api1 --up--> Obj1aa : Checked out for editing / approval
-CO -> stor1a : Draft
-stor1a --> CO : More editing
-Obj1aa  --down--> api1 : Check in new version\nor new object
+api1 --right--> p1a : Checked out for editing / approval
+Obj1a -right-> p1a : Draft
+p1a -right-> CO: More editing
+p1a  --down--> api1 : Check in new version\nor new object
 api1 <-down-> stor1
 
 @enduml

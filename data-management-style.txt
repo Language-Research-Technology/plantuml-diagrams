@@ -4,7 +4,6 @@ skinparam defaultFontName Chalkduster
 skinparam handwritten true
 skinparam FontSize 24
 skinparam InterfaceFontSize 24
-
 skinparam titleFontSize 42
 skinparam arrowFontSize 24
 skinparam arrowColor DarkRed
@@ -14,6 +13,10 @@ skinparam FontSize 24
 skinparam BackgroundColor<< workspace >>  mistyrose
 
 
+skinparam activityFontSize 24
+skinparam activityFontName Chalkduster
+skinparam activityDiamondFontSize 24
+skinparam activityArrowFontSize 24
 
 
 
@@ -21,11 +24,10 @@ skinparam BackgroundColor<< workspace >>  mistyrose
 skinparam note  {
     BackgroundColor<< workspace >>  mistyrose
     BackgroundColor<< authorization >>  honeydew
-
     BackgroundColor<< repository >>  palegreen
     BackgroundColor<< support >>  lightyellow
+    BackgroundColor lightyellow
     BorderThickness 4
-    BackgroundColor transparent
     FontSize 24
 
 }

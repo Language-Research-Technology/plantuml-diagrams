@@ -1,6 +1,6 @@
 @startuml
 !include ../data-management-style.txt
-title: Dettached Crate
+title: Detached Crate
 
 folder "One payload file RO-Crate package" <<standards>> {
     rectangle "-- ro-crate-metadata.json" as rmd
