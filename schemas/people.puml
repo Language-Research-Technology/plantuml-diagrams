@@ -1,0 +1,17 @@
+
+@startuml
+!include_many ../data-management-style.txt
+
+title: CommunicationModes
+
+
+
+person "Person 1" as p1 
+
+person "Person 2" as p2
+
+person "Mother of 2" as m2
+person "Fater of 2" as f2
+
+p2 -> 
+@enduml

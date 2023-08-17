@@ -1,0 +1,44 @@
+@startuml
+!include_many ../data-management-style.txt
+title: Data findability w/ compiled indexes
+rectangle "Austalk (for example)"  as arch <<repository>> {
+
+     rectangle "Standard LDaCA Search Portal" as p3{
+        database "Index:\n 1,2,3 4" as i3
+    }
+
+    database "Compiled Metadata Index" as sqlite {
+
+    }
+
+    rectangle "Custom Index Script" as script {
+
+    }
+
+    rectangle "Lightweight (eg Datasette) Portal" as ds {
+    }
+
+    rectangle "Commandline Access" as cl {
+
+    }
+    
+    rectangle "Access Controlled API" as api2
+   
+    database "Austalk Archival Store" as stor3 {
+        rectangle "1"
+        rectangle "1000"
+    }
+}
+ds -down-> sqlite : Index
+cl -up-> sqlite : Query for lists of object of interest
+cl -> api2 : Fetch data
+script -down-> api2 : Query all records
+script -up-> sqlite : Build metadata DB
+api2 <-down-> stor3
+
+i3 -down-> api2 : Index \nStorage 3
+
+
+
+
+@enduml

@@ -6,6 +6,12 @@
 
 <img src="Alveo.svg">
 
+## [ldaca/data-licensing.svg](./data-licensing.svg)
+
+
+
+<img src="data-licensing.svg">
+
 ## [ldaca/data-triage.svg](./data-triage.svg)
 
 

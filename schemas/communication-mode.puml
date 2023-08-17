@@ -1,0 +1,24 @@
+
+@startuml
+!include_many ../data-management-style.txt
+
+title: CommunicationMethod
+
+
+
+person "Person 1" as p1 
+
+rectangle "Method 1\nlanguge: Auslan\nmode:Signed\ncontext:school" as m1
+
+rectangle "Method 2\nlanguge: English\nmode:Spoken\ncontext:work" as m2
+
+rectangle "Method 3\nlanguge: English\nmode:Lipread\ncontext:work" as m3
+
+
+p1 -up-> m1 : produces
+p1 -up-> m1 : consumes
+
+p1 -up-> m2 : produces
+p1 --up-> m3 : consumes
+
+@enduml

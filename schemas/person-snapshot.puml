@@ -1,0 +1,23 @@
+
+@startuml
+!include_many ../data-management-style.txt
+
+title: Person Snapshot
+
+rectangle "Letter 1" as let1 {
+}
+
+person "Mary Reiby at 20\n@type: Person\nage: 20\nisInstance: true" as m1 
+let1 <-right- m1 : creator
+
+
+person "Mary Reiby at 40\n@type: Person\nage: 40\nisInstance: true" as m2 
+let2 <-left- m2 : creator
+
+rectangle "Letter 2" as let2 {
+}
+person "Canonical Mary Reiby\n@type: Person\ndateOfBirth: 1777-05-12" as m
+m1 -up-> m : instanceOf
+m2 -up-> m : instanceOf
+
+@enduml

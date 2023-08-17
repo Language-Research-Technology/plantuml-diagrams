@@ -18,6 +18,12 @@
 
 <img src="authorization-components.svg">
 
+## [generic/disovery-storage-stack-packaged.svg](./disovery-storage-stack-packaged.svg)
+
+
+
+<img src="disovery-storage-stack-packaged.svg">
+
 ## [generic/disovery-storage-stack.svg](./disovery-storage-stack.svg)
 
 
