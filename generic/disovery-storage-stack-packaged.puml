@@ -7,21 +7,24 @@ rectangle "Austalk (for example)"  as arch <<repository>> {
         database "Index:\n 1,2,3 4" as i3
     }
 
+database "Public Repo (eg Zenodo)" {
+    rectangle "Portal At Rest RO-Crate" {
     database "Compiled Metadata Index" as sqlite {
 
     }
+     rectangle "Lightweight (eg Datasette) Portal" as ds {
+    
+    }
 
+    }
+
+
+    }
     rectangle "Custom Index Script" as script {
 
     }
+   
 
-    rectangle "Lightweight (eg Datasette) Portal" as ds {
-    }
-
-    rectangle "Commandline Access" as cl {
-
-    }
-    
     rectangle "Access Controlled API" as api2
    
     database "Austalk Archival Store" as stor3 {
@@ -30,10 +33,8 @@ rectangle "Austalk (for example)"  as arch <<repository>> {
     }
 }
 ds -down-> sqlite : Index
-cl -up-> sqlite : Query for lists of object of interest
-cl -> api2 : Fetch data
 script -down-> api2 : Query all records
-script -up-> sqlite : Build metadata DB
+script --down---> sqlite : Build metadata DB
 api2 <-down-> stor3
 
 i3 -down-> api2 : Index \nStorage 3
