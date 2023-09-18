@@ -1,0 +1,59 @@
+
+@startuml
+!include_many ../data-management-style.txt
+
+title: 3 Steps to Archival-Repositories\n(Turn that R drive into an `RKive`)
+start
+
+:1: Organize data\ninto "Digital Objects";
+note right
+Make "Folders":
+-  Manageable sized objects
+-  Common access conditions
+   (licensing) per object 
+end note
+
+:2: Add metadata\nfor each object;
+note right
+- License
+- Assign IDs (DOIs etc)
+- Object<->Collection relationships 
+- Who, what where
+- File descriptions
+- Provenance
+end note
+
+note left
+RO-Crate metadata tools:
+- Forms
+- Spreadsheets
+- Batch crosswalk scripts
+end note
+
+:🎉 Archival-Repository ready 🎉\n        status achieved ;
+note right
+Ready for institutional storage service
+end note
+
+if (Add more archival features?) then (yes)
+note right
+Oxford Common File Layout (OCFL)
+adds version control and content
+integrity features
+end note
+    :2a: Add OCFL or similar\n"Storage-based repository approach";
+  else (no)
+    
+endif
+
+:3 Index and catalogue the `RKive`;
+note right
+Choose according you your means/requirements:
+- Simple spreadsheet based summaries
+- Portable database catalogues
+- Access controlled API with license manager
+- Full search features a la LDaCA/PARADISEC
+- IDN-style "Data Catalogue"
+- More coming ...
+end note
+@enduml
