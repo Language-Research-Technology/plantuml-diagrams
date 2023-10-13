@@ -2,7 +2,7 @@
 @startuml
 !include_many ../data-management-style.txt
 
-title: 3 Steps to Archival-Repositories\n(Turn that R drive into an `RKive`)
+title: 3 Steps to Archival-Repositories\n(Turn that R: drive into an `RKive`)
 start
 
 :1: Organize data\ninto "Digital Objects";
@@ -46,9 +46,9 @@ end note
     
 endif
 
-:3 Index and catalogue the `RKive`;
+:3: Index and catalogue the `RKive`;
 note right
-Choose according you your means/requirements:
+Choose according to your means/requirements:
 - Simple spreadsheet based summaries
 - Portable database catalogues
 - Access controlled API with license manager

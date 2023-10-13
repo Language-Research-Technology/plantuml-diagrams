@@ -6,6 +6,12 @@
 
 <img src="Alveo.svg">
 
+## [ldaca/ci-logon-and-rems-auth-interaction.svg](./ci-logon-and-rems-auth-interaction.svg)
+
+
+
+<img src="ci-logon-and-rems-auth-interaction.svg">
+
 ## [ldaca/data-licensing.svg](./data-licensing.svg)
 
 

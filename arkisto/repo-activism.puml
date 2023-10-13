@@ -1,0 +1,12 @@
+@startuml
+title: Research Data Management March to Parliament
+actor "Researcher-Activist" as act
+participant "Researchers" as Crowd
+act -> Crowd : What do we want?
+Crowd -> act : Scalable Discipline Repositories with access control!
+Crowd -> act : Also national research archives for important data with access control!
+act -> Crowd : When do we want it?
+act <- Crowd : Next funding round!
+
+
+@enduml

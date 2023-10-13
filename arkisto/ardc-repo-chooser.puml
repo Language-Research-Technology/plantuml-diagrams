@@ -1,0 +1,71 @@
+
+@startuml
+!include_many ../data-management-style.txt
+
+title: Annotated Guide to Choosing a Data Repository
+
+:https://ardc.edu.au/resource/guide-to-choosing-a-data-repository/;
+:Consider;
+note left
+When deciding what data repository to 
+publish in key considerations include:
+- security obligations
+- publisher requirements
+- community conventions
+- institutional policy. 
+end note
+note right
+Also consider: 
+- the type of data you are publishing
+- its format and file size
+- its potential reuse and reuse conditions 
+   in the form of, say, a licence. 
+
+Other considerations can include: 
+- versioning of the data
+- storage location of the data
+- sensitivity of the data
+- access conditions. 
+end note
+
+
+
+
+if (Select/Identify a Subect\nor Domain Specific Repository) then (Yes)
+:Use it;
+
+
+
+
+
+else (no)
+ if (Use an institutional\ndata repository) then (no)
+ if (Choose a Generalist Data Repository) then (yes)
+   :Use it;
+
+
+
+
+ else (no)
+    :Um, use the R: Drive?;
+    stop
+ endif
+ else (yes)
+:Use it;
+
+
+
+endif
+
+
+
+endif
+:done;
+note right 
+If you made it here, you found a disiplne, institutional
+or generalist repo that can address all of the above 
+considerations, sensitivity, access control, data volume
+end note
+
+
+@enduml
