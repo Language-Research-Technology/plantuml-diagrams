@@ -24,3 +24,9 @@
 
 <img src="person-specialization.svg">
 
+## [schemas/schemas_and_modes.svg](./schemas_and_modes.svg)
+
+
+
+<img src="schemas_and_modes.svg">
+

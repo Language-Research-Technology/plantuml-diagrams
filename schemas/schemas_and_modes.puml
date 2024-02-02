@@ -1,0 +1,56 @@
+@startuml
+
+rectangle "Example Crates" as ex {
+    rectangle Crate-1 {
+
+    }
+    rectangle Crate-2 {
+
+    }
+    rectangle Crate-n {
+
+    }
+
+}
+
+
+rectangle "Schema.org Style Schema - RO-Crate" as soss {
+    rectangle "Classes"
+    rectangle "Properties"
+    rectangle "Defined Terms"
+}
+
+rectangle "Crate-O Mode File"  as mode {
+    
+}
+
+rectangle "RO-Crate Profile" {
+    rectangle "Profile Text" as pt
+     rectangle "Profile Template" as tp
+}
+
+rectangle "Schema-tools"  as st {
+ rectangle "Profile-gen" as pg 
+ rectangle "Mode-gen" as mg
+ rectangle "SOSS-gen" as sg
+}
+
+actor "Metadata Specialist" as ms
+ms --down--> mode : (3) Edit definitons\nAdd constraints
+
+
+sg --up--> soss : (1) Generate
+mg -up-> mode : (2) Generate
+pg -up-> pt : (4) Generate
+pg -up->  mode : Use
+pg -up-> tp : Use
+mg -down-> soss : Use
+
+sg -down-> ex : Use
+pg -down-> ex : Use
+
+
+
+
+'
+@enduml

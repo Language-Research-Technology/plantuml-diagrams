@@ -1,0 +1,30 @@
+@startuml
+!include_many ../data-management-style.txt
+
+
+rectangle "Access Portal 1" <<repository>> as p1 {
+    rectangle "Authorization\nRole-based acce\nsystem" as a1 <<authorization>>
+}
+
+
+rectangle "Access Portal 2" <<repository>> as p2 {
+     rectangle "Authorization:\nSimple Access Control\nList" as a2 <<authorization>>
+}
+
+
+
+
+database "Archival Repository 1" as rep1 <<repository>> {
+  
+}
+
+database "Archival Repository 2" as rep2 <<repository>> {
+  
+}
+
+
+
+p1 --down--> rep1 : Index & serve
+
+p2 --down--> rep2 : Index & serve
+@enduml

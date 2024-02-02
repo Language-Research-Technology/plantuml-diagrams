@@ -6,6 +6,12 @@
 
 <img src="access-control.svg">
 
+## [generic/antipattern-built-inauth.svg](./antipattern-built-inauth.svg)
+
+
+
+<img src="antipattern-built-inauth.svg">
+
 ## [generic/archive-components.svg](./archive-components.svg)
 
 
