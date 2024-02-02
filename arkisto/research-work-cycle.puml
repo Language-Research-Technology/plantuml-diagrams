@@ -1,0 +1,70 @@
+@startuml
+
+!include ../data-management-style.txt
+title: An idealised research data work-cycle
+
+
+
+rectangle "Authorization and Authentication" as auths {
+    rectangle "License Management" as lic
+    rectangle "Attribute & Certification\nManagement" as att
+    rectangle "Identity Authentication" as id
+
+}
+
+id -down-> lic
+att -down-> lic
+
+rectangle "Workspaces" <<workspace>> {
+rectangle "Tools" as tools
+rectangle "Working Storage" as ws
+rectangle "Instruments" 
+tools -> ws : Store
+Instruments -down-> ws: Store
+actor Analyse
+actor Collect
+Collect -left-> Describe
+Describe -down-> Analyse
+
+Analyse -> Collect
+
+rectangle "🗑 Active cleanup processes\nWorkspaces considered ephemeral " as bin
+bin <-> ws
+tools --down[hidden]--> bin
+tools --down[hidden]--> ws    
+
+}
+
+rectangle "New Data" as new
+rectangle "Reused Data" as re
+
+Describe --down--> new : Package
+
+Collect <-right- re : Reuse
+Collect -down-> Instruments
+rectangle "                Archival Repositories   \n\n"  as arch <<repository>> {
+    rectangle "Discovery Services" as disco
+    rectangle "APIs" as api
+    database "      1      " as 1 
+    database "      2      " as 2
+    database "      3      " as 3
+    database "      4      " as 4
+    rectangle "🗑 Policy based data management: preservation / disposal    " as arbin
+    
+}
+disco <-> api
+api <-down->1
+api <-down->2
+api <-down->3
+api <-down->4
+2 -down[hidden]-> arbin
+
+auths <-right-> Workspaces
+lic <-> api
+ws -right-> new : Package
+new -down-> api : Deposit
+re -down-> disco: Fetch
+
+
+
+@enduml

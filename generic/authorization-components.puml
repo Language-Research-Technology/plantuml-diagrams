@@ -7,7 +7,6 @@ rectangle "Authorization and Authentication" as auths <<authorization>> {
     rectangle "Identity Authentication" as id
 
 }
-
 id -down-> lic
 att -down-> lic
 

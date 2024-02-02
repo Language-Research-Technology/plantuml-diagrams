@@ -18,3 +18,9 @@
 
 <img src="person-snapshot.svg">
 
+## [schemas/person-specialization.svg](./person-specialization.svg)
+
+
+
+<img src="person-specialization.svg">
+

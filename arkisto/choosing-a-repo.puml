@@ -2,31 +2,21 @@
 @startuml
 !include_many ../data-management-style.txt
 
-title: 3 Steps to Archival-Repositories\n(Turn that R: drive into an `RRKive`)
+title: Choosing a repository
 start
 
-:1: Organize data\ninto "Digital Objects";
+:1: Is there an established repository for;
 note right
-Make "Folders":
--  Manageable sized objects
--  Treat collections as metadata-only
-   objects
--  Common access conditions
-   (licensing) per object 
+Create a lookup table of the archive:
+- List IDs and their storage locations
+- Build map of Collection / Object relationships
+
 end note
-if (Add more archival features?) then (no)
-note right
-Oxford Common File Layout (OCFL)
-adds version control and content
-integrity features
-end note
-     :1a: Stick with folders;
-  else (yes)
-:1a: Use OCFL or similar\napproach;
- 
-    
-endif
-:2: Add metadata\nfor each object;
+
+
+if (Put online) then (yes)
+
+:2: Set up ;
 note right
 - License
 - Assign IDs (DOIs etc)
@@ -36,12 +26,7 @@ note right
 - Provenance
 end note
 
-note left
-RO-Crate metadata tools:
-- Forms
-- Spreadsheets
-- Batch crosswalk scripts
-end note
+
 
 :🎉 Archival-Repository ready 🎉\n        status achieved ;
 note right

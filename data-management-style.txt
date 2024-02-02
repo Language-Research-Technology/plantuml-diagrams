@@ -18,6 +18,8 @@ skinparam activityFontName Chalkduster
 skinparam activityDiamondFontSize 24
 skinparam activityArrowFontSize 24
 
+skinparam partition FontSize 60
+skinparam partition FontName Chalkduster
 
 
 

@@ -1,0 +1,48 @@
+
+@startuml
+!include_many ../data-management-style.txt
+
+title: Is it a FAIR-dinkum repository?
+
+
+if (Has governance to persist data for the required time\n(Forever or shorter)) then (Yes)
+
+if (Has a persistent ID strategy & Implementation) then (yes)
+   
+if (Has interoperable metadata & discoverable) then (yes)
+
+if (HAs clearly marked Exits) then (yes)
+
+
+:✅ Looks like a repository ✅;
+
+if (Has appropriate access control) then (yes)
+
+if (Scale & functionality is adequate) then (yes)
+
+:Use it;
+
+stop
+
+else (no)
+
+
+endif 
+: ❎ Not for your use case  ❎;
+stop
+else (no)
+endif
+else (no)
+
+endif
+else (no)
+
+endif
+else (no)
+
+endif
+
+: ❎ It's not really a repository ❎;
+
+
+@enduml

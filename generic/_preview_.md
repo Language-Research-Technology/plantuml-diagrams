@@ -48,6 +48,18 @@
 
 <img src="ocfl-contains-ro-crate.svg">
 
+## [generic/simple-distributed-access-control.svg](./simple-distributed-access-control.svg)
+
+
+
+<img src="simple-distributed-access-control.svg">
+
+## [generic/simple-repo-object-structure.svg](./simple-repo-object-structure.svg)
+
+
+
+<img src="simple-repo-object-structure.svg">
+
 ## [generic/standards-components.svg](./standards-components.svg)
 
 

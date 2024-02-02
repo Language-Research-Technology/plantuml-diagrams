@@ -9,7 +9,7 @@ title: Abstract FAIR architecture for standards based archival repositories
 rectangle "FAIR + CARE \n\n"  as FAIR {
 rectangle "  F  " as F
 rectangle "  A   " as A
-rectangle "  I  " as I
+rectangle "  I  " as I 
 rectangle "  R"   as R
 }
 F -right[hidden]-> A

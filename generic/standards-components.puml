@@ -2,29 +2,5 @@
 !include_many ../data-management-style.txt
 
 
-rectangle "Standards" <<standards>> {
-    
-    package "RO-Crate" as ro {
-        rectangle "Schema.org"
-        rectangle "JSON-LD"
-    }
-
-     rectangle "Storage Specs" as sstorage {
-        rectangle "OCFL"
-    }
- 
-
-    rectangle "PIDs" {
-      rectangle "DOI"
-      rectangle "ARCP"
-      rectangle "Managed URIs"
-    }
-    rectangle "Profiles & Policy" as Profiles {
-        rectangle "Language Data" as ldac
-        rectangle "Workflow Run" as wr
-    }
-    Profiles --down[hidden]--> ro
-    ro -down[hidden]-> sstorage
-    OCFL -right[hidden]-> NOCFL
-}   
+  
 @enduml

@@ -1,0 +1,65 @@
+
+@startuml
+!include_many ../data-management-style.txt
+
+title: Choosing a Data Repository\nFor a Data Commons Deployment
+
+
+
+
+:Choosing a repo for your collections;
+note right
+Domain sepecific repositories are few and far between
+
+
+end note
+
+
+if (Select/Identify a Subject\nor Domain Specific Repository\n\neg PARADISEC / ADA / ???) then (Yes)
+
+:Use it;
+
+
+
+
+
+else (no)
+ if (Use an institutional\ndata repository) then (no)
+note right
+
+Generalist & Insitutional Repositories typically:
+- Do not have access control/licensing
+- Are not geared for collections of '000s of things
+- Have size limimts on individual items
+- Don't support domain-specific metadata
+
+end note
+ if (Choose a Generalist Data Repository) then (yes)
+   :Use it;
+
+
+
+
+ else (no)
+    :\n\nJoin LDaCA in using open source\nstandards based solutions?\n\n;
+    stop
+ endif
+ else (yes)
+:Use it;
+
+
+
+endif
+
+
+
+endif
+:done;
+note right 
+If you made it here, you found a disiplne, institutional
+or generalist repo that can address all of the above 
+considerations, sensitivity, access control, data volume
+end note
+
+
+@enduml

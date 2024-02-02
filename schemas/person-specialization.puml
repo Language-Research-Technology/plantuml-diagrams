@@ -1,0 +1,24 @@
+
+@startuml
+!include_many ../data-management-style.txt
+
+title: Person Specialization
+
+rectangle "Letter 1" as let1 {
+}
+
+person "Mary Reiby at 20\n@type: Person\nage: 20" as m1 
+let1 <-right- m1 : creator
+ note bottom of m1: This is a point in time version of Mary
+
+person "Mary Reiby at 40\n@type: Person\nage: 40" as m2 
+let2 <-left- m2 : creator
+
+rectangle "Letter 2" as let2 {
+}
+person "Mary Reiby\n@type: Person\ndateOfBirth: 1777-05-12" as m
+m1 -up-> m : specializationOf
+m2 -up-> m : specializationOf
+
+note top of m: This is the 'canonical' or 'main' Mary -- define this once with a participant ID
+@enduml

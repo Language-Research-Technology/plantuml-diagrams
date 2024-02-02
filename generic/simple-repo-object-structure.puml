@@ -1,0 +1,32 @@
+@startuml
+!include_many ../data-management-style.txt
+
+
+database "Archival Repository" as rep <<repository>> {
+  rectangle "Dataset n" as d1 {
+
+  }
+   rectangle "..." as d2 {
+    
+  }
+    rectangle "Dataset 2" as d3 {
+    
+  }
+  rectangle "Dataset 1" as dn {
+    rectangle "License.txt" as lic {
+
+    }
+     rectangle "ro-crate-metadata.json" as meta {
+
+    }
+    rectangle "data_dir" as dd {
+
+    }
+    
+  }
+
+}
+
+meta -down-> lic : Dataset has license.txt
+meta -> dd : Describes in detail
+@enduml

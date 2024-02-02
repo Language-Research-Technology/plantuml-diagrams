@@ -1,16 +1,22 @@
+!include_many ../data-management-style.txt
+
+
 rectangle "RO-Crate Profiles" <<standards>> {
-    rectangle "Language Data Commons RO-Crate Profile" as prof {
-        rectangle "Rules" as r1 {
-            rectangle "Human & Machine readable clauses " as rules
-        }
-       rectangle "RO-Crate Metadata Editor Profile" as eprof
+    rectangle "Language Data Commons RO-Crate Profile Document" as prof {
+            rectangle "Exposition: Collection Structure, Guidance etc"
+            rectangle "Syntax summary " as rules
+    }
+        
+
+       rectangle "Crate-O Mode File" as eprof
        rectangle "Language Data Commons Metadata Schema" as lsoss
        rectangle "RO-Crate Metadata Schema (incl. Schema.org)" as soss
-       rectangle "Document" as doc
-
+note top of prof: http://w3id.org/ldac/profile
+note top of soss: http://w3id.org/ldac/terms
     }
-note top of doc: http://purl.archive.org/language-data-commons/profile
+    
+
+
 eprof -down-> lsoss : Derived from
 lsoss -down-> soss : Extends
-doc -> rules : Includes
-}
+rules -down-> eprof : Generated from

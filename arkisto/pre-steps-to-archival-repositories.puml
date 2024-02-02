@@ -1,0 +1,41 @@
+
+@startuml
+!include_many ../data-management-style.txt
+title: Preparing for an  `RRKive`
+
+start
+
+
+if (Metadata Schema for your domain exists) then (yes)
+: Crosswalk to RO-Crate formats \n (if needed);
+     
+else (no)
+: Document a Schema;
+note right
+Crate-O can do this
+end note
+
+endif
+: Make or source some sample documents ;
+
+: Generate a Crate-O Mode File;
+Note left
+Mode files enable:
+- Metadata GUI
+- Import via spreadsheets
+- Data validation
+end note
+: Write a human-readable profile ;
+Note right
+- Document collection / object structure
+- Use tools to document the Mode File
+End note
+: Configure an RRKive stack ;
+
+Note left
+- Choose & configure storage
+- Configure indexing for collection structure
+
+End note
+
+@enduml
