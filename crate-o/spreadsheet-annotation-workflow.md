@@ -9,7 +9,7 @@ start
 
 : Export the collection to a spreadsheet ;
      
-note right
+note left
 - Built in export eg UQ eSpace
 - Harvest using OAI-PMH (most repo systems)
 - via API
@@ -18,7 +18,7 @@ end note
 
 partition #mistyrose "Workspace Activity" {
 if (Format is Crate-O ready) then (no)
-:Change Headers, calcualate fields;
+:Change Headers, calculate fields;
 
 else (yes)
 
@@ -27,33 +27,36 @@ endif
 
 : Add annotations using Crate-O;
 note left
-- Using Spreadsheet or
-- Using GUI Editor
+Spreadsheet and/or 
+web GUI data entry
 end note
 
 : Save collection annotations as RO-Crate ;
 }
+if (Publish) then  (yes) 
 partition #palegreen "Repository Deposit" {
-if (How to publish) then (As a self contained scholarly work)
+    if (Where?) then (Self contained scholarly work)
+        : Zenodo or similar ;
+        note left
+        RO-Crates are self-
+        contained and have a
+        built in web view.
+        Anyone can publish
+        their own annotation set
+        end note
+    else (As a collection)
+        : DIY or shared Discipline Repo;
+        note right
+        We're working on lightweight 
+        ways to do this building on 
+        Tim Sherratt's work 
+        eg with Datasette
+        end note
 
-: Publish to Zeonodo or similar ;
-note left
-RO-Crates are self-
-contained and have a
-built in web view.
-Anyone can publish
-their own annotation set
-end note
-else (as a website)
-
-: Run your own portal ;
-note right
-We're working on lightweight 
-ways to do this building on 
-Tim Sherratt's work 
-eg with Datasette
-end note
-endif
+    endif
 }
+else (no)
+:save locally;
+endif
 
 @enduml
