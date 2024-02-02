@@ -1,3 +1,5 @@
+@startuml
+
 !include_many ../data-management-style.txt
 
 
@@ -20,3 +22,5 @@ note top of soss: http://w3id.org/ldac/terms
 eprof -down-> lsoss : Derived from
 lsoss -down-> soss : Extends
 rules -down-> eprof : Generated from
+
+@enduml

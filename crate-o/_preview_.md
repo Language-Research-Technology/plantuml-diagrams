@@ -24,3 +24,9 @@
 
 <img src="simple-object-upload.svg">
 
+## [crate-o/standards.svg](./standards.svg)
+
+
+
+<img src="standards.svg">
+
