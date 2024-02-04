@@ -1,0 +1,65 @@
+@startuml
+!include_many ../data-management-style.txt
+title: Implemenations of RRKive (Arkisto)\nPrinciples and Requirements
+rectangle "Implementations" {
+rectangle "PARADISEC" as parai
+rectangle "Nyngarn" as nyi
+rectangle "UTS Data portal" as uts
+rectangle "OMAA" as om
+rectangle "LDaCA" as ldaca
+}
+
+
+rectangle "Toolkits / Software" {
+ rectangle "Oni" as oni
+ rectangle "PARADISEC" as para
+ rectangle "Nyingarn" as ny
+
+}
+
+rectangle "Standards" {
+rectangle "Metadata" {
+rectangle "Languate Data Commons\nRO-Crate Profile" as ldacp {
+
+
+
+}
+rectangle "RO-Crate" as rocrate {
+
+}
+
+
+
+
+}
+rectangle "Storage" {
+    rectangle "OCFL" {
+
+    }
+    rectangle "NOCFL" {
+
+    }
+    rectangle "PROXYIST" as pr {
+
+    }
+}
+}
+     
+ny --down--> NOCFL 
+para --down--> pr 
+oni --down--> OCFL
+
+ny --down--> ldacp 
+para --down--> ldacp 
+oni --down--> ldacp 
+oni --down--> rocrate 
+
+
+om --down--> oni 
+uts --down--> oni 
+ldaca --down--> oni 
+ldacp --down--> rocrate
+parai --down--> para 
+nyi --down--> ny 
+
+@enduml
