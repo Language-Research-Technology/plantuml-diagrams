@@ -6,6 +6,12 @@
 
 <img src="ardc-repo-chooser-2.svg">
 
+## [arkisto/ardc-repo-chooser-full.svg](./ardc-repo-chooser-full.svg)
+
+
+
+<img src="ardc-repo-chooser-full.svg">
+
 ## [arkisto/ardc-repo-chooser.svg](./ardc-repo-chooser.svg)
 
 

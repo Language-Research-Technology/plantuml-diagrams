@@ -10,7 +10,7 @@ rectangle "LDaCA" as ldaca
 }
 
 
-rectangle "Toolkits / Software" {
+rectangle "Open Source Toolkits / Software" {
  rectangle "Oni" as oni
  rectangle "PARADISEC" as para
  rectangle "Nyingarn" as ny
@@ -39,7 +39,7 @@ rectangle "Storage" {
     rectangle "NOCFL" {
 
     }
-    rectangle "PROXYIST" as pr {
+    rectangle "-TBC-" as pr {
 
     }
 }
