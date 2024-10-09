@@ -1,0 +1,63 @@
+@startuml
+
+skinparam {
+    rectangle {
+        BackgroundColor<<code>> Pink
+        BackgroundColor<<data>> LIghtBlue
+    }   
+    database    {
+        BackgroundColor<<repository>> LightGreen
+    }
+    
+}
+
+cloud "Repositories" as repos {
+database "data.ldaca" as data_ldaca <<repository>> {
+    rectangle api
+}
+
+
+database "Zenodo" as zenodo <<repository>> {
+    
+}
+}
+
+rectangle "ldaca.py" as ldaca_py <<code>>
+
+rectangle "user-crate" as user_crate <<data>>
+
+rectangle "RO-Crate to properties table" as crate_to_properties <<code>>
+
+rectangle "Properties table to entities table" as properties_to_entities <<code>>
+
+rectangle "Entities table to csv" as csv <<code>>
+
+rectangle "Corpus Loader" as corpus_loader <<code>>
+
+rectangle "User CSV" as user_csv <<data>>
+
+ldaca_py -up-> api: get_data
+ldaca_py -down-> crate_to_properties: Explode RO-Crate
+user_crate -down-> crate_to_properties: Explode RO-Crate
+crate_to_properties -down-> properties_to_entities: Make entity tables
+properties_to_entities -down-> csv: Make csv / dataframe / parquet / json
+csv -down-> corpus_loader: Load corpus from CSV
+user_csv -down-> corpus_loader: Load corpus from CSV file
+
+note right of properties_to_entities
+    This is a process that involves following some graph links and 
+    expanding like author.name author.age (this is difficult to do in SQL)
+end note
+
+note right of csv
+    Once tables are in SQL it is practial to use idiomatic SQL with them,
+    eg joining on author IDs from a set of transcripts to get de-normalized
+     metadata per-utterance
+end note
+
+actor "Anayltics Operative" as analytics_operative
+
+analytics_operative <-down- csv : Package data for specific purpose
+analytics_operative -up-> repos  : Deposit curated dataset\nwith supporting material\neg links to notebooks\nthat explain the data
+
+@enduml
