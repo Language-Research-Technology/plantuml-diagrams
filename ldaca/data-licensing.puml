@@ -5,7 +5,7 @@
 title: Data licensing
 start
 
-:Find the data steward\n(copyright owner or representative);
+:Find the data steward \n(copyright owner or representative);
 note right: Non-trivial non-technical\nprocess
 :Work with data steward to understand access and use rights;
 note right: Non-trivial non-technical\nprocess
@@ -21,7 +21,7 @@ else (Authorization Step Required)
     :Write a click-thru or\nquiz based license;
   else (no)
     if (Steward can list *exactly*\nwho should have access) then (yes)
-      : Make an\nAccess Control List;
+      :Make an\nAccess Control List\nand invite users;
 
     else (no)
     

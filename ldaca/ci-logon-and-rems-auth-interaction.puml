@@ -2,22 +2,20 @@
 @startuml
 skinparam defaultFontSize 18
 
-title: License Server w/ CILogon Authentication & REMS Authorization
-actor       researcher     as res
-entity    "Repository/Portal"   as rep
-entity "Dataset 1" as c
+title: License Server with CILogon Authentication & REMS Authorization
+actor   researcher  as res
+entity  "Repository/Portal" as rep
+entity  "Dataset 1" as c
+entity  "CILogon\n(Authentication)" as cl
+entity  "REMS\n(Authorization)" as gls
 
-entity    "REMS\n(Authorization)"    as gls
-entity    "CILogon\n(Authentication)"    as cl
 res -> rep : Can I have Dataset1
 rep -> c : What's your licence?
 c -> rep : Has "My Study Data Reuse License" 
 rep -> res : Authenticate yourself ...
 res -> cl : Logs user in using CILogon
-res -> rep : (redirected back to Repoistory) 
-
-
-rep ->  gls : Has User been granter "My Study ... License"?
+res -> rep : Redirected back to Repository
+rep ->  gls : Has User been granted "My Study ... License"?
 gls -> rep : Yep
 res -> rep : Here's the dataset
 
