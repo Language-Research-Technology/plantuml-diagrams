@@ -1,0 +1,36 @@
+
+@startuml
+skinparam defaultFontSize 18
+
+title: REMS Authorization: Applying for a licence
+actor researcher as res
+entity "Repository/Portal" as rep
+entity "Dataset 1" as c
+
+entity "REMS\n(Authorization)" as gls
+entity "CILogon\n(Authentication)" as cl
+
+entity "Chief Investigator\nData Custodian" as dc
+
+res -> rep : Browse Dataset1
+rep -> c : What's your licence?
+c -> rep : Has "My Study Data Reuse License" 
+rep -> res : Authenticate yourself ...
+res -> cl : Logs user in using CILogon
+res -> rep : (redirected back to Repoistory) 
+rep ->  gls : Has user been granted "My Study Reuse License"?
+gls -> rep : Nope
+rep -> res : Can I have the link to apply for access?
+res -> gls : Apply for access ...
+gls -> res : Fill in this form \n[] Agree to terms and conditions \n[] Send evidence of research record
+res -> gls : Fills Form
+gls -> dc : Please approve
+dc -> gls : Approved
+gls -> res : (Receives email)
+res -> rep : Refresh my permissions
+rep -> gls : Has user been granted "My Study Reuse License"?
+gls -> rep : Yep
+rep -> res : Here's the dataset
+
+@enduml
+
