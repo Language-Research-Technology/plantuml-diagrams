@@ -1,0 +1,29 @@
+@startuml
+' !include_many ../data-management-style.txt
+
+package "RO-Crate: Darwin Study"  {
+    rectangle "Collection: Darwin Study\nLicense: License A" as col {
+
+    }
+    rectangle "Object: Darwin Interview\nLicense: License A" as o {
+
+    }
+
+    rectangle "Object: Batchelor Interview\nLicense: License A" as b {
+ 
+    }
+    rectangle "File: Darwin Interview text\ntype: Annotation\nLicense: License A" as d {
+
+    }
+    rectangle "File: Darwin Interview audio\ntype: Primary Material\nLicense: License A" as e {
+
+    }
+
+}
+
+col --down-> o: hasMember
+col --down-> b: hasMember
+o --down-> d: hasPart
+o --down-> e: hasPart
+d --> e: annotationOf
+@enduml

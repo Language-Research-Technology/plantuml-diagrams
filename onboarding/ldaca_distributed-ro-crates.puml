@@ -1,0 +1,58 @@
+@startuml
+' !include_many ../data-management-style.txt
+title: NT Study
+
+package "RO-Crate: NT Study" as a {
+    rectangle "NT Study\n@type: Collection\nLicense:cc-by" as ab {
+
+    }
+
+}
+
+package "RO-Crate: NT Study: Batchelor Interviews" as b {
+    rectangle "Collection: Batchelor Interviews\nLicense:License A" as colb {
+
+    }
+    rectangle "Object: Batchelor Interview #1\nLicense:License A" as ob1 {
+
+    }
+
+    rectangle "Object: Batchelor Interview #2\nLicense:License A" as ob2 {
+ 
+    }
+    rectangle "File: Batchelor Interview #1 dialogue\nLicense:License A" as fb1 {
+
+    }
+
+}
+
+colb --down-> ob1: hasMember
+colb --down-> ob2: hasMember
+ob1 --down-> fb1: hasPart
+
+package "RO-Crate: NT Study: Darwin Interviews" as c  {
+    rectangle "Collection: NT Study\nLicense:License B" as colc {
+
+    }
+    rectangle "Object: Darwin Interview #1\nLicense:License B" as obc1 {
+
+    }
+
+    rectangle "Object: Darwin Interview #2\nLicense:License B" as obc2 {
+ 
+    }
+    rectangle "File: Darwin Interview #1 dialogue\nLicense:License B" as fc1 {
+
+    }
+
+}
+
+colc --down-> obc1: hasMember
+colc --down-> obc2: hasMember
+obc2 --down-> fc1: hasPart
+
+
+colb --up-> ab : memberOf
+colc --up-> ab : memberOf
+
+@enduml

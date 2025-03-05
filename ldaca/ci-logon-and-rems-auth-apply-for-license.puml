@@ -2,13 +2,13 @@
 @startuml
 skinparam defaultFontSize 18
 
-title: REMS Authorization: Applying for a licence
+title: REMS Authorisation: Applying for a licence
 actor researcher as res
 entity "Repository/Portal" as rep
 entity "Dataset 1" as c
 
-entity "REMS\n(Authorization)" as gls
 entity "CILogon\n(Authentication)" as cl
+entity "REMS\n(Authorisation)" as gls
 
 entity "Chief Investigator\nData Custodian" as dc
 
@@ -16,8 +16,8 @@ res -> rep : Browse Dataset1
 rep -> c : What's your licence?
 c -> rep : Has "My Study Data Reuse License" 
 rep -> res : Authenticate yourself ...
-res -> cl : Logs user in using CILogon
-res -> rep : (redirected back to Repoistory) 
+cl -> res : Logs user in using CILogon
+res -> rep : (redirected back to Repository) 
 rep ->  gls : Has user been granted "My Study Reuse License"?
 gls -> rep : Nope
 rep -> res : Can I have the link to apply for access?

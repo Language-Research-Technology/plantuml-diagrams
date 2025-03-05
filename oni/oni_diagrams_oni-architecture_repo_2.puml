@@ -3,39 +3,37 @@
 skinparam defaultFontSize 18
 title: Oni Architecture
 
-database "Discovery Index" {
-    rectangle "A" {
+database "Search and discovery Index" {
 
-    }
-        rectangle "Object, Diaglogue" as A {
+        rectangle "Object 1:\nDiaglogue" as A {
         
     }
-        rectangle "Sub Collection Books 1" as B {
+        rectangle "Object 2:\nSub Collection Books 1" as B {
         
     }
-        rectangle "Sub Collection Books 1" as C {
+        rectangle "Object 2:\nSub Collection Books 2" as C {
         
     }
-        rectangle "Small video collection"  as D{
+        rectangle "Object 3:\nSmall video collection"  as D{
         
     }
-        rectangle "Video 1" as E {
+        rectangle "Object 3:\nVideos" as E {
         
     }
-           rectangle "Video 2" as F {
+        rectangle "Object 3:\nAudios" as F {
         
     }
 
 }
 
 database "Data and license index" {
-       rectangle "Object 1" as o1 {
+       rectangle "Object 1:\nData Location\nLicense" as o1 {
 
     }
-    rectangle "Object 2" as o2 {
+    rectangle "Object 2:\nData Location\nLicense" as o2 {
         
     }
-   rectangle "Object 3" as o3 {
+   rectangle "Object 3:\nData Location\nLicense" as o3 {
         
     }
 
@@ -43,21 +41,22 @@ database "Data and license index" {
 
 
 
-database "OCFL Repo" as repo {
-    rectangle "Object 1" as ro1 {
+database "Repository" as repo {
+    rectangle "Object 1:\nMetadata\nData\nLicense" as ro1 {
 
     }
-    rectangle "Object 2"  as ro2 {
+    rectangle "Object 2:\nMetadata\nData\nLicense"  as ro2 {
         
     }
-   rectangle "Object 3" as ro3 {
+   rectangle "Object 3:\nMetadata\nData\nLicense" as ro3 {
         
     }
 }
 
-note top of ro3: Complete collection
+note top of ro3: Collection
 note top of ro2: Two sub collection records
-note top of ro1: Single data object
+note top of ro1: Part of a larger collection
+
 ro1 ---> A
 ro2 ---> B
 ro2 ---> C
@@ -78,7 +77,7 @@ database "Index" {
 rectangle "Data & License index" as ii {
 
 }
-rectangle "Discovery Index" as ai {
+rectangle "Browse Index" as ai {
 
 }
 }

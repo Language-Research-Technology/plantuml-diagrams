@@ -43,21 +43,22 @@ database "Data and license index" {
 
 
 
-database "OCFL Repo" as repo {
-    rectangle "Object 1" as ro1 {
+database "Repository" as repo {
+    rectangle "Object 1:\nMetadata\nData\nLicense" as ro1 {
 
     }
-    rectangle "Object 2"  as ro2 {
+    rectangle "Object 2:\nMetadata\nData\nLicense"  as ro2 {
         
     }
-   rectangle "Object 3" as ro3 {
+   rectangle "Object 3:\nMetadata\nData\nLicense" as ro3 {
         
     }
 }
 
-note top of ro3: Complete collection
+note top of ro3: Collection
 note top of ro2: Two sub collection records
 note top of ro1: Single data object
+
 ro1 ---> A
 ro2 ---> B
 ro2 ---> C

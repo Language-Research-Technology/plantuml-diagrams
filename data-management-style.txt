@@ -1,7 +1,10 @@
 @startuml
 
 skinparam defaultFontName Chalkduster
-skinparam handwritten true
+'For versions before V1.2025.1, set the handwritten skinparam to true
+'For versions V1.2025.1 and later, set the handwritten option to true
+'skinparam handwritten true 'this is commented out depends on the version
+!option handwritten true
 skinparam FontSize 24
 skinparam InterfaceFontSize 24
 skinparam titleFontSize 42

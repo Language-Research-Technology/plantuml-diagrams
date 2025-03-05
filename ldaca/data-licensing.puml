@@ -1,22 +1,23 @@
 
 @startuml
+!option handwritten true
 !include_many ../data-management-style.txt
 
 title: Data licensing
 start
 
-:Find the data steward\n(copyright owner or representative);
+:Find the data owner\n(copyright owner or representative);
 note right: Non-trivial non-technical\nprocess
-:Work with data steward to understand access and use rights;
+:Work with data owner to understand access and use rights;
 note right: Non-trivial non-technical\nprocess
 
-:Write a natural language license;
-note right: Could TK Notices and Labels form\npart of a license?\n Maybe act as clauses?
+:Write an easy to read license;
+' note right: Could TK Notices and Labels form\npart of a license?\n Maybe act as clauses?
 note left: It's important to document\naccess and usage contraints\nin an implementation-neutral way\n           *IN ONE PLACE*
 if (anyone can use) then (yes)
-  :Use a CC-style license;
+  :Use an open access license;
 
-else (Authorization Step Required)
+else (no; Authorization Step Required)
   if (Click-thru agreement\nwith terms or a short quiz\nis enough) then (yes)
     :Write a click-thru or\nquiz based license;
   else (no)

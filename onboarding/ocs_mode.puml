@@ -1,0 +1,15 @@
+@startuml
+skinparam defaultFontSize 18
+
+!define ENTITY #lightblue
+
+ENTITY Owner
+ENTITY Custodian
+ENTITY Steward
+
+Owner -down--> Custodian : Storage\nand access
+Custodian -left--> Steward :  Storage and access
+Steward -up--> Owner : \n\nProcessing
+Steward -right--> Custodian : -
+
+@enduml

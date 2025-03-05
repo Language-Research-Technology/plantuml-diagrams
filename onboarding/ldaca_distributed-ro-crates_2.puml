@@ -1,0 +1,82 @@
+@startuml
+' !include_many ../data-management-style.txt
+title: NT Study
+
+package "RO-Crate: NT Study" as a {
+    rectangle "NT Study\n@type: Collection\nLicense:cc-by" as ab {
+
+    }
+
+}
+
+package "RO-Crate: Collection: Batchelor Interviews" as cb {
+    rectangle "Batchelor Interviews\nLicense: License A" as cb1 {
+
+    }
+}
+
+package "RO-Crate: Batchelor Interview #1" as ob1 {
+    rectangle "Object: Batchelor Interview #1\nLicense: License A" as oob1 {
+
+    }
+    rectangle "File: Batchelor Interview #1 dialogue\nLicense: License A" as fob1 {
+
+    }
+}
+
+package "RO-Crate: Batchelor Interview #2" as ob2 {
+        rectangle "Object: Batchelor Interview #2\nLicense: License A" as oob2 {
+
+    }
+    rectangle "File: Batchelor Interview #2 dialogue\nLicense: License A" as fob2 {
+
+    }
+}
+
+'-----
+
+package "RO-Crate: Collection: Darwin Interviews" as cd {
+    rectangle "Darwin Interviews\nLicense: License B" as cd1 {
+
+    }
+}
+
+package "RO-Crate: Darwin Interview #1" as od1 {
+    rectangle "Object: Darwin Interview #1\nLicense: License B" as ood1 {
+
+    }
+    rectangle "File: Darwin Interview #1 dialogue\nLicense: License B" as fod1 {
+
+    }
+}
+
+package "RO-Crate: Darwin Interview #2" as od2 {
+        rectangle "Object: Darwin Interview #2\nLicense: License B" as ood2 {
+
+    }
+    rectangle "File: Darwin Interview #2 dialogue\nLicense: License B" as fod2 {
+
+    }
+}
+
+'----
+
+cb1 --up-> ab : memberOf
+
+oob1 --up-> cb1 : memberOf
+oob2 --up-> cb1 : memberOf
+
+oob1 --down-> fob1: hasPart
+oob2 --down-> fob2: hasPart
+
+'--
+
+cd1 --up-> ab : memberOf
+
+ood1 --up-> cd1 : memberOf
+ood2 --up-> cd1 : memberOf
+
+ood1 --down-> fod1: hasPart
+ood2 --down-> fod2: hasPart
+
+@enduml

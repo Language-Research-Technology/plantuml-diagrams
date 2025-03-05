@@ -1,0 +1,30 @@
+
+@startuml
+skinparam defaultFontSize 18
+
+title: CILogon Authentication & REMS Authorization Oni Implementation
+entity       "Oni-UI"     as user
+entity    "Oni"   as oni
+entity "Oni DB" as onidb
+
+entity    "REMS\n(Authorization)"    as rems
+entity    "CILogon\n(Authentication)"    as cl
+user -> oni : "/login"
+oni -> cl : "/api/oauth/cilogon/login"
+cl -> oni : "/api/oauth/cilogon/code"
+oni -> onidb : "create or find user"
+onidb -> oni : "found or created"
+oni -> user : "session token"
+user -> oni : "/memberships"
+oni -> rems : "<REMS>/entitlements?user=X"
+rems -> oni : "entitlements"
+oni -> onidb : "update entitlements"
+
+user -> oni : "/object/:id"
+oni -> onidb : "authorize middleware"
+onidb -> oni : "authorized"
+oni -> user: "authorized"
+
+
+@enduml
+
