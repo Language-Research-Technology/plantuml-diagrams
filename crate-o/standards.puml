@@ -14,7 +14,7 @@ rectangle "RO-Crate Profiles" <<standards>> {
        rectangle "Language Data Commons Metadata Schema" as lsoss
        rectangle "RO-Crate Metadata Schema (incl. Schema.org)" as soss
 note top of prof: http://w3id.org/ldac/profile
-note top of soss: http://w3id.org/ldac/terms
+note top of lsoss: http://w3id.org/ldac/terms
     }
     
 

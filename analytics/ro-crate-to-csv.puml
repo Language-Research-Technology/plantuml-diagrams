@@ -26,19 +26,25 @@ rectangle "ldaca.py" as ldaca_py <<code>>
 
 rectangle "user-crate" as user_crate <<data>>
 
+rectangle "RO-Crate-Abstract" as ro_crate_dt <<code>>{
+
+}
+
+
+rectangle "Tabulator" as tabulator {
+
 rectangle "RO-Crate to properties table" as crate_to_properties <<code>>
 
 rectangle "Properties table to entities table" as properties_to_entities <<code>>
 
 rectangle "Entities table to csv" as csv <<code>>
 
-rectangle "Corpus Loader" as corpus_loader <<code>>
-
-rectangle "User CSV" as user_csv <<data>>
-
+}
 ldaca_py -up-> api: get_data
-ldaca_py -down-> crate_to_properties: Explode RO-Crate
-user_crate -down-> crate_to_properties: Explode RO-Crate
+ldaca_py -down-> ro_crate_dt: Uses
+tabulator -down-> ro_crate_dt: Uses
+ldaca_py -down-> crate_to_properties: Pass RO-Crate object\n(w/ methods to fetch data from API)
+user_crate -down-> crate_to_properties: Load RO-Crate\n(w/ methods to fetch data from FS)
 crate_to_properties -down-> properties_to_entities: Make entity tables
 properties_to_entities -down-> csv: Make csv / dataframe / parquet / json
 csv -down-> corpus_loader: Load corpus from CSV

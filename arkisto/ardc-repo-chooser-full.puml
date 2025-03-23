@@ -53,11 +53,11 @@ end note
 
 if (You have project funding or eResearch Support) then (yes)
 
-   :Start a project\n(potentially use RRKive tools);
+   :Start a project\n(Follow PILARS Protocols);
    stop
          
 else (no)
-   : Follow RRKive advice about organizing data\non raw institutional storage\n(Use the the R: Drive) ;
+   : Follow PILARS advice about organizing data\non raw institutional storage\n(Use the the R: Drive) ;
    stop
 endif
 
