@@ -1,0 +1,166 @@
+
+@startuml
+skinparam defaultFontSize 18
+title: Oni Architecture
+
+component "Other Clients" as other {
+    rectangle "Jupyter Notebook" {
+
+    }
+    rectangle "Python" {
+
+    }
+    rectangle "Laptop" {
+
+    }
+    
+}
+
+component "Oni UI" as ui {
+
+    rectangle "Faceted Search" {
+
+    }
+    rectangle "Map Search" {
+
+    }
+    rectangle "Collections/Objects/Files" {
+
+    }
+    rectangle "Downloads" {
+
+    }
+
+}
+
+component "Oni API" as api{
+    rectangle "Auth" {
+
+    }
+    rectangle "Routes" {
+
+    }
+    rectangle "Files" {
+
+    }
+    rectangle "Downloads" {
+
+    }
+}
+
+component "Authorization" as autho {
+    database "REMS"
+}
+
+component "Authentication" as authe{
+    database "CILogon"
+}
+
+component "Identity Provider" as identity {
+    rectangle "Institution"
+    rectangle "social login"
+}
+
+component "Search and discovery Index" as search {
+     database "Open Search"
+}
+
+component "Data Location and license index" as structure {
+    database "Postgres DB"
+
+}
+
+component "File Repository" as repo {
+    database "OCFL"
+}
+
+other -down-> api
+ui -down-> api
+
+api --down-> structure
+api --down-> search
+api -down-> repo
+
+autho --left-> api
+authe --right-> api
+
+autho --right-> identity
+authe --right-> identity
+
+structure -down-> repo
+search -down->repo
+
+
+' === Clients ===
+' other
+' ui
+
+' === API Layer ===
+' api
+' autho
+' authe
+' identity
+
+' === Index Layer ===
+' structure
+' search
+
+' === Repository Layer ===
+' repo
+
+
+@enduml
+
+@startuml
+
+database "Index" {
+rectangle "Data & License index" as ii {
+
+}
+rectangle "Browse Index" as ai {
+
+}
+}
+
+database ".......... OCFL Repo .............. \n\n\n\n\n\n\n\n\n\n\n\n" as repo {
+    
+}
+
+rectangle "Indexer" {
+
+}
+
+rectangle "Config" as conf {
+
+}
+
+Indexer -up-> repo : Scan objects
+Indexer -> conf : Consume
+Indexer -up-> Index : Write
+
+rectangle "API" {
+    [item/] as iapi
+    [query/] as qapi
+    [license filter] as lic
+
+}
+
+cloud "Authentication and Authorizatio Services" as auth {
+    [CILogon]
+    [Mukurtu]
+    [...]
+
+}
+
+rectangle "UI" {
+  
+}
+lic -> auth : Get user's group/license holdings
+UI --down--> qapi : Construct views
+UI --down--> iapi : Get data for viewing
+iapi --down-> ii : Consult for get requests\nfor Objects and files
+qapi --down-> ai : Consult for queries / views\n*with license filter
+
+API --down->  repo : Read
+
+@enduml

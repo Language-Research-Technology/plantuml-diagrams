@@ -3,6 +3,9 @@
 skinparam defaultFontSize 18
 title: Oni Architecture
 
+
+rectangle "Oni API" {
+
 database "Search and discovery Index" {
 
         rectangle "Object 1:\nDiaglogue" as A {
@@ -14,7 +17,7 @@ database "Search and discovery Index" {
         rectangle "Object 2:\nSub Collection Books 2" as C {
         
     }
-        rectangle "Object 3:\nSmall video collection"  as D{
+        rectangle "Object 3:\nText"  as D{
         
     }
         rectangle "Object 3:\nVideos" as E {
@@ -26,7 +29,8 @@ database "Search and discovery Index" {
 
 }
 
-database "Data and license index" {
+
+database "Data Location and license index" {
        rectangle "Object 1:\nData Location\nLicense" as o1 {
 
     }
@@ -40,22 +44,27 @@ database "Data and license index" {
 }
 
 
+database "File Repository" as repo {
+    rectangle "Object 1:" as ro1 {
+        rectangle "RO-Crate:\nMetadata\nData\nLicense" as ro11 {
 
-database "Repository" as repo {
-    rectangle "Object 1:\nMetadata\nData\nLicense" as ro1 {
+        }
+    }
+    rectangle "Object 2:"  as ro2 {
+                rectangle "RO-Crate:\nMetadata\nData\nLicense" as ro21 {
 
+        }
     }
-    rectangle "Object 2:\nMetadata\nData\nLicense"  as ro2 {
-        
-    }
-   rectangle "Object 3:\nMetadata\nData\nLicense" as ro3 {
-        
+   rectangle "Object 3:" as ro3 {
+                rectangle "RO-Crate:\nMetadata\nData\nLicense" as ro31 {
+
+        }
     }
 }
 
-note top of ro3: Collection
-note top of ro2: Two sub collection records
-note top of ro1: Part of a larger collection
+note top of ro31: Collection
+note top of ro21: Two sub collection records
+note top of ro11: Part of a larger collection
 
 ro1 ---> A
 ro2 ---> B
@@ -67,6 +76,15 @@ ro3 ---> F
 ro1 --up--> o1
 ro2 --up--> o2
 ro3 --up--> o3
+
+}
+
+cloud "Oni UI" {
+
+}
+
+"Oni UI" <-> "Oni API" : UI
+
 
 
 @enduml
