@@ -1,0 +1,89 @@
+@startuml
+!include_many ./data-management-style.txt
+title: PILARS Implementations - mid 2026?
+rectangle "Implementations" {
+rectangle "PARADISEC\nPortal" as parai
+rectangle "UTS Data\nPortal" as uts
+rectangle "LDaCA\nPortal" as ldaca {
+    rectangle "Nyingarn" as nyi_repo
+    rectangle "Academic" as ldaca_repo
+    rectangle "Oral History" as oral_repo
+
+}
+rectangle "CALL Collection" as call
+rectangle "RAPID Portal\n(Hansard etc)" as rapid
+
+
+rectangle "Data Preparation & Management" as data_prep {
+    rectangle "LDaCA data\nonboarding\nworkspace" as ldacws
+    rectangle "Nyingarn\nWorkspace" as nyi
+    rectangle "PARADISEC\nWorkspace" as paraw
+}
+}
+
+
+
+rectangle "Open Source Toolkits / Software" {
+ rectangle "Oni Portal" as oni
+ rectangle "AROCAPI" as aroc
+ rectangle "PARADISEC Catalog" as para
+ rectangle "Nyingarn Workspace" as ny
+}
+oni -down-> aroc
+parai -right-> oni
+rapid -down-> oni
+call -down-> oni
+ldacws -down-> ny
+rectangle "Specs & Standards" {
+rectangle "Metadata" {
+rectangle "Language Data Commons\nRO-Crate Profile" as ldacp {
+}
+rectangle "General Collection\nRO-Crate Profile" as genp {
+}
+rectangle "Government Collection\nRO-Crate Profile" as govp {
+}
+rectangle "RO-Crate" as rocrate {
+
+}
+
+
+
+
+}
+rectangle "Storage" {
+    rectangle "OCFL" {
+
+    }
+     rectangle "Object Storage" as Storage {
+        rectangle "S3" as s3
+        rectangle "Azure Blob" as azure
+
+    }
+
+    rectangle "Git\nLarge File Storage" as git-lfs {
+       
+    }
+   
+    rectangle "Proxyist" as pr {
+
+    }
+}
+}
+     
+ny --down--> aroc
+paraw --down--> para 
+pr .> OCFL
+aroc --down--> Storage
+
+
+aroc --down--> rocrate 
+
+uts --down--> oni 
+ldaca --down--> oni 
+ldacp --down--> rocrate
+genp --down--> rocrate
+govp --down--> rocrate
+parai --down--> para 
+nyi --down--> ny 
+
+@enduml

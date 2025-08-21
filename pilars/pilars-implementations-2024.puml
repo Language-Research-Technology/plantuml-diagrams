@@ -1,0 +1,66 @@
+@startuml
+!include_many ./data-management-style.txt
+title: PILARS Implementations - mid 2024
+rectangle "Implementations" {
+rectangle "PARADISEC" as parai
+rectangle "Nyingarn" as nyi
+rectangle "UTS Data portal" as uts
+rectangle "OMAA" as om
+rectangle "LDaCA" as ldaca
+}
+
+
+rectangle "Open Source Toolkits / Software" {
+ rectangle "Oni" as oni
+ rectangle "PARADISEC Code" as para
+ rectangle "Nyingarn Workspace" as ny
+
+}
+
+rectangle "Specs & Standards" {
+rectangle "Metadata" {
+rectangle "Language Data Commons\nRO-Crate Profile" as ldacp {
+
+
+
+}
+rectangle "RO-Crate" as rocrate {
+
+}
+
+
+
+
+}
+rectangle "Storage" {
+    rectangle "OCFL" {
+
+    }
+    rectangle "NOCFL" {
+
+    }
+    rectangle "Proxyist" as pr {
+
+    }
+}
+}
+     
+ny --down--> NOCFL 
+para --down--> pr 
+pr .> OCFL
+oni --down--> OCFL
+
+ny --down--> ldacp 
+para --down--> ldacp 
+oni --down--> ldacp 
+oni --down--> rocrate 
+
+
+om --down--> oni 
+uts --down--> oni 
+ldaca --down--> oni 
+ldacp --down--> rocrate
+parai --down--> para 
+nyi --down--> ny 
+
+@enduml
