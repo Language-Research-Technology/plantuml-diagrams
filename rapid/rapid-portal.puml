@@ -1,0 +1,49 @@
+
+@startuml
+title: RAPID Portal
+!include_many ../data-management-style.txt
+
+
+
+rectangle "Data Portal with faceted search" as portal {
+    rectangle "Search" as search {
+        rectangle "Faceted Search" as facet
+        rectangle "Full text search" as results
+        rectangle "Document Preview" as preview
+        rectangle "ZIP Download" as download
+        rectangle "Notebook Launcher" as download
+        rectangle "Downloadable API\ncode snippets" as download
+
+
+    }
+   
+}
+
+rectangle "⚙️ API ⚙️ " as api {
+
+}
+
+database "Repository" as repo <<repository>> {
+    rectangle "RO-Crate 1" as 1
+    rectangle "RO-Crate 2" as 2
+    rectangle "RO-Crate 3" as 3
+    rectangle "RO-Crate n" as n
+    1 -[hidden]> 2
+    2 -[hidden]> 3
+    3 -[hidden]> n
+}
+
+database Indexes {
+    rectangle "Structural Index" as index
+    rectangle "Full text index" as fulltext
+
+}
+
+portal <-down- api : Serve data
+portal -down-> api : Search
+index -down-> repo : Index 
+api -down-> index : Search
+repo -up-> api : Serve data
+
+
+@enduml

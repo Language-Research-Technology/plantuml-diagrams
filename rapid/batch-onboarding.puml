@@ -1,0 +1,31 @@
+
+@startuml
+title: Batch-loading data into RAPID (Data Curation and Deposit)
+!include_many ../data-management-style.txt
+
+
+
+rectangle "Hansard Website" as data {
+
+}
+
+rectangle "⚙️ Conversion script ⚙️ " as ct {
+
+}
+
+actor "Programmer" as p
+database "Repository" as repo <<repository>> {
+    rectangle "RO-Crate 1" as 1
+    rectangle "RO-Crate 2" as 2
+    rectangle "RO-Crate 3" as 3
+    rectangle "RO-Crate n" as n
+    1 -[hidden]> 2
+    2 -[hidden]> 3
+    3 -[hidden]> n
+}
+
+p -down-> ct : Write script
+ct <-up- data : Convert to RO-Crate\nusing Public Interest Documents\n RO-Crate Metadata profile)
+ct -down-> repo : Write data 
+
+@enduml

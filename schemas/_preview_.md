@@ -6,6 +6,12 @@
 
 <img src="communication-mode.svg">
 
+## [schemas/overview-schema-profile.svg](./overview-schema-profile.svg)
+
+
+
+<img src="overview-schema-profile.svg">
+
 ## [schemas/people.svg](./people.svg)
 
 

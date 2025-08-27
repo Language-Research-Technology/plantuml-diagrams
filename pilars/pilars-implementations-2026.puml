@@ -10,7 +10,11 @@ rectangle "LDaCA\nPortal" as ldaca {
     rectangle "Oral History" as oral_repo
 
 }
-rectangle "CALL Collection" as call
+rectangle "Top End\nCollections" as tec {
+    rectangle "CALL" as call
+    rectangle "ARDS" as ards
+
+}
 rectangle "RAPID Portal\n(Hansard etc)" as rapid
 
 
@@ -32,7 +36,7 @@ rectangle "Open Source Toolkits / Software" {
 oni -down-> aroc
 parai -right-> oni
 rapid -down-> oni
-call -down-> oni
+tec -down-> oni
 ldacws -down-> ny
 rectangle "Specs & Standards" {
 rectangle "Metadata" {

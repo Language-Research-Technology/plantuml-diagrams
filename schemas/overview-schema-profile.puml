@@ -1,0 +1,81 @@
+@startuml
+title Schema Overview
+
+
+
+
+package "Schemas" {
+
+  
+  rectangle "General" as general
+  rectangle "Specific" as specific
+
+  package "Schema.org" as so {
+    rectangle "General Purpose" as gp
+}
+
+
+
+package "Darwin core" {
+  rectangle "Biodiversity" as biodiversity
+}
+
+package "LDAC" {
+  rectangle "Language collections\n(based on OLAC)" as lang_coll
+}
+
+package "Danala" {
+  rectangle "Clan kinship &\nPlace-specific metadata" as clan_kinship
+}
+  general <---> specific
+}
+
+LDAC -up-> so : Extends
+Danala -up-> LDAC : Extends
+note left of Schemas 
+Used for:
+- Documentation
+- Source of terms for specialization in profiles
+
+Defines re-usable:
+- Classes
+- Properties
+- Defined Terms
+
+end note
+
+so -down[hidden]-> biodiversity
+so -down[hidden]-> lang_coll
+lang_coll -down[hidden]-> clan_kinship
+
+
+
+package "Profiles" {
+  
+  package "LDaCA profiles" as ldacap {
+    rectangle "LDaCA"
+    rectangle "PARADISEC"
+    rectangle "Nyingarn"
+   
+  }
+  package  "ARDS profiles" as ardsp {
+    rectangle "ARDS Language Collection"
+    rectangle "ARDS legal"
+    rectangle "ARDS Radio"
+  }
+  package "CALL Collection profile" as callp {
+
+  }
+}
+note top of Profiles 
+Used for:
+- Editing tool configuration
+- Validation
+- Documentation generation
+end note
+
+ldacap --up--> LDAC  : Specialises
+ardsp --> Danala : Specialises
+callp --up--> Danala : Specialises
+
+@enduml

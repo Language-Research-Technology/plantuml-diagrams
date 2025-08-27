@@ -18,6 +18,12 @@
 
 <img src="ro-crate-plus-editor-profiles.svg">
 
+## [crate-o/schema-mode-profile.svg](./schema-mode-profile.svg)
+
+
+
+<img src="schema-mode-profile.svg">
+
 ## [crate-o/simple-object-upload.svg](./simple-object-upload.svg)
 
 

@@ -1,0 +1,31 @@
+  
+@startuml
+!include_many ../data-management-style.txt
+title: OCFL Storage
+
+  
+database "Storage Root" as stor1 <<repository>> {
+   database "Obj-1" {
+
+   }    
+     database "Obj-n" {
+    
+   }
+}
+
+
+note bottom of stor1
+
+- File system root for OCFL storage*
+- Contains OCFL objects which are directories
+- OCFL objects contain files and directories
+- OCFL objects are versioned
+- OCFL objects are identified with unique IDs
+
+ *OCFL can also be use with other storage systems
+like Amazon S3 or Azure Blob Storage
+
+end note
+
+
+ @enduml

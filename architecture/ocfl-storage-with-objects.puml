@@ -1,0 +1,35 @@
+  
+@startuml
+!include_many ../data-management-style.txt
+title: OCFL Storage with Objects
+
+  
+database "Storage Root" as stor1 <<repository>> {
+rectangle "Storage Object 1" as obj1 {
+  rectangle "metadata" as m1 {
+  }
+  rectangle "v1" as v1 {
+    rectangle "content" as c1
+  }
+  rectangle "v2" as v2 {
+    rectangle "content" as c2
+  }
+}
+
+rectangle "Storage Object 2" as obj2 {
+}
+rectangle "Storage Object n" as obj3 {
+}
+
+note bottom of m1
+Checksums for each unique file
+end note
+}
+
+note bottom of obj2
+Write once for each unique file,
+reduces risk of corruption
+(with the downside that it's hard
+for humans to read an OCFL filesystem)
+end note
+ @enduml

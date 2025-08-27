@@ -1,0 +1,43 @@
+@startuml
+!include_many ./data-management-style.txt
+
+title: The three main components for a metadata environment
+
+
+rectangle "Schema.org Style Schema (SOSS) for Domain" <<standards>> as soss
+
+
+
+note top of soss
+ e.g. Language Data Commons terms
+ such as communicationMode, SpokenLanguage
+end note
+rectangle "Domain-specific Mode" <<workspace>> as md
+
+note top of md
+ e.g. Language Data Commons\nmode file. 
+ Mode files are used to configure:
+- RO-Crate editing in Crate-O
+- RO-Crate validation
+
+end note
+
+note bottom of md
+Used for:
+ - Specify behaviour of editor, e.g. Crate-O
+ - Validate RO-Crate structure
+ - Used for generating profile documentation
+
+ (Currently uses a custom JSON format
+ but the RO-Crate community is exploring the
+ use of LinkML as a consistent schema language for 
+ these purposes)
+
+end note
+rectangle "RO-Crate Profile Document" <<standards>> as pf 
+
+pf -left-> md : Include rules\ndocumentation generated\nfrom
+soss <-right- md : Based on
+
+note top of pf: e.g. Language Data Commons RO-Crate\nProfile Document
+@enduml
