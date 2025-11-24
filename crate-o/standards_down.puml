@@ -1,0 +1,28 @@
+@startuml
+
+!include_many ../data-management-style.txt
+
+rectangle "RO-Crate Profiles" <<standards>> {
+
+    rectangle "RO-Crate Metadata Schema (incl. Schema.org)" as soss
+
+    rectangle "Language Data Commons Metadata Schema" as lsoss
+    note right of lsoss: http://w3id.org/ldac/terms
+
+    rectangle "Crate-O Mode File" as eprof
+    rectangle "Validation Rules" as valid
+
+    rectangle "Language Data Commons RO-Crate Profile Document" as prof {
+        rectangle "Exposition: Collection Structure, Guidance etc"
+        rectangle "Syntax summary " as rules
+    }       
+    note top of prof: http://w3id.org/ldac/profile    
+
+}
+    
+soss <-down- lsoss : is Based On
+lsoss <-down- rules : Derived from
+rules -down-> eprof : Generates
+rules -down-> valid : Generates 
+
+@enduml
