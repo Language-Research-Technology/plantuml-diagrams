@@ -1,0 +1,63 @@
+
+@startuml
+title: LDaCA Data preparation
+!include_many ../data-management-style.txt
+
+
+
+rectangle "📈📄📜  Folders of original data 🎥🎙" as data {
+
+}
+
+rectangle  "Data Preparation Workbench " as dp {
+  rectangle "Data Annotation Tool: (Crate-O)"  as co {
+   rectangle "Interactive Web Forms" as forms
+   rectangle "Excel Import" as excel
+  }
+rectangle "OCR Image to Text" as ocr
+rectangle "Text to TEI Editory" as tei
+rectangle "Audio/Video Transcription Tool Multi-tier" as avt {
+    rectangle "Speech-to-Text API Integration" as stt
+    rectangle "Manual Transcription Interface" as mti
+      }
+}
+
+
+
+
+
+
+
+database "Repository" as repo <<repository>> {
+    rectangle "RO-Crate 1" as 1
+    rectangle "RO-Crate 2" as 2
+    rectangle "RO-Crate 3" as 3
+    rectangle "RO-Crate n" as n
+    1 -[hidden]> 2
+    2 -[hidden]> 3
+    3 -[hidden]> n
+}
+
+rectangle "⚙️ API ⚙️ "  as api {
+
+}
+
+dp <-up- data : Upload or share data via sync service
+dp -down-> repo : Write crate(s)
+repo -down-> api : Serve data
+dtt -up-> api : Fetch data
+dtt --up--> dp : use data directly 
+rectangle "Data Transformation Tools" as dtt {
+    rectangle "RO-Crate to Table (Tabulator)" as tablr {
+        rectangle "CSV Export" as csv
+        rectangle "Pandas DataFrame Export" as pandas
+        rectangle "Parquet Export" as parquet
+        rectangle "SQL Export" as sql
+        rectangle "Corpus Export" as corpus {
+            rectangle "AntConc" as ac
+        }
+
+    }
+    
+}
+@enduml
