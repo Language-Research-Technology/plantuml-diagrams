@@ -9,7 +9,7 @@ rectangle "📈📄📜  Folders of original data 🎥🎙" as data {
 
 }
 
-rectangle "⚙️ Collection-specific conversion script ⚙️ " as ct {
+rectangle "⚙️ Collection-specific conversion script ⚙️ " <<dataprep>> as ct {
 
 }
 
@@ -29,3 +29,6 @@ ct <-up- data : Convert to RO-Crate\n(using Language Commons profile)
 ct -down-> repo : Write data 
 
 @enduml
+
+
+

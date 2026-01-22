@@ -1,0 +1,41 @@
+
+@startuml
+title: Data Prep Workbench 
+!include_many ../data-management-style.txt
+
+
+
+rectangle "📈📄📜  Folders of original data 🎥🎙" as data {
+
+}
+
+rectangle "⚙️ Data Preparation Workbench ⚙️ " <<dataprep>> as dp {
+
+}
+rectangle "⚙️ Data Transformation Tools ⚙️ " <<workspace>> as dt {
+
+}
+
+dt <-left- dp : Use *conformant*\nRO-Crates directly
+
+actor "Researcher" as p
+database "Repository" as repo <<repository>> {
+    rectangle "RO-Crate 1" as 1
+    rectangle "RO-Crate 2" as 2
+    rectangle "RO-Crate 3" as 3
+    rectangle "RO-Crate n" as n
+    1 -[hidden]> 2
+    2 -[hidden]> 3
+    3 -[hidden]> n
+}
+repo -up-> dp : Import\n(to enhance)
+dt -> dp : Import\n(to enhance)
+
+p --down--> dp : Make decisions about\ndata description & organization
+dp <--up-- data : Import to\norganize & describe 
+dp --down--> repo : Write LDAC profile-\nconformant RO-Crates 
+
+@enduml
+
+
+

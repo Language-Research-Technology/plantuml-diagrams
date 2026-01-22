@@ -14,6 +14,7 @@ skinparam arrowThickness 4
 skinparam arrowAlignment left
 skinparam FontSize 24
 skinparam BackgroundColor<< workspace >>  mistyrose
+skinparam BackgroundColor<< dataprep >>  paleblue
 
 
 skinparam activityFontSize 24
@@ -28,6 +29,7 @@ skinparam partition FontName Chalkduster
 
 skinparam note  {
     BackgroundColor<< workspace >>  mistyrose
+BackgroundColor<< dataprep >>  lightblue
     BackgroundColor<< authorization >>  honeydew
     BackgroundColor<< repository >>  palegreen
     BackgroundColor<< support >>  lightyellow
@@ -39,6 +41,7 @@ skinparam note  {
 
 skinparam actor  {
     BackgroundColor<< workspace >>  mistyrose
+BackgroundColor<< dataprep >>  lightblue
     BackgroundColor<< authorization >>  honeydew
 
     BorderColor DarkRed
@@ -59,6 +62,7 @@ skinparam actor  {
 
 skinparam rectangle  {
     BackgroundColor<< workspace >>  mistyrose
+BackgroundColor<< dataprep >>  lightblue
     BackgroundColor<< authorization >>  honeydew
 
     BackgroundColor<< standards >>  lavender
@@ -75,6 +79,7 @@ skinparam rectangle  {
 
 skinparam package  {
     BackgroundColor<< workspace >>  mistyrose
+BackgroundColor<< dataprep >>  lightblue
     BackgroundColor<< authorization >>  honeydew
 
     BackgroundColor<< standards >>  lavender
@@ -94,6 +99,7 @@ skinparam package  {
 
 skinparam cloud  {
     BackgroundColor<< workspace >>  mistyrose
+BackgroundColor<< dataprep >>  lightblue
     BackgroundColor<< authorization >>  honeydew
 
     BackgroundColor<< repository >>  palegreen
@@ -107,6 +113,7 @@ skinparam cloud  {
 
 skinparam database  {
     BackgroundColor<< workspace >>  mistyrose
+BackgroundColor<< dataprep >>  lightblue
     BackgroundColor<< authorization >>  honeydew
 
     BackgroundColor<< repository >>  palegreen

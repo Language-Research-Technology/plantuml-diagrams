@@ -6,6 +6,12 @@
 
 <img src="ldaca-batch-data-conversion.svg">
 
+## [onboarding/ldaca-data-prep-wb-onboarding.svg](./ldaca-data-prep-wb-onboarding.svg)
+
+
+
+<img src="ldaca-data-prep-wb-onboarding.svg">
+
 ## [onboarding/ldaca-data-prep-workbench-conversion.svg](./ldaca-data-prep-workbench-conversion.svg)
 
 

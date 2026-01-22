@@ -1,30 +1,50 @@
 
 @startuml
+
 title: LDaCA Data preparation
 !include_many ../data-management-style.txt
 
 
 
-rectangle "📈📄📜  Folders of original data 🎥🎙" as data {
+rectangle "📈📄📜  Folders of legacy or novel data 🎥🎙" as data {
 
 }
 
-rectangle  "Data Preparation Workbench " as dp {
+rectangle  "Data Preparation Workbench: Make Research Objects" <<dataprep>> as dp {
+rectangle "Corpus Tools" as ct {
+    rectangle "Custom scripts" as ctscripts
+    rectangle "RO-Crate Excel" as ctexcel
+
+}
   rectangle "Data Annotation Tool: (Crate-O)"  as co {
    rectangle "Interactive Web Forms" as forms
    rectangle "Excel Import" as excel
   }
-rectangle "OCR Image to Text" as ocr
-rectangle "Text to TEI Editory" as tei
-rectangle "Audio/Video Transcription Tool Multi-tier" as avt {
-    rectangle "Speech-to-Text API Integration" as stt
-    rectangle "Manual Transcription Interface" as mti
-      }
+
+
+rectangle "Plugins" as pi {
+  
+}
+
+dp --down--> co
+pi --down--> co
+ct --down--> co
 }
 
 
-
-
+note top of pi
+ - Extend Workbench functionality
+ - Custom plugins for specific data types or tasks
+ - Examples:
+    - OCR for images
+    - Auto transcription for audio
+    - Text to TEI conversion
+    - Word transcriptions to CSV or other formats
+ - Run in:
+    - Local machine
+    - Binderhub
+    - Commercial API services
+end note
 
 
 
@@ -42,22 +62,33 @@ rectangle "⚙️ API ⚙️ "  as api {
 
 }
 
-dp <-up- data : Upload or share data via sync service
-dp -down-> repo : Write crate(s)
+dp <--up-- data : Upload or share data via sync service
+dp --down--> repo : Write crate(s)
 repo -down-> api : Serve data
-dtt -up-> api : Fetch data
-dtt --up--> dp : use data directly 
-rectangle "Data Transformation Tools" as dtt {
+
+rectangle "Data Transformation Tools" <<workspace>> as dtt {
     rectangle "RO-Crate to Table (Tabulator)" as tablr {
         rectangle "CSV Export" as csv
         rectangle "Pandas DataFrame Export" as pandas
         rectangle "Parquet Export" as parquet
         rectangle "SQL Export" as sql
-        rectangle "Corpus Export" as corpus {
-            rectangle "AntConc" as ac
-        }
+       
 
     }
-    
+    rectangle "Corpus Loader (SIH)" {
+
+    }
+     rectangle "Corpus Export" as corpus {
+            rectangle "AntConc" as ac
+        }
 }
+
+dtt -down-> api : Fetch research objects
+dtt --up--> dp : Use Research Objects directly 
+
+cloud "Analytics Environment\n(Jupyter Notebooks, RStudio, etc)" <<workspace>> as analytics {
+    rectangle "Data Analysis & Visualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" as dav
+}
+
+analytics --up--> dtt : Use transformed data
 @enduml
